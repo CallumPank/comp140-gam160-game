@@ -31,3 +31,28 @@ Can move the paddle board forwards and backwards as well as up and down.
 Game Modes - 
 Circle being the regular game mode. 
 Triangle is an extra game mode.	
+
+
+
+
+What Are Alternative Controllers?
+Traditional controllers are built by video game developers such as Microsoft (Xbox controller) and Nintendo (Wii Remote) these are the controllers that are usually associated when you think of controllers or video games. 
+Alternative controllers are the controllers that are custom made for example custard bowls. 
+Hijacked traditional controllers such as a keyboard that has been modified.
+Arcade Cabinets such as those designed to play Tekken or Street Fighter but with an innovative design such as a webcam or a microphone.
+Installations these are controllers can be traditional but are different because to be used they need a certain setting such as a room or cubicles.
+Playful Performances these are just live performances that are controlled by the crowd such as Take Control which gives two members of the crowd control over two actors with the controllers being laser pointers.
+Playable at Home these are games that can be played with traditional controllers but are used in a unique way such as Space Team which uses the microphone in an IPad. 
+Alternative Controllers:
+Dildo Controller – Genital Jousting. This game uses 8 joysticks with ball tops and 8 dildos of varying colour and size to control virtual penises on screen.
+Webcam- No Pain No Gain. This game uses a webcam, players jump into a white sheet and depending on how close they are to the projection on the wall they will gain points.
+
+Controller Description
+A large see through box with two 8 direction joysticks on either end of the box. 4 arcade buttons placed near each joystick. Large Action Button.
+
+
+
+
+
+
+
