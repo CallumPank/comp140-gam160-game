@@ -1,0 +1,967 @@
+﻿Log file open, 03/17/17 19:57:29
+LogInit:Display: Running engine for game: Pong
+LogPlatformFile: Not using cached read wrapper
+LogInit:Display: RandInit(-1631977233) SRandInit(-1631977231).
+LogTaskGraph: Started task graph with 4 named threads and 7 total threads with 1 sets of task threads.
+LogStats: Stats thread started at 0.131114
+LogInit: Version: 4.12.5-3039270+++UE4+Release-4.12
+LogInit: API Version: 2992821
+LogInit: Net Version: 3039270
+LogDevObjectVersion: Number of dev versions registered: 13
+LogDevObjectVersion:   Dev-Blueprints (B0D832E4-1F89-4F0D-ACCF-7EB736FD4AA2): 3
+LogDevObjectVersion:   Dev-Build (E1C64328-A22C-4D53-A36C-8E866417BD8C): 0
+LogDevObjectVersion:   Dev-Core (375EC13C-06E4-48FB-B500-84F0262A717E): 1
+LogDevObjectVersion:   Dev-Editor (E4B068ED-F494-42E9-A231-DA0B2E46BB41): 2
+LogDevObjectVersion:   Dev-Framework (CFFC743F-43B0-4480-9391-14DF171D2073): 6
+LogDevObjectVersion:   Dev-Mobile (B02B49B5-BB20-44E9-A304-32B752E40360): 0
+LogDevObjectVersion:   Dev-Networking (A4E4105C-59A1-49B5-A7C5-40C4547EDFEE): 0
+LogDevObjectVersion:   Dev-Online (39C831C9-5AE6-47DC-9A44-9C173E1C8E7C): 0
+LogDevObjectVersion:   Dev-Physics (78F01B33-EBEA-4F98-B9B4-84EACCB95AA2): 0
+LogDevObjectVersion:   Dev-Platform (6631380F-2D4D-43E0-8009-CF276956A95A): 0
+LogDevObjectVersion:   Dev-Rendering (12F88B9F-8875-4AFC-A67C-D90C383ABD29): 2
+LogDevObjectVersion:   Dev-Sequencer (7B5AE74C-D270-4C10-A958-57980B212A5A): 0
+LogDevObjectVersion:   Dev-VR (D7296918-1DD6-4BDD-9DE2-64A83CC13884): 0
+LogInit: Compiled (64-bit): Jul  6 2016 09:09:46
+LogInit: Compiled with Visual C++: 19.00.23026.00
+LogInit: Build Configuration: Development
+LogInit: Branch Name: ++UE4+Release-4.12
+LogInit: Command line:  
+LogInit: Base directory: D:/Unreal Engine/UE_4.12/Engine/Binaries/Win64/
+LogInit: Installed Engine Build: 1
+LogInit: Using libcurl 7.41.0
+LogInit:  - built for x86_64-pc-win32
+LogInit:  - supports SSL with WinSSL
+LogInit:  - other features:
+LogInit:      CURL_VERSION_SSL
+LogInit:      CURL_VERSION_IPV6
+LogInit:      CURL_VERSION_ASYNCHDNS
+LogInit:      CURL_VERSION_LARGEFILE
+LogInit:      CURL_VERSION_IDN
+LogInit:  CurlRequestOptions (configurable via config and command line):
+LogInit:  - bVerifyPeer = true  - Libcurl will verify peer certificate
+LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
+LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
+LogInit:  - CertBundlePath = nullptr  - Libcurl will use whatever was configured at build time.
+LogInit: Presizing for max 8388607 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
+LogInit: Object subsystem initialized
+[2017.03.17-19.57.30:083][  0]LogInit: Selected Device Profile: [Windows]
+[2017.03.17-19.57.30:083][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2017.03.17-19.57.30:130][  0]LogInit: Computer: MSI
+[2017.03.17-19.57.30:130][  0]LogInit: User: Callum
+[2017.03.17-19.57.30:130][  0]LogInit: CPU Page size=65536, Cores=4
+[2017.03.17-19.57.30:130][  0]LogInit: High frequency timer resolution =2.531248 MHz
+[2017.03.17-19.57.30:130][  0]LogMemory: Memory total: Physical=15.9GB (16GB approx)
+[2017.03.17-19.57.30:130][  0]LogMemory: Platform Memory Stats for Windows
+[2017.03.17-19.57.30:130][  0]LogMemory: Process Physical Memory: 190.82 MB used, 190.82 MB peak
+[2017.03.17-19.57.30:130][  0]LogMemory: Process Virtual Memory: 195.30 MB used, 195.30 MB peak
+[2017.03.17-19.57.30:130][  0]LogMemory: Physical Memory: 4442.45 MB used, 16259.88 MB total
+[2017.03.17-19.57.30:130][  0]LogMemory: Virtual Memory: 553.80 MB used, 134217728.00 MB total
+[2017.03.17-19.57.31:358][  0]LogTextLocalizationManager: No specific translations for ('en-GB') exist, so ('en') translations will be used.
+[2017.03.17-19.57.31:933][  0]LogD3D11RHI: D3D11 adapters:
+[2017.03.17-19.57.32:568][  0]LogD3D11RHI:    0. 'NVIDIA GeForce GTX 1060' (Feature Level 11_0)
+[2017.03.17-19.57.32:568][  0]LogD3D11RHI:       6084/0/8129 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:1, VendorId:0x10de
+[2017.03.17-19.57.32:574][  0]LogD3D11RHI:    1. 'Intel(R) HD Graphics 530' (Feature Level 11_0)
+[2017.03.17-19.57.32:574][  0]LogD3D11RHI:       128/0/8129 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x8086
+[2017.03.17-19.57.32:575][  0]LogD3D11RHI:    2. 'Microsoft Basic Render Driver' (Feature Level 11_0)
+[2017.03.17-19.57.32:575][  0]LogD3D11RHI:       0/0/8129 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
+[2017.03.17-19.57.32:575][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2017.03.17-19.57.32:580][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2017.03.17-19.57.32:580][  0]LogD3D11RHI:     GPU DeviceId: 0x1c20 (for the marketing name, search the web for "GPU Device Id")
+[2017.03.17-19.57.32:580][  0]LogWindows: EnumDisplayDevices:
+[2017.03.17-19.57.32:580][  0]LogWindows:    0. 'Intel(R) HD Graphics 530' (P:1 D:1)
+[2017.03.17-19.57.32:581][  0]LogWindows:    1. 'Intel(R) HD Graphics 530' (P:0 D:0)
+[2017.03.17-19.57.32:581][  0]LogWindows:    2. 'Intel(R) HD Graphics 530' (P:0 D:0)
+[2017.03.17-19.57.32:581][  0]LogWindows:    3. 'NVIDIA GeForce GTX 1060' (P:0 D:0)
+[2017.03.17-19.57.32:581][  0]LogWindows:    4. 'NVIDIA GeForce GTX 1060' (P:0 D:0)
+[2017.03.17-19.57.32:581][  0]LogWindows:    5. 'NVIDIA GeForce GTX 1060' (P:0 D:0)
+[2017.03.17-19.57.32:581][  0]LogWindows:    6. 'NVIDIA GeForce GTX 1060' (P:0 D:0)
+[2017.03.17-19.57.32:581][  0]LogWindows: DebugString: PrimaryIsNotTheChoosenAdapter PrimaryIsNotTheChoosenAdapter PrimaryIsNotTheChoosenAdapter FoundDriverCount:4 
+[2017.03.17-19.57.32:581][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce GTX 1060
+[2017.03.17-19.57.32:581][  0]LogD3D11RHI:   Driver Version: 378.78 (internal:21.21.13.7878, unified:378.78)
+[2017.03.17-19.57.32:581][  0]LogD3D11RHI:      Driver Date: 2-23-2017
+[2017.03.17-19.57.32:581][  0]LogRHI: Texture pool is 1361 MB (70% of 1945 MB)
+[2017.03.17-19.57.33:162][  0]LogD3D11RHI: Async texture creation enabled
+[2017.03.17-19.57.33:241][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 1)
+[2017.03.17-19.57.33:241][  0]LogShaderCompilers: Guid format shader working directory is -13 characters bigger than the processId version (../../../../../Users/Callum/Desktop/Computing/COMP 140/Pong/Intermediate/Shaders/WorkingDirectory/12360/).
+[2017.03.17-19.57.33:242][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/Callum/AppData/Local/Temp/UnrealShaderWorkingDir/401482A447C7505B07B733BEDFEF5BE1/'.
+[2017.03.17-19.57.33:242][  0]LogShaderCompilers:Display: Using Local Shader Compiler.
+[2017.03.17-19.57.36:586][  0]LogTemp:Display: Loaded TP AllDesktopTargetPlatform
+[2017.03.17-19.57.36:595][  0]LogTemp:Display: Loaded TP WindowsClientTargetPlatform
+[2017.03.17-19.57.36:603][  0]LogTemp:Display: Loaded TP WindowsNoEditorTargetPlatform
+[2017.03.17-19.57.36:611][  0]LogTemp:Display: Loaded TP WindowsServerTargetPlatform
+[2017.03.17-19.57.36:620][  0]LogTemp:Display: Loaded TP WindowsTargetPlatform
+[2017.03.17-19.57.36:641][  0]LogTemp:Display: Loaded TP AndroidTargetPlatform
+[2017.03.17-19.57.36:659][  0]LogTemp:Display: Loaded TP Android_ASTCTargetPlatform
+[2017.03.17-19.57.36:667][  0]LogTemp:Display: Loaded TP Android_ATCTargetPlatform
+[2017.03.17-19.57.36:682][  0]LogTemp:Display: Loaded TP Android_DXTTargetPlatform
+[2017.03.17-19.57.36:695][  0]LogTemp:Display: Loaded TP Android_ETC1TargetPlatform
+[2017.03.17-19.57.36:709][  0]LogTemp:Display: Loaded TP Android_ETC2TargetPlatform
+[2017.03.17-19.57.36:745][  0]LogTemp:Display: Loaded TP Android_MultiTargetPlatform
+[2017.03.17-19.57.36:745][  0]LogTemp:Display: Loaded TP Android_PVRTCTargetPlatform
+[2017.03.17-19.57.36:748][  0]LogTemp:Display: Loaded TP HTML5TargetPlatform
+[2017.03.17-19.57.36:843][  0]LogTemp:Display: Loaded TP IOSTargetPlatform
+[2017.03.17-19.57.36:850][  0]LogTemp:Display: Loaded TP TVOSTargetPlatform
+[2017.03.17-19.57.36:869][  0]LogTemp:Display: Loaded TP LinuxNoEditorTargetPlatform
+[2017.03.17-19.57.36:887][  0]LogTemp:Display: Loaded TP LinuxServerTargetPlatform
+[2017.03.17-19.57.36:938][  0]LogTemp:Display: Loaded TP LinuxTargetPlatform
+[2017.03.17-19.57.36:938][  0]LogTargetPlatformManager:Display: Building Assets For Windows
+[2017.03.17-19.57.37:678][  0]LogDerivedDataCache:Display: Max Cache Size: 512 MB
+[2017.03.17-19.57.37:927][  0]LogDerivedDataCache: Loaded boot cache 0.25s 48MB C:/Users/Callum/AppData/Local/UnrealEngine/4.12/DerivedDataCache/Boot.ddc.
+[2017.03.17-19.57.37:927][  0]LogDerivedDataCache:Display: Loaded Boot cache: C:/Users/Callum/AppData/Local/UnrealEngine/4.12/DerivedDataCache/Boot.ddc
+[2017.03.17-19.57.37:927][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../Users/Callum/Desktop/Computing/COMP 140/Pong/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2017.03.17-19.57.37:927][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2017.03.17-19.57.37:928][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../Users/Callum/Desktop/Computing/COMP 140/Pong/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2017.03.17-19.57.37:928][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2017.03.17-19.57.38:001][  0]LogDerivedDataCache:Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2017.03.17-19.57.38:014][  0]LogDerivedDataCache: Using Local data cache path C:/Users/Callum/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2017.03.17-19.57.46:091][  0]LogInit: Selected Device Profile: [Windows]
+[2017.03.17-19.57.46:147][  0]LogContentStreaming: Texture pool size is 0.00 MB
+[2017.03.17-19.57.49:185][  0]LogMeshUtilities: No automatic mesh reduction module available
+[2017.03.17-19.57.49:185][  0]LogMeshUtilities: No automatic mesh merging module available
+[2017.03.17-19.57.49:185][  0]LogMeshUtilities: No distributed automatic mesh merging module available
+[2017.03.17-19.57.52:191][  0]LogAssetRegistry: FAssetRegistry took 0.0240 seconds to start up
+[2017.03.17-19.57.52:490][  0]LogPackageLocalizationCache: Processed 3 localized package path(s) for 2 prioritized culture(s) in 0.196058 seconds
+[2017.03.17-19.57.52:530][  0]LogUObjectArray: 28739 objects as part of root set at end of initial load.
+[2017.03.17-19.57.52:530][  0]LogUObjectAllocator: 5855632 out of 0 bytes used by permanent object pool.
+[2017.03.17-19.57.52:530][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2017.03.17-19.57.52:551][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+[2017.03.17-19.57.55:460][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2017.03.17-19.57.55:471][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2017.03.17-19.58.04:080][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2017.03.17-19.58.05:449][  0]SourceControl: Info Source control is disabled
+[2017.03.17-19.58.05:578][  0]SourceControl: Info Source control is disabled
+[2017.03.17-19.58.05:625][  0]SourceControl: Info Source control is disabled
+[2017.03.17-19.58.05:653][  0]SourceControl: Info Source control is disabled
+[2017.03.17-19.58.06:798][  0]LogEngine: Initializing Engine...
+[2017.03.17-19.58.06:887][  0]LogHMD: SteamVR failed to initialize.  Err: 110
+[2017.03.17-19.58.06:888][  0]LogHMD: SteamVR failed to initialize.  Err: 110
+[2017.03.17-19.58.07:773][  0]LogAIModule: Creating AISystem for world NewWorld
+[2017.03.17-19.58.07:989][  0]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.03.17-19.58.08:024][  0]LogInit: FAudioDevice initialized.
+[2017.03.17-19.58.08:048][  0]LogDerivedDataCache: Saved boot cache 0.02s 48MB C:/Users/Callum/AppData/Local/UnrealEngine/4.12/DerivedDataCache/Boot.ddc.
+[2017.03.17-19.58.08:056][  0]LogInit: Texture streaming: Enabled
+[2017.03.17-19.58.08:187][  0]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
+[2017.03.17-19.58.08:694][  0]LogInit: Transaction tracking system initialized
+[2017.03.17-19.58.11:212][  0]BlueprintLog: New page: Editor Load
+[2017.03.17-19.58.12:197][  0]LocalizationService: Info Localization service is disabled
+[2017.03.17-19.58.13:161][  0]LogConsoleResponse:Display: 
+[2017.03.17-19.58.14:932][  0]LogFileCache: Scanning file cache for directory 'D:/Users/Callum/Desktop/Computing/COMP 140/Pong/Content/' took 0.01s
+[2017.03.17-19.58.14:932][  0]LogCook:Display: Max memory allowance for cook 8192mb
+[2017.03.17-19.58.14:932][  0]LogCook:Display: Mobile HDR setting 1
+[2017.03.17-19.58.16:117][  0]SourceControl: Info Source control is disabled
+[2017.03.17-19.58.16:167][  0]Cmd: MAP LOAD FILE="../../../../../Users/Callum/Desktop/Computing/COMP 140/Pong/Content/Lavels/Pong_Main.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2017.03.17-19.58.16:218][  0]LightingResults: New page: Lighting Build
+[2017.03.17-19.58.16:365][  0]MapCheck: New page: Map Check
+[2017.03.17-19.58.16:365][  0]LightingResults: New page: Lighting Build
+[2017.03.17-19.58.17:513][  0]LogAIModule: Creating AISystem for world Pong_Main
+[2017.03.17-19.58.17:686][  0]PIE:Warning: Warning Invalid Simulate Options: Body (BP_Ball_108.Ball StaticMesh_PongBall) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.17-19.58.17:686][  0]PIE:Warning: Warning Invalid Simulate Options: Body (BP_Ball_108.Ball StaticMesh_PongBall) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.17-19.58.17:730][  0]PIE:Warning: Warning Invalid Simulate Options: Body (BP_Ball_108.Ball StaticMesh_PongBall) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.17-19.58.17:730][  0]PIE:Warning: Warning Invalid Simulate Options: Body (BP_Ball_108.Ball StaticMesh_PongBall) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.17-19.58.17:825][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2017.03.17-19.58.17:857][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2017.03.17-19.58.17:890][  0]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 32.808ms to complete.
+[2017.03.17-19.58.17:890][  0]LogFileHelpers: Loading map 'Pong_Main' took 1.754
+[2017.03.17-19.58.19:449][  0]LogCollectionManager: Loaded 0 collections in 0.002041 seconds
+[2017.03.17-19.58.19:888][  0]LogFileCache: Scanning file cache for directory 'D:/Users/Callum/Desktop/Computing/COMP 140/Pong/Saved/Collections/' took 0.01s
+[2017.03.17-19.58.19:888][  0]LogFileCache: Scanning file cache for directory 'D:/Users/Callum/Desktop/Computing/COMP 140/Pong/Content/Developers/Callum/Collections/' took 0.01s
+[2017.03.17-19.58.19:888][  0]LogFileCache: Scanning file cache for directory 'D:/Users/Callum/Desktop/Computing/COMP 140/Pong/Content/Collections/' took 0.01s
+[2017.03.17-19.58.19:888][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000003 seconds
+[2017.03.17-19.58.19:947][  0]LogContentBrowser: Native class hierarchy populated in 0.0208 seconds. Added 2047 classes and 369 folders.
+[2017.03.17-19.58.20:039][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
+[2017.03.17-19.58.20:041][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.002 s
+[2017.03.17-19.58.20:049][  0]LogContentBrowser: Native class hierarchy updated for 'GameplayTags' in 0.0008 seconds. Added 12 classes and 0 folders.
+[2017.03.17-19.58.20:084][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0004 seconds. Added 0 classes and 0 folders.
+[2017.03.17-19.58.22:158][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0004 seconds. Added 0 classes and 0 folders.
+[2017.03.17-19.58.22:295][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0004 seconds. Added 1 classes and 2 folders.
+[2017.03.17-19.58.22:993][  0]LogCrashTracker: Crashtracker disabled due to settings.
+[2017.03.17-19.58.23:240][  0]LogUObjectGlobals:Warning: Failed to find object 'Class None.'
+[2017.03.17-19.58.23:525][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0005 seconds. Added 1 classes and 2 folders.
+[2017.03.17-19.58.23:525][  0]LogLoad: Full Startup: 55.99 seconds (BP compile: 0.48 seconds)
+[2017.03.17-19.58.23:525][  0]LogExternalProfiler: Found external profiler: VSPerf
+[2017.03.17-19.58.23:525][  0]LogExternalProfiler: Using external profiler: VSPerf
+[2017.03.17-19.58.23:609][  0]LogOcInput: OculusInput pre-init called
+[2017.03.17-19.58.24:051][  0]LogContentStreaming: Texture pool size now 1000 MB
+[2017.03.17-19.58.25:546][  0]LogRenderer: Reallocating scene render targets to support 1208x576 (Frame:2).
+[2017.03.17-19.58.26:256][  3]LogAssetRegistry: Asset discovery search completed in 34.0872 seconds
+[2017.03.17-19.58.26:272][  3]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000001 seconds (found 0 objects)
+[2017.03.17-19.58.26:272][  3]LogCollectionManager: Fixed up redirectors for 0 collections in 0.015554 seconds (updated 0 objects)
+[2017.03.17-19.59.16:640][995]LogEditorViewport: Clicking on Actor (LMB): CameraActor (CameraActor)
+[2017.03.17-20.00.02:136][635]LogEditorViewport: Clicking Background
+[2017.03.17-20.00.02:207][637]LogEditorViewport: Clicking Background
+[2017.03.17-20.00.03:405][709]LogEditorViewport: Clicking on Actor (LMB): CameraActor (CameraActor)
+[2017.03.17-20.00.18:875][622]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Lavels/Pong_Main.Pong_Main:PersistentLevel' has LevelScriptBlueprint '/Game/Lavels/Pong_Main.Pong_Main:PersistentLevel.Pong_Main' with GeneratedClass '/Game/Lavels/Pong_Main.Pong_Main_C' with ClassGeneratedBy '/Game/Lavels/Pong_Main.Pong_Main:PersistentLevel.Pong_Main'
+[2017.03.17-20.00.18:915][622]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.03.17-20.00.18:981][622]PIE: New page: PIE session: Pong_Main (17 Mar 2017 20:00:18)
+[2017.03.17-20.00.18:981][622]LogPlayLevel: Creating play world package: /Game/Lavels/UEDPIE_0_Pong_Main
+[2017.03.17-20.00.18:984][622]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002652s)
+[2017.03.17-20.00.18:984][622]LogAIModule: Creating AISystem for world Pong_Main
+[2017.03.17-20.00.18:985][622]LogPlayLevel: PIE: World Init took: (0.000541s)
+[2017.03.17-20.00.18:985][622]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Lavels/Pong_Main.Pong_Main to /Game/Lavels/UEDPIE_0_Pong_Main.Pong_Main (0.003390s)
+[2017.03.17-20.00.19:062][622]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.03.17-20.00.19:093][622]LogInit: FAudioDevice initialized.
+[2017.03.17-20.00.19:263][622]LogWorld: Game class is 'PangGamemode_C'
+[2017.03.17-20.00.19:306][622]PIE:Warning: Warning Invalid Simulate Options: Body (BP_Ball_108.Ball StaticMesh_PongBall) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.17-20.00.19:306][622]PIE:Warning: Warning Invalid Simulate Options: Body (BP_Ball_108.Ball StaticMesh_PongBall) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.17-20.00.19:306][622]LogWorld: Bringing World /Game/Lavels/UEDPIE_0_Pong_Main.Pong_Main up for play (max tick rate 60) at 2017.03.17-20.00.19
+[2017.03.17-20.00.19:334][622]LogWorld: Bringing up level for play took: 0.029287
+[2017.03.17-20.00.19:411][622]LogContentBrowser: Native class hierarchy updated for 'MovieSceneCapture' in 0.0005 seconds. Added 11 classes and 0 folders.
+[2017.03.17-20.00.19:435][622]PIE: Info Play in editor start time for /Game/Lavels/UEDPIE_0_Pong_Main 0.869
+[2017.03.17-20.00.19:435][622]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Lavels/Pong_Main.Pong_Main:PersistentLevel' has LevelScriptBlueprint '/Game/Lavels/Pong_Main.Pong_Main:PersistentLevel.Pong_Main' with GeneratedClass '/Game/Lavels/Pong_Main.Pong_Main_C' with ClassGeneratedBy '/Game/Lavels/Pong_Main.Pong_Main:PersistentLevel.Pong_Main'
+[2017.03.17-20.00.23:527][854]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Lavels/Pong_Main.Pong_Main:PersistentLevel' has LevelScriptBlueprint '/Game/Lavels/Pong_Main.Pong_Main:PersistentLevel.Pong_Main' with GeneratedClass '/Game/Lavels/Pong_Main.Pong_Main_C' with ClassGeneratedBy '/Game/Lavels/Pong_Main.Pong_Main:PersistentLevel.Pong_Main'
+[2017.03.17-20.00.23:679][854]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Lavels/Pong_Main.Pong_Main:PersistentLevel' has LevelScriptBlueprint '/Game/Lavels/Pong_Main.Pong_Main:PersistentLevel.Pong_Main' with GeneratedClass '/Game/Lavels/Pong_Main.Pong_Main_C' with ClassGeneratedBy '/Game/Lavels/Pong_Main.Pong_Main:PersistentLevel.Pong_Main'
+[2017.03.17-20.00.28:883][156]LogEditorViewport: Clicking on Actor (LMB): CameraActor (CameraActor)
+[2017.03.17-20.01.04:626][269]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Lavels/Pong_Main.Pong_Main:PersistentLevel' has LevelScriptBlueprint '/Game/Lavels/Pong_Main.Pong_Main:PersistentLevel.Pong_Main' with GeneratedClass '/Game/Lavels/Pong_Main.Pong_Main_C' with ClassGeneratedBy '/Game/Lavels/Pong_Main.Pong_Main:PersistentLevel.Pong_Main'
+[2017.03.17-20.01.04:626][269]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.03.17-20.01.04:627][269]PIE: New page: PIE session: Pong_Main (17 Mar 2017 20:01:04)
+[2017.03.17-20.01.04:627][269]LogPlayLevel: Creating play world package: /Game/Lavels/UEDPIE_0_Pong_Main
+[2017.03.17-20.01.04:630][269]LogPlayLevel: PIE: StaticDuplicateObject took: (0.003237s)
+[2017.03.17-20.01.04:630][269]LogAIModule: Creating AISystem for world Pong_Main
+[2017.03.17-20.01.04:631][269]LogPlayLevel: PIE: World Init took: (0.000712s)
+[2017.03.17-20.01.04:631][269]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Lavels/Pong_Main.Pong_Main to /Game/Lavels/UEDPIE_0_Pong_Main.Pong_Main (0.004265s)
+[2017.03.17-20.01.04:669][269]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.03.17-20.01.04:697][269]LogInit: FAudioDevice initialized.
+[2017.03.17-20.01.04:747][269]LogWorld: Game class is 'PangGamemode_C'
+[2017.03.17-20.01.04:750][269]PIE:Warning: Warning Invalid Simulate Options: Body (BP_Ball_108.Ball StaticMesh_PongBall) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.17-20.01.04:750][269]PIE:Warning: Warning Invalid Simulate Options: Body (BP_Ball_108.Ball StaticMesh_PongBall) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.17-20.01.04:750][269]LogWorld: Bringing World /Game/Lavels/UEDPIE_0_Pong_Main.Pong_Main up for play (max tick rate 60) at 2017.03.17-20.01.04
+[2017.03.17-20.01.04:750][269]LogWorld: Bringing up level for play took: 0.002081
+[2017.03.17-20.01.04:794][269]PIE: Info Play in editor start time for /Game/Lavels/UEDPIE_0_Pong_Main 0.228
+[2017.03.17-20.01.04:794][269]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Lavels/Pong_Main.Pong_Main:PersistentLevel' has LevelScriptBlueprint '/Game/Lavels/Pong_Main.Pong_Main:PersistentLevel.Pong_Main' with GeneratedClass '/Game/Lavels/Pong_Main.Pong_Main_C' with ClassGeneratedBy '/Game/Lavels/Pong_Main.Pong_Main:PersistentLevel.Pong_Main'
+[2017.03.17-20.01.08:471][489]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Lavels/Pong_Main.Pong_Main:PersistentLevel' has LevelScriptBlueprint '/Game/Lavels/Pong_Main.Pong_Main:PersistentLevel.Pong_Main' with GeneratedClass '/Game/Lavels/Pong_Main.Pong_Main_C' with ClassGeneratedBy '/Game/Lavels/Pong_Main.Pong_Main:PersistentLevel.Pong_Main'
+[2017.03.17-20.01.08:520][489]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Lavels/Pong_Main.Pong_Main:PersistentLevel' has LevelScriptBlueprint '/Game/Lavels/Pong_Main.Pong_Main:PersistentLevel.Pong_Main' with GeneratedClass '/Game/Lavels/Pong_Main.Pong_Main_C' with ClassGeneratedBy '/Game/Lavels/Pong_Main.Pong_Main:PersistentLevel.Pong_Main'
+[2017.03.17-20.01.13:671][793]LogEditorViewport: Clicking Background
+[2017.03.17-20.01.14:238][826]LogEditorViewport: Clicking Background
+[2017.03.17-20.01.21:166][238]LogEditorViewport: Clicking on Actor (LMB): P2_Paddle_C (P2_Paddle)
+[2017.03.17-20.01.29:017][692]LogMaterial: Missing cached shader map for material M_White, compiling. 
+[2017.03.17-20.01.29:363][692]LogMaterial: Missing cached shader map for material M_White, compiling. 
+[2017.03.17-20.01.29:366][692]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.03.17-20.01.30:480][704]MaterialEditorStats: Info Base pass shader without light map: 8 instructions
+[2017.03.17-20.01.30:480][704]MaterialEditorStats: Info Vertex shader: 29 instructions
+[2017.03.17-20.01.30:480][704]MaterialEditorStats: Info Texture samplers: 0/16
+[2017.03.17-20.01.45:391][581]LogMaterial: Missing cached shader map for material M_White, compiling. 
+[2017.03.17-20.01.45:394][581]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.03.17-20.01.45:606][594]MaterialEditorStats: Info Base pass shader without light map: 8 instructions
+[2017.03.17-20.01.45:606][594]MaterialEditorStats: Info Vertex shader: 29 instructions
+[2017.03.17-20.01.45:606][594]MaterialEditorStats: Info Texture samplers: 0/16
+[2017.03.17-20.01.47:164][687]LogMaterial: Missing cached shader map for material M_White, compiling. 
+[2017.03.17-20.01.47:167][687]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.03.17-20.01.47:362][699]MaterialEditorStats: Info Base pass shader without light map: 8 instructions
+[2017.03.17-20.01.47:362][699]MaterialEditorStats: Info Vertex shader: 29 instructions
+[2017.03.17-20.01.47:362][699]MaterialEditorStats: Info Texture samplers: 0/16
+[2017.03.17-20.01.52:746][ 21]LogMaterial: Missing cached shader map for material M_White, compiling. 
+[2017.03.17-20.01.52:749][ 21]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.03.17-20.01.52:960][ 34]MaterialEditorStats: Info Base pass shader without light map: 8 instructions
+[2017.03.17-20.01.52:960][ 34]MaterialEditorStats: Info Vertex shader: 29 instructions
+[2017.03.17-20.01.52:960][ 34]MaterialEditorStats: Info Texture samplers: 0/16
+[2017.03.17-20.02.09:901][ 40]LogMaterial: Missing cached shader map for material M_White, compiling. 
+[2017.03.17-20.02.09:904][ 40]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.03.17-20.02.10:110][ 53]MaterialEditorStats: Info Base pass shader without light map: 8 instructions
+[2017.03.17-20.02.10:110][ 53]MaterialEditorStats: Info Vertex shader: 29 instructions
+[2017.03.17-20.02.10:110][ 53]MaterialEditorStats: Info Texture samplers: 0/16
+[2017.03.17-20.02.20:805][683]LogMaterial: Missing cached shader map for material M_White, compiling. 
+[2017.03.17-20.02.20:808][683]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.03.17-20.02.21:004][695]MaterialEditorStats: Info Base pass shader without light map: 8 instructions
+[2017.03.17-20.02.21:004][695]MaterialEditorStats: Info Vertex shader: 29 instructions
+[2017.03.17-20.02.21:004][695]MaterialEditorStats: Info Texture samplers: 0/16
+[2017.03.17-20.02.28:015][938]LogMaterial: Missing cached shader map for material M_White, compiling. 
+[2017.03.17-20.02.28:020][938]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.03.17-20.02.28:047][938]LogMaterial: Missing cached shader map for material M_White, compiling. 
+[2017.03.17-20.02.28:055][938]LogMaterial: Missing cached shader map for material M_White, compiling. 
+[2017.03.17-20.02.28:061][938]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.03.17-20.04.19:273][652]LogMaterial: Missing cached shader map for material PreviewMaterial_0, compiling. 
+[2017.03.17-20.04.19:345][652]LogMaterial: Missing cached shader map for material PreviewMaterial_0, compiling. 
+[2017.03.17-20.04.19:347][652]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.03.17-20.04.19:747][671]MaterialEditorStats: Info Base pass shader without light map: 8 instructions
+[2017.03.17-20.04.19:747][671]MaterialEditorStats: Info Vertex shader: 29 instructions
+[2017.03.17-20.04.19:747][671]MaterialEditorStats: Info Texture samplers: 0/16
+[2017.03.17-20.04.29:789][260]LogMaterial: Missing cached shader map for material PreviewMaterial_0, compiling. 
+[2017.03.17-20.04.29:792][260]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.03.17-20.04.29:998][266]MaterialEditorStats: Info Base pass shader without light map: 8 instructions
+[2017.03.17-20.04.29:998][266]MaterialEditorStats: Info Vertex shader: 29 instructions
+[2017.03.17-20.04.29:998][266]MaterialEditorStats: Info Texture samplers: 0/16
+[2017.03.17-20.04.33:518][476]LogMaterial: Missing cached shader map for material PreviewMaterial_0, compiling. 
+[2017.03.17-20.04.33:521][476]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.03.17-20.04.33:720][487]MaterialEditorStats: Info Base pass shader without light map: 8 instructions
+[2017.03.17-20.04.33:720][487]MaterialEditorStats: Info Vertex shader: 29 instructions
+[2017.03.17-20.04.33:720][487]MaterialEditorStats: Info Texture samplers: 0/16
+[2017.03.17-20.05.19:803][932]LogMaterial: Missing cached shader map for material PreviewMaterial_0, compiling. 
+[2017.03.17-20.05.19:806][932]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.03.17-20.05.19:807][932]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionConstant3Vector_0, compiling. 
+[2017.03.17-20.05.20:228][954]MaterialEditorStats: Info Base pass shader without light map: 8 instructions
+[2017.03.17-20.05.20:228][954]MaterialEditorStats: Info Vertex shader: 29 instructions
+[2017.03.17-20.05.20:228][954]MaterialEditorStats: Info Texture samplers: 0/16
+[2017.03.17-20.05.23:723][161]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionConstant3Vector_0, compiling. 
+[2017.03.17-20.05.25:263][251]LogMaterial: Missing cached shader map for material PreviewMaterial_0, compiling. 
+[2017.03.17-20.05.25:266][251]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.03.17-20.05.25:292][251]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionConstant3Vector_0, compiling. 
+[2017.03.17-20.05.25:486][263]MaterialEditorStats: Info Base pass shader without light map: 8 instructions
+[2017.03.17-20.05.25:486][263]MaterialEditorStats: Info Vertex shader: 29 instructions
+[2017.03.17-20.05.25:486][263]MaterialEditorStats: Info Texture samplers: 0/16
+[2017.03.17-20.05.31:090][573]LogMaterial: Missing cached shader map for material PreviewMaterial_0, compiling. 
+[2017.03.17-20.05.31:092][573]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.03.17-20.05.31:125][573]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionConstant3Vector_0, compiling. 
+[2017.03.17-20.05.31:204][578]LogMaterial: Missing cached shader map for material PreviewMaterial_0, compiling. 
+[2017.03.17-20.05.31:208][578]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.03.17-20.05.31:239][578]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionConstant3Vector_0, compiling. 
+[2017.03.17-20.05.31:245][578]LogMaterial: Missing cached shader map for material PreviewMaterial_0, compiling. 
+[2017.03.17-20.05.31:249][578]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.03.17-20.05.31:275][578]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionConstant3Vector_0, compiling. 
+[2017.03.17-20.05.31:535][594]MaterialEditorStats: Info Base pass shader without light map: 8 instructions
+[2017.03.17-20.05.31:535][594]MaterialEditorStats: Info Vertex shader: 29 instructions
+[2017.03.17-20.05.31:535][594]MaterialEditorStats: Info Texture samplers: 0/16
+[2017.03.17-20.05.31:703][604]LogMaterial: Missing cached shader map for material PreviewMaterial_0, compiling. 
+[2017.03.17-20.05.31:705][604]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.03.17-20.05.31:731][604]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionConstant3Vector_0, compiling. 
+[2017.03.17-20.05.31:931][616]MaterialEditorStats: Info Base pass shader without light map: 8 instructions
+[2017.03.17-20.05.31:931][616]MaterialEditorStats: Info Vertex shader: 29 instructions
+[2017.03.17-20.05.31:931][616]MaterialEditorStats: Info Texture samplers: 0/16
+[2017.03.17-20.05.32:300][638]LogMaterial: Missing cached shader map for material PreviewMaterial_0, compiling. 
+[2017.03.17-20.05.32:303][638]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.03.17-20.05.32:330][638]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionConstant3Vector_0, compiling. 
+[2017.03.17-20.05.32:523][650]MaterialEditorStats: Info Base pass shader without light map: 8 instructions
+[2017.03.17-20.05.32:523][650]MaterialEditorStats: Info Vertex shader: 29 instructions
+[2017.03.17-20.05.32:523][650]MaterialEditorStats: Info Texture samplers: 0/16
+[2017.03.17-20.05.33:277][695]LogMaterial: Missing cached shader map for material PreviewMaterial_0, compiling. 
+[2017.03.17-20.05.33:280][695]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.03.17-20.05.33:305][695]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionConstant3Vector_0, compiling. 
+[2017.03.17-20.05.33:352][698]LogMaterial: Missing cached shader map for material PreviewMaterial_0, compiling. 
+[2017.03.17-20.05.33:354][698]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.03.17-20.05.33:383][698]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionConstant3Vector_0, compiling. 
+[2017.03.17-20.05.33:644][714]MaterialEditorStats: Info Base pass shader without light map: 8 instructions
+[2017.03.17-20.05.33:644][714]MaterialEditorStats: Info Vertex shader: 29 instructions
+[2017.03.17-20.05.33:644][714]MaterialEditorStats: Info Texture samplers: 0/16
+[2017.03.17-20.05.34:715][778]LogMaterial: Missing cached shader map for material PreviewMaterial_0, compiling. 
+[2017.03.17-20.05.34:718][778]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.03.17-20.05.34:749][778]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionConstant3Vector_0, compiling. 
+[2017.03.17-20.05.34:795][781]LogMaterial: Missing cached shader map for material PreviewMaterial_0, compiling. 
+[2017.03.17-20.05.34:798][781]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.03.17-20.05.34:826][781]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionConstant3Vector_0, compiling. 
+[2017.03.17-20.05.35:080][796]MaterialEditorStats: Info Base pass shader without light map: 8 instructions
+[2017.03.17-20.05.35:080][796]MaterialEditorStats: Info Vertex shader: 29 instructions
+[2017.03.17-20.05.35:080][796]MaterialEditorStats: Info Texture samplers: 0/16
+[2017.03.17-20.05.35:816][840]LogMaterial: Missing cached shader map for material PreviewMaterial_0, compiling. 
+[2017.03.17-20.05.35:819][840]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.03.17-20.05.35:846][840]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionConstant3Vector_0, compiling. 
+[2017.03.17-20.05.35:925][845]LogMaterial: Missing cached shader map for material PreviewMaterial_0, compiling. 
+[2017.03.17-20.05.35:927][845]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.03.17-20.05.35:954][845]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionConstant3Vector_0, compiling. 
+[2017.03.17-20.05.36:174][858]MaterialEditorStats: Info Base pass shader without light map: 8 instructions
+[2017.03.17-20.05.36:174][858]MaterialEditorStats: Info Vertex shader: 29 instructions
+[2017.03.17-20.05.36:174][858]MaterialEditorStats: Info Texture samplers: 0/16
+[2017.03.17-20.05.36:826][897]LogMaterial: Missing cached shader map for material PreviewMaterial_0, compiling. 
+[2017.03.17-20.05.36:829][897]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.03.17-20.05.36:856][897]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionConstant3Vector_0, compiling. 
+[2017.03.17-20.05.36:884][899]LogMaterial: Missing cached shader map for material PreviewMaterial_0, compiling. 
+[2017.03.17-20.05.36:887][899]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.03.17-20.05.36:915][899]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionConstant3Vector_0, compiling. 
+[2017.03.17-20.05.37:180][915]MaterialEditorStats: Info Base pass shader without light map: 8 instructions
+[2017.03.17-20.05.37:180][915]MaterialEditorStats: Info Vertex shader: 29 instructions
+[2017.03.17-20.05.37:180][915]MaterialEditorStats: Info Texture samplers: 0/16
+[2017.03.17-20.05.38:259][979]LogMaterial: Missing cached shader map for material PreviewMaterial_0, compiling. 
+[2017.03.17-20.05.38:262][979]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.03.17-20.05.38:287][979]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionConstant3Vector_0, compiling. 
+[2017.03.17-20.05.38:332][982]LogMaterial: Missing cached shader map for material PreviewMaterial_0, compiling. 
+[2017.03.17-20.05.38:336][982]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.03.17-20.05.38:361][982]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionConstant3Vector_0, compiling. 
+[2017.03.17-20.05.38:367][982]LogMaterial: Missing cached shader map for material PreviewMaterial_0, compiling. 
+[2017.03.17-20.05.38:371][982]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.03.17-20.05.38:400][982]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionConstant3Vector_0, compiling. 
+[2017.03.17-20.05.38:406][982]LogMaterial: Missing cached shader map for material PreviewMaterial_0, compiling. 
+[2017.03.17-20.05.38:409][982]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.03.17-20.05.38:439][982]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionConstant3Vector_0, compiling. 
+[2017.03.17-20.05.38:446][982]LogMaterial: Missing cached shader map for material PreviewMaterial_0, compiling. 
+[2017.03.17-20.05.38:450][982]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.03.17-20.05.38:476][982]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionConstant3Vector_0, compiling. 
+[2017.03.17-20.05.38:482][982]LogMaterial: Missing cached shader map for material PreviewMaterial_0, compiling. 
+[2017.03.17-20.05.38:485][982]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.03.17-20.05.38:513][982]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionConstant3Vector_0, compiling. 
+[2017.03.17-20.05.38:809][  0]LogMaterial: Missing cached shader map for material PreviewMaterial_0, compiling. 
+[2017.03.17-20.05.38:813][  0]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.03.17-20.05.38:838][  0]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionConstant3Vector_0, compiling. 
+[2017.03.17-20.05.39:057][ 13]MaterialEditorStats: Info Base pass shader without light map: 8 instructions
+[2017.03.17-20.05.39:057][ 13]MaterialEditorStats: Info Vertex shader: 29 instructions
+[2017.03.17-20.05.39:057][ 13]MaterialEditorStats: Info Texture samplers: 0/16
+[2017.03.17-20.05.45:554][398]LogMaterial: Missing cached shader map for material PreviewMaterial_0, compiling. 
+[2017.03.17-20.05.45:557][398]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.03.17-20.05.45:757][409]MaterialEditorStats: Info Base pass shader without light map: 8 instructions
+[2017.03.17-20.05.45:757][409]MaterialEditorStats: Info Vertex shader: 29 instructions
+[2017.03.17-20.05.45:757][409]MaterialEditorStats: Info Texture samplers: 0/16
+[2017.03.17-20.05.53:560][873]Cmd: TRANSACTION UNDO
+[2017.03.17-20.05.53:603][873]LogEditorTransaction: Undo Material Editor: Delete
+[2017.03.17-20.05.53:606][873]LogMaterial: Missing cached shader map for material PreviewMaterial_0, compiling. 
+[2017.03.17-20.05.53:611][873]LogMaterial: Missing cached shader map for material PreviewMaterial_0, compiling. 
+[2017.03.17-20.05.53:614][873]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.03.17-20.05.53:830][885]MaterialEditorStats: Info Base pass shader without light map: 8 instructions
+[2017.03.17-20.05.53:830][885]MaterialEditorStats: Info Vertex shader: 29 instructions
+[2017.03.17-20.05.53:830][885]MaterialEditorStats: Info Texture samplers: 0/16
+[2017.03.17-20.05.53:980][894]Cmd: TRANSACTION UNDO
+[2017.03.17-20.05.53:980][894]LogEditorTransaction: Undo Modify Color Picker Value
+[2017.03.17-20.05.53:982][894]LogMaterial: Missing cached shader map for material PreviewMaterial_0, compiling. 
+[2017.03.17-20.05.53:987][894]LogMaterial: Missing cached shader map for material PreviewMaterial_0, compiling. 
+[2017.03.17-20.05.53:989][894]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.03.17-20.05.54:015][894]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionConstant3Vector_0, compiling. 
+[2017.03.17-20.05.54:211][904]MaterialEditorStats: Info Base pass shader without light map: 8 instructions
+[2017.03.17-20.05.54:211][904]MaterialEditorStats: Info Vertex shader: 29 instructions
+[2017.03.17-20.05.54:211][904]MaterialEditorStats: Info Texture samplers: 0/16
+[2017.03.17-20.05.54:444][918]Cmd: TRANSACTION UNDO
+[2017.03.17-20.05.54:444][918]LogEditorTransaction: Undo Modify Color Picker Value
+[2017.03.17-20.05.54:447][918]LogMaterial: Missing cached shader map for material PreviewMaterial_0, compiling. 
+[2017.03.17-20.05.54:453][918]LogMaterial: Missing cached shader map for material PreviewMaterial_0, compiling. 
+[2017.03.17-20.05.54:457][918]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.03.17-20.05.54:483][918]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionConstant3Vector_0, compiling. 
+[2017.03.17-20.05.54:676][929]MaterialEditorStats: Info Base pass shader without light map: 8 instructions
+[2017.03.17-20.05.54:676][929]MaterialEditorStats: Info Vertex shader: 29 instructions
+[2017.03.17-20.05.54:676][929]MaterialEditorStats: Info Texture samplers: 0/16
+[2017.03.17-20.05.55:559][982]Cmd: TRANSACTION UNDO
+[2017.03.17-20.05.55:559][982]LogEditorTransaction: Undo Modify Color Picker Value
+[2017.03.17-20.05.55:561][982]LogMaterial: Missing cached shader map for material PreviewMaterial_0, compiling. 
+[2017.03.17-20.05.55:566][982]LogMaterial: Missing cached shader map for material PreviewMaterial_0, compiling. 
+[2017.03.17-20.05.55:569][982]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.03.17-20.05.55:597][982]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionConstant3Vector_0, compiling. 
+[2017.03.17-20.05.55:775][992]MaterialEditorStats: Info Base pass shader without light map: 8 instructions
+[2017.03.17-20.05.55:775][992]MaterialEditorStats: Info Vertex shader: 29 instructions
+[2017.03.17-20.05.55:775][992]MaterialEditorStats: Info Texture samplers: 0/16
+[2017.03.17-20.05.55:941][  2]Cmd: TRANSACTION UNDO
+[2017.03.17-20.05.55:941][  2]LogEditorTransaction: Undo Modify Color Picker Value
+[2017.03.17-20.05.55:943][  2]LogMaterial: Missing cached shader map for material PreviewMaterial_0, compiling. 
+[2017.03.17-20.05.55:949][  2]LogMaterial: Missing cached shader map for material PreviewMaterial_0, compiling. 
+[2017.03.17-20.05.55:953][  2]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.03.17-20.05.55:979][  2]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionConstant3Vector_0, compiling. 
+[2017.03.17-20.05.56:144][ 11]Cmd: TRANSACTION UNDO
+[2017.03.17-20.05.56:144][ 11]LogEditorTransaction: Undo Modify Color Picker Value
+[2017.03.17-20.05.56:147][ 11]LogMaterial: Missing cached shader map for material PreviewMaterial_0, compiling. 
+[2017.03.17-20.05.56:152][ 11]LogMaterial: Missing cached shader map for material PreviewMaterial_0, compiling. 
+[2017.03.17-20.05.56:157][ 11]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.03.17-20.05.56:184][ 11]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionConstant3Vector_0, compiling. 
+[2017.03.17-20.05.56:319][ 18]Cmd: TRANSACTION UNDO
+[2017.03.17-20.05.56:319][ 18]LogEditorTransaction: Undo Modify Color Picker Value
+[2017.03.17-20.05.56:322][ 18]LogMaterial: Missing cached shader map for material PreviewMaterial_0, compiling. 
+[2017.03.17-20.05.56:326][ 18]LogMaterial: Missing cached shader map for material PreviewMaterial_0, compiling. 
+[2017.03.17-20.05.56:330][ 18]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.03.17-20.05.56:356][ 18]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionConstant3Vector_0, compiling. 
+[2017.03.17-20.05.56:535][ 28]Cmd: TRANSACTION UNDO
+[2017.03.17-20.05.56:535][ 28]LogEditorTransaction: Undo Modify Color Picker Value
+[2017.03.17-20.05.56:538][ 28]LogMaterial: Missing cached shader map for material PreviewMaterial_0, compiling. 
+[2017.03.17-20.05.56:545][ 28]LogMaterial: Missing cached shader map for material PreviewMaterial_0, compiling. 
+[2017.03.17-20.05.56:549][ 28]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.03.17-20.05.56:577][ 28]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionConstant3Vector_0, compiling. 
+[2017.03.17-20.05.56:740][ 37]Cmd: TRANSACTION UNDO
+[2017.03.17-20.05.56:740][ 37]LogEditorTransaction: Undo Modify Color Picker Value
+[2017.03.17-20.05.56:743][ 37]LogMaterial: Missing cached shader map for material PreviewMaterial_0, compiling. 
+[2017.03.17-20.05.56:750][ 37]LogMaterial: Missing cached shader map for material PreviewMaterial_0, compiling. 
+[2017.03.17-20.05.56:753][ 37]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.03.17-20.05.56:778][ 37]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionConstant3Vector_0, compiling. 
+[2017.03.17-20.05.56:927][ 45]Cmd: TRANSACTION UNDO
+[2017.03.17-20.05.56:927][ 45]LogEditorTransaction: Undo Modify Color Picker Value
+[2017.03.17-20.05.56:930][ 45]LogMaterial: Missing cached shader map for material PreviewMaterial_0, compiling. 
+[2017.03.17-20.05.56:936][ 45]LogMaterial: Missing cached shader map for material PreviewMaterial_0, compiling. 
+[2017.03.17-20.05.56:938][ 45]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.03.17-20.05.56:967][ 45]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionConstant3Vector_0, compiling. 
+[2017.03.17-20.05.57:134][ 54]Cmd: TRANSACTION UNDO
+[2017.03.17-20.05.57:134][ 54]LogEditorTransaction: Undo Modify Color Picker Value
+[2017.03.17-20.05.57:137][ 54]LogMaterial: Missing cached shader map for material PreviewMaterial_0, compiling. 
+[2017.03.17-20.05.57:142][ 54]LogMaterial: Missing cached shader map for material PreviewMaterial_0, compiling. 
+[2017.03.17-20.05.57:146][ 54]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.03.17-20.05.57:175][ 54]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionConstant3Vector_0, compiling. 
+[2017.03.17-20.05.57:352][ 63]Cmd: TRANSACTION UNDO
+[2017.03.17-20.05.57:352][ 63]LogEditorTransaction: Undo Modify Color Picker Value
+[2017.03.17-20.05.57:355][ 63]LogMaterial: Missing cached shader map for material PreviewMaterial_0, compiling. 
+[2017.03.17-20.05.57:359][ 63]LogMaterial: Missing cached shader map for material PreviewMaterial_0, compiling. 
+[2017.03.17-20.05.57:363][ 63]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.03.17-20.05.57:392][ 63]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionConstant3Vector_0, compiling. 
+[2017.03.17-20.05.57:640][ 77]MaterialEditorStats: Info Base pass shader without light map: 8 instructions
+[2017.03.17-20.05.57:640][ 77]MaterialEditorStats: Info Vertex shader: 29 instructions
+[2017.03.17-20.05.57:640][ 77]MaterialEditorStats: Info Texture samplers: 0/16
+[2017.03.17-20.05.59:293][174]LogMaterial: Missing cached shader map for material PreviewMaterial_0, compiling. 
+[2017.03.17-20.05.59:296][174]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.03.17-20.05.59:512][186]MaterialEditorStats: Info Base pass shader without light map: 8 instructions
+[2017.03.17-20.05.59:512][186]MaterialEditorStats: Info Vertex shader: 29 instructions
+[2017.03.17-20.05.59:512][186]MaterialEditorStats: Info Texture samplers: 0/16
+[2017.03.17-20.06.02:596][362]LogMaterial: Missing cached shader map for material PreviewMaterial_0, compiling. 
+[2017.03.17-20.06.02:599][362]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.03.17-20.06.02:794][374]MaterialEditorStats: Info Base pass shader without light map: 8 instructions
+[2017.03.17-20.06.02:794][374]MaterialEditorStats: Info Vertex shader: 29 instructions
+[2017.03.17-20.06.02:794][374]MaterialEditorStats: Info Texture samplers: 0/16
+[2017.03.17-20.06.04:009][446]LogMaterialEditor: Saving and Compiling material M_White
+[2017.03.17-20.06.04:420][446]LogMaterial: Missing cached shader map for material PreviewMaterial_0, compiling. 
+[2017.03.17-20.06.04:426][446]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.03.17-20.06.04:443][446]LogMaterial: Missing cached shader map for material M_White, compiling. 
+[2017.03.17-20.06.04:450][446]LogMaterial: Missing cached shader map for material M_White, compiling. 
+[2017.03.17-20.06.04:455][446]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.03.17-20.06.05:177][446]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Meterials/M_White" FILE="../../../../../Users/Callum/Desktop/Computing/COMP 140/Pong/Content/Meterials/M_White.uasset" SILENT=true
+[2017.03.17-20.06.05:361][446]LogSavePackage: Save=60.36ms
+[2017.03.17-20.06.05:361][446]LogSavePackage: Moving '../../../../../Users/Callum/Desktop/Computing/COMP 140/Pong/Saved/M_White71C5D20246B6D62787939DBBF0862F9A.tmp' to '../../../../../Users/Callum/Desktop/Computing/COMP 140/Pong/Content/Meterials/M_White.uasset'
+[2017.03.17-20.06.05:379][446]LogSavePackage:Display: Finished SavePackage ../../../../../Users/Callum/Desktop/Computing/COMP 140/Pong/Content/Meterials/M_White.uasset
+[2017.03.17-20.06.05:384][446]MaterialEditorStats: Info Base pass shader without light map: 29 instructions
+[2017.03.17-20.06.05:384][446]MaterialEditorStats: Info Vertex shader: 29 instructions
+[2017.03.17-20.06.05:384][446]MaterialEditorStats: Info Texture samplers: 0/16
+[2017.03.17-20.06.12:025][814]LogMaterial: Missing cached shader map for material Black, compiling. 
+[2017.03.17-20.06.12:135][814]LogMaterial: Missing cached shader map for material Black, compiling. 
+[2017.03.17-20.06.12:142][814]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.03.17-20.06.13:003][856]MaterialEditorStats: Info Base pass shader with only dynamic lighting: 22 instructions
+[2017.03.17-20.06.13:004][856]MaterialEditorStats: Info Vertex shader: 29 instructions
+[2017.03.17-20.06.13:004][856]MaterialEditorStats: Info Texture samplers: 0/16
+[2017.03.17-20.06.18:073][148]LogMaterial: Missing cached shader map for material Black, compiling. 
+[2017.03.17-20.06.18:081][148]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.03.17-20.06.18:083][148]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionConstant3Vector_1, compiling. 
+[2017.03.17-20.06.18:952][198]MaterialEditorStats: Info Base pass shader with only dynamic lighting: 22 instructions
+[2017.03.17-20.06.18:952][198]MaterialEditorStats: Info Vertex shader: 29 instructions
+[2017.03.17-20.06.18:952][198]MaterialEditorStats: Info Texture samplers: 0/16
+[2017.03.17-20.06.19:644][239]LogMaterial: Missing cached shader map for material Black, compiling. 
+[2017.03.17-20.06.19:653][239]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.03.17-20.06.19:681][239]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionConstant3Vector_1, compiling. 
+[2017.03.17-20.06.20:517][289]MaterialEditorStats: Info Base pass shader with only dynamic lighting: 22 instructions
+[2017.03.17-20.06.20:517][289]MaterialEditorStats: Info Vertex shader: 29 instructions
+[2017.03.17-20.06.20:517][289]MaterialEditorStats: Info Texture samplers: 0/16
+[2017.03.17-20.06.29:053][777]LogMaterial: Missing cached shader map for material Black, compiling. 
+[2017.03.17-20.06.29:063][777]LogMaterial: Missing cached shader map for material Black, compiling. 
+[2017.03.17-20.06.29:066][777]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.03.17-20.06.29:286][788]MaterialEditorStats: Info Base pass shader without light map: 8 instructions
+[2017.03.17-20.06.29:286][788]MaterialEditorStats: Info Vertex shader: 29 instructions
+[2017.03.17-20.06.29:286][788]MaterialEditorStats: Info Texture samplers: 0/16
+[2017.03.17-20.06.35:671][159]LogMaterialEditor: Saving and Compiling material Black
+[2017.03.17-20.06.36:044][159]LogMaterial: Missing cached shader map for material Black, compiling. 
+[2017.03.17-20.06.36:048][159]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.03.17-20.06.36:071][159]LogMaterial: Missing cached shader map for material Black, compiling. 
+[2017.03.17-20.06.36:079][159]LogMaterial: Missing cached shader map for material Black, compiling. 
+[2017.03.17-20.06.36:084][159]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.03.17-20.06.36:864][159]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Meterials/Black" FILE="../../../../../Users/Callum/Desktop/Computing/COMP 140/Pong/Content/Meterials/Black.uasset" SILENT=true
+[2017.03.17-20.06.36:914][159]LogSavePackage: Save=48.58ms
+[2017.03.17-20.06.36:914][159]LogSavePackage: Moving '../../../../../Users/Callum/Desktop/Computing/COMP 140/Pong/Saved/Black338ED2694CFFCDB5B37CFF9CE1FF69A9.tmp' to '../../../../../Users/Callum/Desktop/Computing/COMP 140/Pong/Content/Meterials/Black.uasset'
+[2017.03.17-20.06.36:916][159]LogSavePackage:Display: Finished SavePackage ../../../../../Users/Callum/Desktop/Computing/COMP 140/Pong/Content/Meterials/Black.uasset
+[2017.03.17-20.06.36:925][159]MaterialEditorStats: Info Base pass shader without light map: 29 instructions
+[2017.03.17-20.06.36:925][159]MaterialEditorStats: Info Vertex shader: 29 instructions
+[2017.03.17-20.06.36:926][159]MaterialEditorStats: Info Texture samplers: 0/16
+[2017.03.17-20.06.54:065][134]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Lavels/Pong_Main.Pong_Main:PersistentLevel' has LevelScriptBlueprint '/Game/Lavels/Pong_Main.Pong_Main:PersistentLevel.Pong_Main' with GeneratedClass '/Game/Lavels/Pong_Main.Pong_Main_C' with ClassGeneratedBy '/Game/Lavels/Pong_Main.Pong_Main:PersistentLevel.Pong_Main'
+[2017.03.17-20.06.54:065][134]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.03.17-20.06.54:065][134]PIE: New page: PIE session: Pong_Main (17 Mar 2017 20:06:54)
+[2017.03.17-20.06.54:065][134]LogPlayLevel: Creating play world package: /Game/Lavels/UEDPIE_0_Pong_Main
+[2017.03.17-20.06.54:068][134]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002886s)
+[2017.03.17-20.06.54:068][134]LogAIModule: Creating AISystem for world Pong_Main
+[2017.03.17-20.06.54:068][134]LogPlayLevel: PIE: World Init took: (0.000605s)
+[2017.03.17-20.06.54:069][134]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Lavels/Pong_Main.Pong_Main to /Game/Lavels/UEDPIE_0_Pong_Main.Pong_Main (0.003730s)
+[2017.03.17-20.06.54:117][134]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.03.17-20.06.54:147][134]LogInit: FAudioDevice initialized.
+[2017.03.17-20.06.54:198][134]LogWorld: Game class is 'PangGamemode_C'
+[2017.03.17-20.06.54:201][134]PIE:Warning: Warning Invalid Simulate Options: Body (BP_Ball_108.Ball StaticMesh_PongBall) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.17-20.06.54:201][134]PIE:Warning: Warning Invalid Simulate Options: Body (BP_Ball_108.Ball StaticMesh_PongBall) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.17-20.06.54:202][134]LogWorld: Bringing World /Game/Lavels/UEDPIE_0_Pong_Main.Pong_Main up for play (max tick rate 60) at 2017.03.17-20.06.54
+[2017.03.17-20.06.54:202][134]LogWorld: Bringing up level for play took: 0.002487
+[2017.03.17-20.06.54:204][134]PIE: Info Play in editor start time for /Game/Lavels/UEDPIE_0_Pong_Main -0.362
+[2017.03.17-20.06.54:204][134]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Lavels/Pong_Main.Pong_Main:PersistentLevel' has LevelScriptBlueprint '/Game/Lavels/Pong_Main.Pong_Main:PersistentLevel.Pong_Main' with GeneratedClass '/Game/Lavels/Pong_Main.Pong_Main_C' with ClassGeneratedBy '/Game/Lavels/Pong_Main.Pong_Main:PersistentLevel.Pong_Main'
+[2017.03.17-20.06.58:028][362]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Lavels/Pong_Main.Pong_Main:PersistentLevel' has LevelScriptBlueprint '/Game/Lavels/Pong_Main.Pong_Main:PersistentLevel.Pong_Main' with GeneratedClass '/Game/Lavels/Pong_Main.Pong_Main_C' with ClassGeneratedBy '/Game/Lavels/Pong_Main.Pong_Main:PersistentLevel.Pong_Main'
+[2017.03.17-20.06.58:062][362]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Lavels/Pong_Main.Pong_Main:PersistentLevel' has LevelScriptBlueprint '/Game/Lavels/Pong_Main.Pong_Main:PersistentLevel.Pong_Main' with GeneratedClass '/Game/Lavels/Pong_Main.Pong_Main_C' with ClassGeneratedBy '/Game/Lavels/Pong_Main.Pong_Main:PersistentLevel.Pong_Main'
+[2017.03.17-20.07.10:128][ 71]LogEditorViewport: Clicking on Actor (LMB): BP_P1_Goal_C (BP_P1_Goal)
+[2017.03.17-20.07.14:954][348]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Lavels/Pong_Main.Pong_Main:PersistentLevel' has LevelScriptBlueprint '/Game/Lavels/Pong_Main.Pong_Main:PersistentLevel.Pong_Main' with GeneratedClass '/Game/Lavels/Pong_Main.Pong_Main_C' with ClassGeneratedBy '/Game/Lavels/Pong_Main.Pong_Main:PersistentLevel.Pong_Main'
+[2017.03.17-20.07.14:954][348]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.03.17-20.07.14:954][348]PIE: New page: PIE session: Pong_Main (17 Mar 2017 20:07:14)
+[2017.03.17-20.07.14:954][348]LogPlayLevel: Creating play world package: /Game/Lavels/UEDPIE_0_Pong_Main
+[2017.03.17-20.07.14:957][348]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002710s)
+[2017.03.17-20.07.14:957][348]LogAIModule: Creating AISystem for world Pong_Main
+[2017.03.17-20.07.14:958][348]LogPlayLevel: PIE: World Init took: (0.000608s)
+[2017.03.17-20.07.14:958][348]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Lavels/Pong_Main.Pong_Main to /Game/Lavels/UEDPIE_0_Pong_Main.Pong_Main (0.003531s)
+[2017.03.17-20.07.14:970][348]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.03.17-20.07.15:000][348]LogInit: FAudioDevice initialized.
+[2017.03.17-20.07.15:054][348]LogWorld: Game class is 'PangGamemode_C'
+[2017.03.17-20.07.15:056][348]PIE:Warning: Warning Invalid Simulate Options: Body (BP_Ball_108.Ball StaticMesh_PongBall) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.17-20.07.15:056][348]PIE:Warning: Warning Invalid Simulate Options: Body (BP_Ball_108.Ball StaticMesh_PongBall) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.17-20.07.15:056][348]LogWorld: Bringing World /Game/Lavels/UEDPIE_0_Pong_Main.Pong_Main up for play (max tick rate 60) at 2017.03.17-20.07.15
+[2017.03.17-20.07.15:057][348]LogWorld: Bringing up level for play took: 0.001863
+[2017.03.17-20.07.15:058][348]PIE: Info Play in editor start time for /Game/Lavels/UEDPIE_0_Pong_Main 0.492
+[2017.03.17-20.07.15:058][348]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Lavels/Pong_Main.Pong_Main:PersistentLevel' has LevelScriptBlueprint '/Game/Lavels/Pong_Main.Pong_Main:PersistentLevel.Pong_Main' with GeneratedClass '/Game/Lavels/Pong_Main.Pong_Main_C' with ClassGeneratedBy '/Game/Lavels/Pong_Main.Pong_Main:PersistentLevel.Pong_Main'
+[2017.03.17-20.07.19:035][585]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Lavels/Pong_Main.Pong_Main:PersistentLevel' has LevelScriptBlueprint '/Game/Lavels/Pong_Main.Pong_Main:PersistentLevel.Pong_Main' with GeneratedClass '/Game/Lavels/Pong_Main.Pong_Main_C' with ClassGeneratedBy '/Game/Lavels/Pong_Main.Pong_Main:PersistentLevel.Pong_Main'
+[2017.03.17-20.07.19:070][585]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Lavels/Pong_Main.Pong_Main:PersistentLevel' has LevelScriptBlueprint '/Game/Lavels/Pong_Main.Pong_Main:PersistentLevel.Pong_Main' with GeneratedClass '/Game/Lavels/Pong_Main.Pong_Main_C' with ClassGeneratedBy '/Game/Lavels/Pong_Main.Pong_Main:PersistentLevel.Pong_Main'
+[2017.03.17-20.07.25:591][971]LogEditorViewport: Clicking on Actor (LMB): PlayerStart (PlayerStart)
+[2017.03.17-20.08.06:753][419]LogEditorViewport: Clicking on Actor (LMB): BP_P2_Goal_C (BP_P2_Goal)
+[2017.03.17-20.08.07:514][464]LogEditorViewport: Clicking on Actor (LMB): CameraActor (CameraActor)
+[2017.03.17-20.08.09:865][598]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Lavels/Pong_Main.Pong_Main:PersistentLevel' has LevelScriptBlueprint '/Game/Lavels/Pong_Main.Pong_Main:PersistentLevel.Pong_Main' with GeneratedClass '/Game/Lavels/Pong_Main.Pong_Main_C' with ClassGeneratedBy '/Game/Lavels/Pong_Main.Pong_Main:PersistentLevel.Pong_Main'
+[2017.03.17-20.08.09:865][598]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.03.17-20.08.09:865][598]PIE: New page: PIE session: Pong_Main (17 Mar 2017 20:08:09)
+[2017.03.17-20.08.09:865][598]LogPlayLevel: Creating play world package: /Game/Lavels/UEDPIE_0_Pong_Main
+[2017.03.17-20.08.09:868][598]LogPlayLevel: PIE: StaticDuplicateObject took: (0.003132s)
+[2017.03.17-20.08.09:869][598]LogAIModule: Creating AISystem for world Pong_Main
+[2017.03.17-20.08.09:869][598]LogPlayLevel: PIE: World Init took: (0.000599s)
+[2017.03.17-20.08.09:869][598]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Lavels/Pong_Main.Pong_Main to /Game/Lavels/UEDPIE_0_Pong_Main.Pong_Main (0.003928s)
+[2017.03.17-20.08.09:910][598]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.03.17-20.08.09:942][598]LogInit: FAudioDevice initialized.
+[2017.03.17-20.08.09:992][598]LogWorld: Game class is 'PangGamemode_C'
+[2017.03.17-20.08.09:994][598]PIE:Warning: Warning Invalid Simulate Options: Body (BP_Ball_108.Ball StaticMesh_PongBall) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.17-20.08.09:994][598]PIE:Warning: Warning Invalid Simulate Options: Body (BP_Ball_108.Ball StaticMesh_PongBall) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.17-20.08.09:995][598]LogWorld: Bringing World /Game/Lavels/UEDPIE_0_Pong_Main.Pong_Main up for play (max tick rate 60) at 2017.03.17-20.08.09
+[2017.03.17-20.08.09:995][598]LogWorld: Bringing up level for play took: 0.001556
+[2017.03.17-20.08.09:996][598]PIE: Info Play in editor start time for /Game/Lavels/UEDPIE_0_Pong_Main -0.57
+[2017.03.17-20.08.09:996][598]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Lavels/Pong_Main.Pong_Main:PersistentLevel' has LevelScriptBlueprint '/Game/Lavels/Pong_Main.Pong_Main:PersistentLevel.Pong_Main' with GeneratedClass '/Game/Lavels/Pong_Main.Pong_Main_C' with ClassGeneratedBy '/Game/Lavels/Pong_Main.Pong_Main:PersistentLevel.Pong_Main'
+[2017.03.17-20.08.35:042][ 94]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Lavels/Pong_Main.Pong_Main:PersistentLevel' has LevelScriptBlueprint '/Game/Lavels/Pong_Main.Pong_Main:PersistentLevel.Pong_Main' with GeneratedClass '/Game/Lavels/Pong_Main.Pong_Main_C' with ClassGeneratedBy '/Game/Lavels/Pong_Main.Pong_Main:PersistentLevel.Pong_Main'
+[2017.03.17-20.08.35:091][ 94]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Lavels/Pong_Main.Pong_Main:PersistentLevel' has LevelScriptBlueprint '/Game/Lavels/Pong_Main.Pong_Main:PersistentLevel.Pong_Main' with GeneratedClass '/Game/Lavels/Pong_Main.Pong_Main_C' with ClassGeneratedBy '/Game/Lavels/Pong_Main.Pong_Main:PersistentLevel.Pong_Main'
+[2017.03.17-20.09.06:283][290]LogSavePackage: Save=165.57ms
+[2017.03.17-20.09.06:283][290]LogSavePackage: Moving '../../../../../Users/Callum/Desktop/Computing/COMP 140/Pong/Saved/Pong_Main_Auto13A5E54EB44520E3313FE19B112D1D9BA.tmp' to '../../../../../Users/Callum/Desktop/Computing/COMP 140/Pong/Saved/Autosaves/Game/Lavels/Pong_Main_Auto1.umap'
+[2017.03.17-20.09.06:284][290]LogSavePackage:Display: Finished SavePackage ../../../../../Users/Callum/Desktop/Computing/COMP 140/Pong/Saved/Autosaves/Game/Lavels/Pong_Main_Auto1.umap
+[2017.03.17-20.09.06:301][290]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/Lavels/Pong_Main' took 0.274
+[2017.03.17-20.09.06:301][290]LogFileHelpers: Editor autosave (incl. sublevels) for all levels took 0.274
+[2017.03.17-20.42.58:185][540]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Lavels/Pong_Main.Pong_Main:PersistentLevel' has LevelScriptBlueprint '/Game/Lavels/Pong_Main.Pong_Main:PersistentLevel.Pong_Main' with GeneratedClass '/Game/Lavels/Pong_Main.Pong_Main_C' with ClassGeneratedBy '/Game/Lavels/Pong_Main.Pong_Main:PersistentLevel.Pong_Main'
+[2017.03.17-20.42.58:185][540]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.03.17-20.42.58:186][540]PIE: New page: PIE session: Pong_Main (17 Mar 2017 20:42:58)
+[2017.03.17-20.42.58:186][540]LogPlayLevel: Creating play world package: /Game/Lavels/UEDPIE_0_Pong_Main
+[2017.03.17-20.42.58:190][540]LogPlayLevel: PIE: StaticDuplicateObject took: (0.004007s)
+[2017.03.17-20.42.58:191][540]LogAIModule: Creating AISystem for world Pong_Main
+[2017.03.17-20.42.58:191][540]LogPlayLevel: PIE: World Init took: (0.000858s)
+[2017.03.17-20.42.58:191][540]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Lavels/Pong_Main.Pong_Main to /Game/Lavels/UEDPIE_0_Pong_Main.Pong_Main (0.005147s)
+[2017.03.17-20.42.58:237][540]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.03.17-20.42.58:277][540]LogInit: FAudioDevice initialized.
+[2017.03.17-20.42.58:352][540]LogWorld: Game class is 'PangGamemode_C'
+[2017.03.17-20.42.58:354][540]PIE:Warning: Warning Invalid Simulate Options: Body (BP_Ball_108.Ball StaticMesh_PongBall) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.17-20.42.58:355][540]PIE:Warning: Warning Invalid Simulate Options: Body (BP_Ball_108.Ball StaticMesh_PongBall) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.17-20.42.58:355][540]LogWorld: Bringing World /Game/Lavels/UEDPIE_0_Pong_Main.Pong_Main up for play (max tick rate 60) at 2017.03.17-20.42.58
+[2017.03.17-20.42.58:356][540]LogWorld: Bringing up level for play took: 0.002705
+[2017.03.17-20.42.58:358][540]PIE: Info Play in editor start time for /Game/Lavels/UEDPIE_0_Pong_Main 0.229
+[2017.03.17-20.42.58:358][540]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Lavels/Pong_Main.Pong_Main:PersistentLevel' has LevelScriptBlueprint '/Game/Lavels/Pong_Main.Pong_Main:PersistentLevel.Pong_Main' with GeneratedClass '/Game/Lavels/Pong_Main.Pong_Main_C' with ClassGeneratedBy '/Game/Lavels/Pong_Main.Pong_Main:PersistentLevel.Pong_Main'
+[2017.03.17-20.43.25:405][151]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Lavels/Pong_Main.Pong_Main:PersistentLevel' has LevelScriptBlueprint '/Game/Lavels/Pong_Main.Pong_Main:PersistentLevel.Pong_Main' with GeneratedClass '/Game/Lavels/Pong_Main.Pong_Main_C' with ClassGeneratedBy '/Game/Lavels/Pong_Main.Pong_Main:PersistentLevel.Pong_Main'
+[2017.03.17-20.43.25:457][151]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Lavels/Pong_Main.Pong_Main:PersistentLevel' has LevelScriptBlueprint '/Game/Lavels/Pong_Main.Pong_Main:PersistentLevel.Pong_Main' with GeneratedClass '/Game/Lavels/Pong_Main.Pong_Main_C' with ClassGeneratedBy '/Game/Lavels/Pong_Main.Pong_Main:PersistentLevel.Pong_Main'
+[2017.03.17-21.34.51:385][690]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Lavels/Pong_Main" FILE="../../../../../Users/Callum/Desktop/Computing/COMP 140/Pong/Content/Lavels/Pong_Main.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
+[2017.03.17-21.34.51:536][690]LogSavePackage: Save=69.95ms
+[2017.03.17-21.34.51:536][690]LogSavePackage: Moving '../../../../../Users/Callum/Desktop/Computing/COMP 140/Pong/Saved/Pong_MainB52B45C84A4386D91F7C4C9F56644D56.tmp' to '../../../../../Users/Callum/Desktop/Computing/COMP 140/Pong/Content/Lavels/Pong_Main.umap'
+[2017.03.17-21.34.51:539][690]LogSavePackage:Display: Finished SavePackage ../../../../../Users/Callum/Desktop/Computing/COMP 140/Pong/Content/Lavels/Pong_Main.umap
+[2017.03.17-21.53.42:804][539]LogHttp:Warning: Timeout processing Http request. 0000022B59D87B80
+[2017.03.18-01.12.47:435][585]LogD3D11RHI: Timed out while waiting for GPU to catch up. (500 ms)
+[2017.03.18-11.17.49:055][594]LogHttp:Warning: Timeout processing Http request. 0000022B59D87B80
+[2017.03.18-11.23.08:195][850]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Lavels/Pong_Main.Pong_Main:PersistentLevel' has LevelScriptBlueprint '/Game/Lavels/Pong_Main.Pong_Main:PersistentLevel.Pong_Main' with GeneratedClass '/Game/Lavels/Pong_Main.Pong_Main_C' with ClassGeneratedBy '/Game/Lavels/Pong_Main.Pong_Main:PersistentLevel.Pong_Main'
+[2017.03.18-11.23.08:195][850]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.03.18-11.23.08:195][850]PIE: New page: PIE session: Pong_Main (18 Mar 2017 11:23:08)
+[2017.03.18-11.23.08:195][850]LogPlayLevel: Creating play world package: /Game/Lavels/UEDPIE_0_Pong_Main
+[2017.03.18-11.23.08:209][850]LogPlayLevel: PIE: StaticDuplicateObject took: (0.013299s)
+[2017.03.18-11.23.08:209][850]LogAIModule: Creating AISystem for world Pong_Main
+[2017.03.18-11.23.08:210][850]LogPlayLevel: PIE: World Init took: (0.000787s)
+[2017.03.18-11.23.08:210][850]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Lavels/Pong_Main.Pong_Main to /Game/Lavels/UEDPIE_0_Pong_Main.Pong_Main (0.014368s)
+[2017.03.18-11.23.08:253][850]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.03.18-11.23.08:285][850]LogInit: FAudioDevice initialized.
+[2017.03.18-11.23.08:339][850]LogWorld: Game class is 'PangGamemode_C'
+[2017.03.18-11.23.08:341][850]PIE:Warning: Warning Invalid Simulate Options: Body (BP_Ball_108.Ball StaticMesh_PongBall) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.18-11.23.08:341][850]PIE:Warning: Warning Invalid Simulate Options: Body (BP_Ball_108.Ball StaticMesh_PongBall) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.18-11.23.08:342][850]LogWorld: Bringing World /Game/Lavels/UEDPIE_0_Pong_Main.Pong_Main up for play (max tick rate 60) at 2017.03.18-11.23.08
+[2017.03.18-11.23.08:342][850]LogWorld: Bringing up level for play took: 0.002570
+[2017.03.18-11.23.08:344][850]PIE: Info Play in editor start time for /Game/Lavels/UEDPIE_0_Pong_Main -0.467
+[2017.03.18-11.23.08:344][850]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Lavels/Pong_Main.Pong_Main:PersistentLevel' has LevelScriptBlueprint '/Game/Lavels/Pong_Main.Pong_Main:PersistentLevel.Pong_Main' with GeneratedClass '/Game/Lavels/Pong_Main.Pong_Main_C' with ClassGeneratedBy '/Game/Lavels/Pong_Main.Pong_Main:PersistentLevel.Pong_Main'
+[2017.03.18-11.23.19:197][499]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Lavels/Pong_Main.Pong_Main:PersistentLevel' has LevelScriptBlueprint '/Game/Lavels/Pong_Main.Pong_Main:PersistentLevel.Pong_Main' with GeneratedClass '/Game/Lavels/Pong_Main.Pong_Main_C' with ClassGeneratedBy '/Game/Lavels/Pong_Main.Pong_Main:PersistentLevel.Pong_Main'
+[2017.03.18-11.23.19:249][499]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Lavels/Pong_Main.Pong_Main:PersistentLevel' has LevelScriptBlueprint '/Game/Lavels/Pong_Main.Pong_Main:PersistentLevel.Pong_Main' with GeneratedClass '/Game/Lavels/Pong_Main.Pong_Main_C' with ClassGeneratedBy '/Game/Lavels/Pong_Main.Pong_Main:PersistentLevel.Pong_Main'
+[2017.03.18-11.23.20:748][585]LogEditorViewport: Clicking on Actor (LMB): BP_Wall_C (BP_Wall2)
+[2017.03.18-11.23.32:151][247]LogMaterial: Missing cached shader map for material Grey, compiling. 
+[2017.03.18-11.23.32:214][247]LogMaterial: Missing cached shader map for material Grey, compiling. 
+[2017.03.18-11.23.32:220][247]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.03.18-11.23.33:842][335]MaterialEditorStats: Info Base pass shader with only dynamic lighting: 22 instructions
+[2017.03.18-11.23.33:842][335]MaterialEditorStats: Info Vertex shader: 29 instructions
+[2017.03.18-11.23.33:842][335]MaterialEditorStats: Info Texture samplers: 0/16
+[2017.03.18-11.23.35:884][456]LogMaterial: Missing cached shader map for material Grey, compiling. 
+[2017.03.18-11.23.35:891][456]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.03.18-11.23.35:892][456]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionConstant3Vector_2, compiling. 
+[2017.03.18-11.23.36:762][505]MaterialEditorStats: Info Base pass shader with only dynamic lighting: 22 instructions
+[2017.03.18-11.23.36:762][505]MaterialEditorStats: Info Vertex shader: 29 instructions
+[2017.03.18-11.23.36:762][505]MaterialEditorStats: Info Texture samplers: 0/16
+[2017.03.18-11.23.45:797][ 35]LogMaterial: Missing cached shader map for material Grey, compiling. 
+[2017.03.18-11.23.45:805][ 35]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.03.18-11.23.45:832][ 35]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionConstant3Vector_2, compiling. 
+[2017.03.18-11.23.46:631][ 82]MaterialEditorStats: Info Base pass shader with only dynamic lighting: 22 instructions
+[2017.03.18-11.23.46:631][ 82]MaterialEditorStats: Info Vertex shader: 29 instructions
+[2017.03.18-11.23.46:631][ 82]MaterialEditorStats: Info Texture samplers: 0/16
+[2017.03.18-11.23.49:213][234]LogMaterial: Missing cached shader map for material Grey, compiling. 
+[2017.03.18-11.23.49:220][234]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.03.18-11.23.49:248][234]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionConstant3Vector_2, compiling. 
+[2017.03.18-11.23.50:045][281]MaterialEditorStats: Info Base pass shader with only dynamic lighting: 22 instructions
+[2017.03.18-11.23.50:045][281]MaterialEditorStats: Info Vertex shader: 29 instructions
+[2017.03.18-11.23.50:046][281]MaterialEditorStats: Info Texture samplers: 0/16
+[2017.03.18-11.23.55:462][595]LogMaterial: Missing cached shader map for material Grey, compiling. 
+[2017.03.18-11.23.55:471][595]LogMaterial: Missing cached shader map for material Grey, compiling. 
+[2017.03.18-11.23.55:474][595]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.03.18-11.23.55:782][610]MaterialEditorStats: Info Base pass shader without light map: 8 instructions
+[2017.03.18-11.23.55:782][610]MaterialEditorStats: Info Vertex shader: 29 instructions
+[2017.03.18-11.23.55:782][610]MaterialEditorStats: Info Texture samplers: 0/16
+[2017.03.18-11.23.59:128][806]LogMaterialEditor: Saving and Compiling material Grey
+[2017.03.18-11.23.59:493][806]LogMaterial: Missing cached shader map for material Grey, compiling. 
+[2017.03.18-11.23.59:498][806]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.03.18-11.23.59:517][806]LogMaterial: Missing cached shader map for material Grey, compiling. 
+[2017.03.18-11.23.59:523][806]LogMaterial: Missing cached shader map for material Grey, compiling. 
+[2017.03.18-11.23.59:529][806]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.03.18-11.24.00:329][806]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Meterials/Grey" FILE="../../../../../Users/Callum/Desktop/Computing/COMP 140/Pong/Content/Meterials/Grey.uasset" SILENT=true
+[2017.03.18-11.24.00:343][806]LogSavePackage: Save=12.34ms
+[2017.03.18-11.24.00:343][806]LogSavePackage: Moving '../../../../../Users/Callum/Desktop/Computing/COMP 140/Pong/Saved/Grey3306CAC548B2CCAEA2AC4CBA9BF7B882.tmp' to '../../../../../Users/Callum/Desktop/Computing/COMP 140/Pong/Content/Meterials/Grey.uasset'
+[2017.03.18-11.24.00:348][806]LogSavePackage:Display: Finished SavePackage ../../../../../Users/Callum/Desktop/Computing/COMP 140/Pong/Content/Meterials/Grey.uasset
+[2017.03.18-11.24.00:357][806]MaterialEditorStats: Info Base pass shader without light map: 29 instructions
+[2017.03.18-11.24.00:357][806]MaterialEditorStats: Info Vertex shader: 29 instructions
+[2017.03.18-11.24.00:357][806]MaterialEditorStats: Info Texture samplers: 0/16
+[2017.03.18-11.24.25:544][273]LogMaterial: Missing cached shader map for material PreviewMaterial_1, compiling. 
+[2017.03.18-11.24.25:626][273]LogMaterial: Missing cached shader map for material PreviewMaterial_1, compiling. 
+[2017.03.18-11.24.25:629][273]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.03.18-11.24.25:656][273]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionConstant3Vector_2, compiling. 
+[2017.03.18-11.24.26:079][292]MaterialEditorStats: Info Base pass shader without light map: 8 instructions
+[2017.03.18-11.24.26:079][292]MaterialEditorStats: Info Vertex shader: 29 instructions
+[2017.03.18-11.24.26:079][292]MaterialEditorStats: Info Texture samplers: 0/16
+[2017.03.18-11.24.35:863][868]LogMaterial: Missing cached shader map for material PreviewMaterial_1, compiling. 
+[2017.03.18-11.24.35:867][868]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.03.18-11.24.35:892][868]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionConstant3Vector_2, compiling. 
+[2017.03.18-11.24.36:086][878]MaterialEditorStats: Info Base pass shader without light map: 8 instructions
+[2017.03.18-11.24.36:086][878]MaterialEditorStats: Info Vertex shader: 29 instructions
+[2017.03.18-11.24.36:086][878]MaterialEditorStats: Info Texture samplers: 0/16
+[2017.03.18-11.24.37:801][980]LogMaterialEditor: Saving and Compiling material Grey
+[2017.03.18-11.24.38:161][980]LogMaterial: Missing cached shader map for material PreviewMaterial_1, compiling. 
+[2017.03.18-11.24.38:166][980]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.03.18-11.24.38:187][980]LogMaterial: Missing cached shader map for material Grey, compiling. 
+[2017.03.18-11.24.38:195][980]LogMaterial: Missing cached shader map for material Grey, compiling. 
+[2017.03.18-11.24.38:201][980]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.03.18-11.24.39:003][980]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Meterials/Grey" FILE="../../../../../Users/Callum/Desktop/Computing/COMP 140/Pong/Content/Meterials/Grey.uasset" SILENT=true
+[2017.03.18-11.24.39:078][980]LogSavePackage: Save=12.05ms
+[2017.03.18-11.24.39:078][980]LogSavePackage: Moving '../../../../../Users/Callum/Desktop/Computing/COMP 140/Pong/Saved/Grey58C0D9F54A698AC0AA37BC9A8FF810C7.tmp' to '../../../../../Users/Callum/Desktop/Computing/COMP 140/Pong/Content/Meterials/Grey.uasset'
+[2017.03.18-11.24.39:081][980]LogSavePackage:Display: Finished SavePackage ../../../../../Users/Callum/Desktop/Computing/COMP 140/Pong/Content/Meterials/Grey.uasset
+[2017.03.18-11.24.39:084][980]MaterialEditorStats: Info Base pass shader without light map: 29 instructions
+[2017.03.18-11.24.39:084][980]MaterialEditorStats: Info Vertex shader: 29 instructions
+[2017.03.18-11.24.39:084][980]MaterialEditorStats: Info Texture samplers: 0/16
+[2017.03.18-11.24.44:948][316]LogEditorViewport: Clicking on Actor (LMB): BP_Wall_C (BP_Wall)
+[2017.03.18-11.24.56:126][970]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Lavels/Pong_Main.Pong_Main:PersistentLevel' has LevelScriptBlueprint '/Game/Lavels/Pong_Main.Pong_Main:PersistentLevel.Pong_Main' with GeneratedClass '/Game/Lavels/Pong_Main.Pong_Main_C' with ClassGeneratedBy '/Game/Lavels/Pong_Main.Pong_Main:PersistentLevel.Pong_Main'
+[2017.03.18-11.24.56:127][970]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.03.18-11.24.56:127][970]PIE: New page: PIE session: Pong_Main (18 Mar 2017 11:24:56)
+[2017.03.18-11.24.56:127][970]LogPlayLevel: Creating play world package: /Game/Lavels/UEDPIE_0_Pong_Main
+[2017.03.18-11.24.56:130][970]LogPlayLevel: PIE: StaticDuplicateObject took: (0.003048s)
+[2017.03.18-11.24.56:130][970]LogAIModule: Creating AISystem for world Pong_Main
+[2017.03.18-11.24.56:130][970]LogPlayLevel: PIE: World Init took: (0.000547s)
+[2017.03.18-11.24.56:131][970]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Lavels/Pong_Main.Pong_Main to /Game/Lavels/UEDPIE_0_Pong_Main.Pong_Main (0.003825s)
+[2017.03.18-11.24.56:144][970]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.03.18-11.24.56:173][970]LogInit: FAudioDevice initialized.
+[2017.03.18-11.24.56:227][970]LogWorld: Game class is 'PangGamemode_C'
+[2017.03.18-11.24.56:230][970]PIE:Warning: Warning Invalid Simulate Options: Body (BP_Ball_108.Ball StaticMesh_PongBall) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.18-11.24.56:230][970]PIE:Warning: Warning Invalid Simulate Options: Body (BP_Ball_108.Ball StaticMesh_PongBall) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.18-11.24.56:230][970]LogWorld: Bringing World /Game/Lavels/UEDPIE_0_Pong_Main.Pong_Main up for play (max tick rate 60) at 2017.03.18-11.24.56
+[2017.03.18-11.24.56:231][970]LogWorld: Bringing up level for play took: 0.001776
+[2017.03.18-11.24.56:232][970]PIE: Info Play in editor start time for /Game/Lavels/UEDPIE_0_Pong_Main -0.578
+[2017.03.18-11.24.56:232][970]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Lavels/Pong_Main.Pong_Main:PersistentLevel' has LevelScriptBlueprint '/Game/Lavels/Pong_Main.Pong_Main:PersistentLevel.Pong_Main' with GeneratedClass '/Game/Lavels/Pong_Main.Pong_Main_C' with ClassGeneratedBy '/Game/Lavels/Pong_Main.Pong_Main:PersistentLevel.Pong_Main'
+[2017.03.18-11.26.34:037][808]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Lavels/Pong_Main.Pong_Main:PersistentLevel' has LevelScriptBlueprint '/Game/Lavels/Pong_Main.Pong_Main:PersistentLevel.Pong_Main' with GeneratedClass '/Game/Lavels/Pong_Main.Pong_Main_C' with ClassGeneratedBy '/Game/Lavels/Pong_Main.Pong_Main:PersistentLevel.Pong_Main'
+[2017.03.18-11.26.34:072][808]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Lavels/Pong_Main.Pong_Main:PersistentLevel' has LevelScriptBlueprint '/Game/Lavels/Pong_Main.Pong_Main:PersistentLevel.Pong_Main' with GeneratedClass '/Game/Lavels/Pong_Main.Pong_Main_C' with ClassGeneratedBy '/Game/Lavels/Pong_Main.Pong_Main:PersistentLevel.Pong_Main'
+[2017.03.18-11.26.36:321][939]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Lavels/Pong_Main" FILE="../../../../../Users/Callum/Desktop/Computing/COMP 140/Pong/Content/Lavels/Pong_Main.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
+[2017.03.18-11.26.36:704][939]LogSavePackage: Save=64.88ms
+[2017.03.18-11.26.36:704][939]LogSavePackage: Moving '../../../../../Users/Callum/Desktop/Computing/COMP 140/Pong/Saved/Pong_MainC81CF015451142698F6E5E82BF6B3A90.tmp' to '../../../../../Users/Callum/Desktop/Computing/COMP 140/Pong/Content/Lavels/Pong_Main.umap'
+[2017.03.18-11.26.36:706][939]LogSavePackage:Display: Finished SavePackage ../../../../../Users/Callum/Desktop/Computing/COMP 140/Pong/Content/Lavels/Pong_Main.umap
+[2017.03.18-11.26.38:460][ 36]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
+[2017.03.18-11.26.38:668][ 37]Cmd: QUIT_EDITOR
+[2017.03.18-11.26.39:261][ 37]LogExit: Preparing to exit.
+[2017.03.18-11.26.39:880][ 37]LogExit: Editor shut down
+[2017.03.18-11.26.39:881][ 37]LogExit: Transaction tracking system shut down
+[2017.03.18-11.26.39:982][ 37]LogObj: Freed 0b from 0 cluster array pools.
+[2017.03.18-11.26.39:982][ 37]LogExit: Object subsystem successfully closed.
+[2017.03.18-11.26.39:999][ 37]LogD3D11RHI: Shutdown
+[2017.03.18-11.26.39:999][ 37]LogD3D11RHI: CleanupD3DDevice
+[2017.03.18-11.26.40:086][ 37]LogD3D11RHI: ~FD3D11DynamicRHI
+[2017.03.18-11.26.40:154][ 37]LogModuleManager: Shutting down and abandoning module HierarchicalLODUtilities (216)
+[2017.03.18-11.26.40:154][ 37]LogModuleManager: Shutting down and abandoning module MaterialEditor (215)
+[2017.03.18-11.26.40:164][ 37]LogModuleManager: Shutting down and abandoning module MovieSceneCapture (214)
+[2017.03.18-11.26.40:165][ 37]LogModuleManager: Shutting down and abandoning module HierarchicalLODOutliner (213)
+[2017.03.18-11.26.40:165][ 37]LogModuleManager: Shutting down and abandoning module CrashTracker (212)
+[2017.03.18-11.26.40:165][ 37]LogModuleManager: Shutting down and abandoning module SceneOutliner (211)
+[2017.03.18-11.26.40:165][ 37]LogModuleManager: Shutting down and abandoning module WidgetCarousel (210)
+[2017.03.18-11.26.40:165][ 37]LogModuleManager: Shutting down and abandoning module AddContentDialog (209)
+[2017.03.18-11.26.40:165][ 37]LogModuleManager: Shutting down and abandoning module GameplayTags (208)
+[2017.03.18-11.26.40:165][ 37]LogModuleManager: Shutting down and abandoning module EditorWidgets (207)
+[2017.03.18-11.26.40:165][ 37]LogModuleManager: Shutting down and abandoning module CollectionManager (206)
+[2017.03.18-11.26.40:166][ 37]LogModuleManager: Shutting down and abandoning module StatsViewer (205)
+[2017.03.18-11.26.40:166][ 37]LogModuleManager: Shutting down and abandoning module FoliageEdit (204)
+[2017.03.18-11.26.40:166][ 37]LogModuleManager: Shutting down and abandoning module LandscapeEditor (203)
+[2017.03.18-11.26.40:166][ 37]LogModuleManager: Shutting down and abandoning module SceneDepthPickerMode (202)
+[2017.03.18-11.26.40:166][ 37]LogModuleManager: Shutting down and abandoning module ActorPickerMode (201)
+[2017.03.18-11.26.40:166][ 37]LogModuleManager: Shutting down and abandoning module GeometryMode (200)
+[2017.03.18-11.26.40:166][ 37]LogModuleManager: Shutting down and abandoning module TextureAlignMode (199)
+[2017.03.18-11.26.40:166][ 37]LogModuleManager: Shutting down and abandoning module BspMode (198)
+[2017.03.18-11.26.40:166][ 37]LogModuleManager: Shutting down and abandoning module HardwareSurvey (197)
+[2017.03.18-11.26.40:166][ 37]LogModuleManager: Shutting down and abandoning module SequenceRecorderSections (196)
+[2017.03.18-11.26.40:166][ 37]LogModuleManager: Shutting down and abandoning module SequenceRecorder (195)
+[2017.03.18-11.26.40:166][ 37]LogModuleManager: Shutting down and abandoning module AutomationWorker (194)
+[2017.03.18-11.26.40:166][ 37]LogModuleManager: Shutting down and abandoning module MatineeToLevelSequence (193)
+[2017.03.18-11.26.40:166][ 37]LogModuleManager: Shutting down and abandoning module PlacementMode (192)
+[2017.03.18-11.26.40:166][ 37]LogModuleManager: Shutting down and abandoning module LevelSequenceEditor (191)
+[2017.03.18-11.26.40:166][ 37]LogModuleManager: Shutting down and abandoning module CharacterAI (190)
+[2017.03.18-11.26.40:166][ 37]LogModuleManager: Shutting down and abandoning module SmartSnapping (189)
+[2017.03.18-11.26.40:166][ 37]LogModuleManager: Shutting down and abandoning module SessionServices (188)
+[2017.03.18-11.26.40:166][ 37]LogModuleManager: Shutting down and abandoning module ViewportSnapping (187)
+[2017.03.18-11.26.40:166][ 37]LogModuleManager: Shutting down and abandoning module LogVisualizer (186)
+[2017.03.18-11.26.40:166][ 37]LogModuleManager: Shutting down and abandoning module GameProjectGeneration (185)
+[2017.03.18-11.26.40:166][ 37]LogModuleManager: Shutting down and abandoning module IntroTutorials (184)
+[2017.03.18-11.26.40:175][ 37]LogModuleManager: Shutting down and abandoning module EditorLiveStreaming (183)
+[2017.03.18-11.26.40:175][ 37]LogModuleManager: Shutting down and abandoning module IOSPlatformEditor (182)
+[2017.03.18-11.26.40:175][ 37]LogModuleManager: Shutting down and abandoning module HTML5PlatformEditor (181)
+[2017.03.18-11.26.40:175][ 37]LogModuleManager: Shutting down and abandoning module AndroidDeviceDetection (180)
+[2017.03.18-11.26.40:772][ 37]LogModuleManager: Shutting down and abandoning module AndroidPlatformEditor (179)
+[2017.03.18-11.26.40:772][ 37]LogModuleManager: Shutting down and abandoning module IOSRuntimeSettings (178)
+[2017.03.18-11.26.40:772][ 37]LogModuleManager: Shutting down and abandoning module AndroidRuntimeSettings (177)
+[2017.03.18-11.26.40:772][ 37]LogModuleManager: Shutting down and abandoning module MergeActors (176)
+[2017.03.18-11.26.40:772][ 37]LogModuleManager: Shutting down and abandoning module SizeMap (175)
+[2017.03.18-11.26.40:772][ 37]LogModuleManager: Shutting down and abandoning module TreeMap (174)
+[2017.03.18-11.26.40:772][ 37]LogModuleManager: Shutting down and abandoning module ReferenceViewer (173)
+[2017.03.18-11.26.40:772][ 37]LogModuleManager: Shutting down and abandoning module LocalizationService (172)
+[2017.03.18-11.26.40:772][ 37]LogModuleManager: Shutting down and abandoning module LocalizationDashboard (171)
+[2017.03.18-11.26.40:772][ 37]LogModuleManager: Shutting down and abandoning module HardwareTargeting (170)
+[2017.03.18-11.26.40:772][ 37]LogModuleManager: Shutting down and abandoning module DeviceProfileEditor (169)
+[2017.03.18-11.26.40:772][ 37]LogModuleManager: Shutting down and abandoning module UndoHistory (168)
+[2017.03.18-11.26.40:772][ 37]LogModuleManager: Shutting down and abandoning module UserFeedback (167)
+[2017.03.18-11.26.40:772][ 37]LogModuleManager: Shutting down and abandoning module XmlParser (166)
+[2017.03.18-11.26.40:772][ 37]LogModuleManager: Shutting down and abandoning module Blutility (165)
+[2017.03.18-11.26.40:772][ 37]LogModuleManager: Shutting down and abandoning module ProjectTargetPlatformEditor (164)
+[2017.03.18-11.26.40:772][ 37]LogModuleManager: Shutting down and abandoning module ProjectSettingsViewer (163)
+[2017.03.18-11.26.40:773][ 37]LogModuleManager: Shutting down and abandoning module InputBindingEditor (162)
+[2017.03.18-11.26.40:773][ 37]LogModuleManager: Shutting down and abandoning module EditorSettingsViewer (161)
+[2017.03.18-11.26.40:773][ 37]LogModuleManager: Shutting down and abandoning module SettingsEditor (160)
+[2017.03.18-11.26.40:773][ 37]LogModuleManager: Shutting down and abandoning module ProjectLauncher (159)
+[2017.03.18-11.26.40:773][ 37]LogModuleManager: Shutting down and abandoning module SessionFrontend (158)
+[2017.03.18-11.26.40:773][ 37]LogModuleManager: Shutting down and abandoning module ProfilerClient (157)
+[2017.03.18-11.26.40:773][ 37]LogModuleManager: Shutting down and abandoning module TargetDeviceServices (156)
+[2017.03.18-11.26.40:773][ 37]LogModuleManager: Shutting down and abandoning module DeviceManager (155)
+[2017.03.18-11.26.40:826][ 37]LogModuleManager: Shutting down and abandoning module AutomationController (154)
+[2017.03.18-11.26.40:826][ 37]LogModuleManager: Shutting down and abandoning module AutomationWindow (153)
+[2017.03.18-11.26.40:826][ 37]LogModuleManager: Shutting down and abandoning module Layers (152)
+[2017.03.18-11.26.40:826][ 37]LogModuleManager: Shutting down and abandoning module ComponentVisualizers (151)
+[2017.03.18-11.26.40:826][ 37]LogModuleManager: Shutting down and abandoning module DetailCustomizations (150)
+[2017.03.18-11.26.40:826][ 37]LogModuleManager: Shutting down and abandoning module PackagesDialog (149)
+[2017.03.18-11.26.40:826][ 37]LogModuleManager: Shutting down and abandoning module Persona (148)
+[2017.03.18-11.26.40:826][ 37]LogModuleManager: Shutting down and abandoning module Kismet (147)
+[2017.03.18-11.26.40:826][ 37]LogModuleManager: Shutting down and abandoning module GraphEditor (146)
+[2017.03.18-11.26.40:826][ 37]LogModuleManager: Shutting down and abandoning module ClassViewer (145)
+[2017.03.18-11.26.40:827][ 37]LogModuleManager: Shutting down and abandoning module Toolbox (144)
+[2017.03.18-11.26.40:827][ 37]LogModuleManager: Shutting down and abandoning module ModuleUI (143)
+[2017.03.18-11.26.40:827][ 37]LogModuleManager: Shutting down and abandoning module MovieSceneTools (142)
+[2017.03.18-11.26.40:827][ 37]LogModuleManager: Shutting down and abandoning module OutputLog (141)
+[2017.03.18-11.26.40:827][ 37]LogModuleManager: Shutting down and abandoning module GammaUI (140)
+[2017.03.18-11.26.40:827][ 37]LogModuleManager: Shutting down and abandoning module Documentation (139)
+[2017.03.18-11.26.40:827][ 37]LogModuleManager: Shutting down and abandoning module StreamingPauseRendering (138)
+[2017.03.18-11.26.40:827][ 37]LogModuleManager: Shutting down and abandoning module AnalyticsET (137)
+[2017.03.18-11.26.40:827][ 37]LogModuleManager: Shutting down and abandoning module Analytics (136)
+[2017.03.18-11.26.40:827][ 37]LogModuleManager: Shutting down and abandoning module PortalServices (135)
+[2017.03.18-11.26.40:827][ 37]LogModuleManager: Shutting down and abandoning module PortalRpc (134)
+[2017.03.18-11.26.40:827][ 37]LogModuleManager: Shutting down and abandoning module MessagingRpc (133)
+[2017.03.18-11.26.40:827][ 37]LogModuleManager: Shutting down and abandoning module GameplayDebugger (132)
+[2017.03.18-11.26.40:827][ 37]LogModuleManager: Shutting down and abandoning module AITestSuite (131)
+[2017.03.18-11.26.40:827][ 37]LogModuleManager: Shutting down and abandoning module AIModule (130)
+[2017.03.18-11.26.40:827][ 37]LogModuleManager: Shutting down and abandoning module ProfilerService (129)
+[2017.03.18-11.26.41:065][ 37]LogModuleManager: Shutting down and abandoning module TaskGraph (128)
+[2017.03.18-11.26.41:065][ 37]LogModuleManager: Shutting down and abandoning module SlateRemote (127)
+[2017.03.18-11.26.41:065][ 37]LogModuleManager: Shutting down and abandoning module SteamVRController (126)
+[2017.03.18-11.26.41:065][ 37]LogModuleManager: Shutting down and abandoning module SteamVR (125)
+[2017.03.18-11.26.41:065][ 37]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponent (124)
+[2017.03.18-11.26.41:065][ 37]LogModuleManager: Shutting down and abandoning module OculusLibrary (123)
+[2017.03.18-11.26.41:065][ 37]LogModuleManager: Shutting down and abandoning module OculusInput (122)
+[2017.03.18-11.26.41:065][ 37]LogModuleManager: Shutting down and abandoning module CustomMeshComponent (121)
+[2017.03.18-11.26.41:065][ 37]LogModuleManager: Shutting down and abandoning module CableComponent (120)
+[2017.03.18-11.26.41:065][ 37]LogModuleManager: Shutting down and abandoning module ArchVisCharacter (119)
+[2017.03.18-11.26.41:065][ 37]LogModuleManager: Shutting down and abandoning module MediaPlayerEditor (118)
+[2017.03.18-11.26.41:065][ 37]LogModuleManager: Shutting down and abandoning module HTML5Networking (117)
+[2017.03.18-11.26.41:065][ 37]LogModuleManager: Shutting down and abandoning module SuperSearch (116)
+[2017.03.18-11.26.41:065][ 37]LogModuleManager: Shutting down and abandoning module SuperSearchEditor (115)
+[2017.03.18-11.26.41:065][ 37]LogModuleManager: Shutting down and abandoning module SpeedTreeImporter (114)
+[2017.03.18-11.26.41:065][ 37]LogModuleManager: Shutting down and abandoning module PluginBrowser (113)
+[2017.03.18-11.26.41:065][ 37]LogModuleManager: Shutting down and abandoning module EpicSurvey (112)
+[2017.03.18-11.26.41:065][ 37]LogModuleManager: Shutting down and abandoning module DesktopPlatform (111)
+[2017.03.18-11.26.41:065][ 37]LogModuleManager: Shutting down and abandoning module VisualStudioSourceCodeAccess (110)
+[2017.03.18-11.26.41:065][ 37]LogModuleManager: Shutting down and abandoning module UObjectPlugin (109)
+[2017.03.18-11.26.41:065][ 37]LogModuleManager: Shutting down and abandoning module SubversionSourceControl (108)
+[2017.03.18-11.26.41:065][ 37]LogModuleManager: Shutting down and abandoning module PerforceSourceControl (107)
+[2017.03.18-11.26.41:065][ 37]LogModuleManager: Shutting down and abandoning module SourceControl (106)
+[2017.03.18-11.26.41:065][ 37]LogModuleManager: Shutting down and abandoning module GitSourceControl (105)
+[2017.03.18-11.26.41:065][ 37]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeEditor (104)
+[2017.03.18-11.26.41:065][ 37]LogModuleManager: Shutting down and abandoning module PaperTiledImporter (103)
+[2017.03.18-11.26.41:065][ 37]LogModuleManager: Shutting down and abandoning module PaperSpriteSheetImporter (102)
+[2017.03.18-11.26.41:065][ 37]LogModuleManager: Shutting down and abandoning module MeshPaint (101)
+[2017.03.18-11.26.41:065][ 37]LogModuleManager: Shutting down and abandoning module PixelInspectorModule (100)
+[2017.03.18-11.26.41:065][ 37]LogModuleManager: Shutting down and abandoning module HotReload (99)
+[2017.03.18-11.26.41:065][ 37]LogModuleManager: Shutting down and abandoning module MainFrame (98)
+[2017.03.18-11.26.41:065][ 37]LogModuleManager: Shutting down and abandoning module LevelEditor (97)
+[2017.03.18-11.26.41:066][ 37]LogModuleManager: Shutting down and abandoning module ContentBrowser (96)
+[2017.03.18-11.26.41:067][ 37]LogModuleManager: Shutting down and abandoning module Paper2DEditor (95)
+[2017.03.18-11.26.41:067][ 37]LogModuleManager: Shutting down and abandoning module UdpMessaging (94)
+[2017.03.18-11.26.41:167][ 37]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeRuntime (93)
+[2017.03.18-11.26.41:167][ 37]LogModuleManager: Shutting down and abandoning module Paper2D (92)
+[2017.03.18-11.26.41:167][ 37]LogModuleManager: Shutting down and abandoning module WindowsMoviePlayer (91)
+[2017.03.18-11.26.41:167][ 37]LogModuleManager: Shutting down and abandoning module Media (90)
+[2017.03.18-11.26.41:167][ 37]LogModuleManager: Shutting down and abandoning module WmfMedia (89)
+[2017.03.18-11.26.41:167][ 37]LogModuleManager: Shutting down and abandoning module MediaAssets (88)
+[2017.03.18-11.26.41:167][ 37]LogModuleManager: Shutting down and abandoning module GameLiveStreaming (87)
+[2017.03.18-11.26.41:168][ 37]LogModuleManager: Shutting down and abandoning module GameplayTagsEditor (86)
+[2017.03.18-11.26.41:168][ 37]LogModuleManager: Shutting down and abandoning module OnlineBlueprintSupport (85)
+[2017.03.18-11.26.41:168][ 37]LogModuleManager: Shutting down and abandoning module VREditor (84)
+[2017.03.18-11.26.41:168][ 37]LogModuleManager: Shutting down and abandoning module GameplayTasksEditor (83)
+[2017.03.18-11.26.41:168][ 37]LogModuleManager: Shutting down and abandoning module PropertyEditor (82)
+[2017.03.18-11.26.41:168][ 37]LogModuleManager: Shutting down and abandoning module BehaviorTreeEditor (81)
+[2017.03.18-11.26.41:168][ 37]LogModuleManager: Shutting down and abandoning module FunctionalTesting (80)
+[2017.03.18-11.26.41:168][ 37]LogModuleManager: Shutting down and abandoning module CollisionAnalyzer (79)
+[2017.03.18-11.26.41:168][ 37]LogModuleManager: Shutting down and abandoning module Sequencer (78)
+[2017.03.18-11.26.41:168][ 37]LogModuleManager: Shutting down and abandoning module WorkspaceMenuStructure (77)
+[2017.03.18-11.26.41:168][ 37]LogModuleManager: Shutting down and abandoning module MessageLog (76)
+[2017.03.18-11.26.41:168][ 37]LogModuleManager: Shutting down and abandoning module AssetTools (75)
+[2017.03.18-11.26.41:168][ 37]LogModuleManager: Shutting down and abandoning module UMGEditor (74)
+[2017.03.18-11.26.41:168][ 37]LogModuleManager: Shutting down and abandoning module UMG (73)
+[2017.03.18-11.26.41:168][ 37]LogModuleManager: Shutting down and abandoning module SlateReflector (72)
+[2017.03.18-11.26.41:168][ 37]LogModuleManager: Shutting down and abandoning module Slate (71)
+[2017.03.18-11.26.41:168][ 37]LogModuleManager: Shutting down and abandoning module EditorStyle (70)
+[2017.03.18-11.26.41:170][ 37]LogModuleManager: Shutting down and abandoning module SourceCodeAccess (69)
+[2017.03.18-11.26.41:170][ 37]LogModuleManager: Shutting down and abandoning module HeadMountedDisplay (68)
+[2017.03.18-11.26.41:170][ 37]LogModuleManager: Shutting down and abandoning module XAudio2 (67)
+[2017.03.18-11.26.41:170][ 37]LogModuleManager: Shutting down and abandoning module Networking (65)
+[2017.03.18-11.26.41:170][ 37]LogModuleManager: Shutting down and abandoning module Core (64)
+[2017.03.18-11.26.41:170][ 37]LogModuleManager: Shutting down and abandoning module DirectoryWatcher (63)
+[2017.03.18-11.26.41:171][ 37]LogModuleManager: Shutting down and abandoning module AssetRegistry (62)
+[2017.03.18-11.26.41:323][ 37]LogModuleManager: Shutting down and abandoning module KismetCompiler (61)
+[2017.03.18-11.26.41:323][ 37]LogModuleManager: Shutting down and abandoning module PhysXFormats (60)
+[2017.03.18-11.26.41:323][ 37]LogModuleManager: Shutting down and abandoning module MeshUtilities (59)
+[2017.03.18-11.26.41:323][ 37]LogModuleManager: Shutting down and abandoning module DerivedDataCache (58)
+[2017.03.18-11.26.41:401][ 37]LogDerivedDataCache: Shutdown
+[2017.03.18-11.26.41:401][ 37]LogModuleManager: Shutting down and abandoning module VulkanShaderFormat (57)
+[2017.03.18-11.26.41:401][ 37]LogModuleManager: Shutting down and abandoning module ShaderFormatOpenGL (56)
+[2017.03.18-11.26.41:401][ 37]LogModuleManager: Shutting down and abandoning module ShaderFormatD3D (55)
+[2017.03.18-11.26.41:401][ 37]LogModuleManager: Shutting down and abandoning module MetalShaderFormat (54)
+[2017.03.18-11.26.41:401][ 37]LogModuleManager: Shutting down and abandoning module TextureFormatUncompressed (53)
+[2017.03.18-11.26.41:401][ 37]LogModuleManager: Shutting down and abandoning module TextureFormatPVR (52)
+[2017.03.18-11.26.41:401][ 37]LogModuleManager: Shutting down and abandoning module TextureFormatIntelISPCTexComp (51)
+[2017.03.18-11.26.41:401][ 37]LogModuleManager: Shutting down and abandoning module TextureFormatDXT (50)
+[2017.03.18-11.26.41:401][ 37]LogModuleManager: Shutting down and abandoning module ImageWrapper (49)
+[2017.03.18-11.26.41:401][ 37]LogModuleManager: Shutting down and abandoning module TextureFormatASTC (48)
+[2017.03.18-11.26.41:401][ 37]LogModuleManager: Shutting down and abandoning module TextureFormatAndroid (47)
+[2017.03.18-11.26.41:401][ 37]LogModuleManager: Shutting down and abandoning module AudioFormatOpus (46)
+[2017.03.18-11.26.41:401][ 37]LogModuleManager: Shutting down and abandoning module AudioFormatOgg (45)
+[2017.03.18-11.26.41:401][ 37]LogModuleManager: Shutting down and abandoning module AudioFormatADPCM (44)
+[2017.03.18-11.26.41:401][ 37]LogModuleManager: Shutting down and abandoning module LinuxTargetPlatform (43)
+[2017.03.18-11.26.41:401][ 37]LogModuleManager: Shutting down and abandoning module LinuxServerTargetPlatform (42)
+[2017.03.18-11.26.41:401][ 37]LogModuleManager: Shutting down and abandoning module LinuxNoEditorTargetPlatform (41)
+[2017.03.18-11.26.41:401][ 37]LogModuleManager: Shutting down and abandoning module TVOSTargetPlatform (40)
+[2017.03.18-11.26.41:401][ 37]LogModuleManager: Shutting down and abandoning module Messaging (39)
+[2017.03.18-11.26.41:401][ 37]LogModuleManager: Shutting down and abandoning module IOSTargetPlatform (38)
+[2017.03.18-11.26.41:401][ 37]LogModuleManager: Shutting down and abandoning module HTML5TargetPlatform (37)
+[2017.03.18-11.26.41:401][ 37]LogModuleManager: Shutting down and abandoning module Android_PVRTCTargetPlatform (36)
+[2017.03.18-11.26.41:401][ 37]LogModuleManager: Shutting down and abandoning module Android_MultiTargetPlatform (35)
+[2017.03.18-11.26.41:401][ 37]LogModuleManager: Shutting down and abandoning module Android_ETC2TargetPlatform (34)
+[2017.03.18-11.26.41:401][ 37]LogModuleManager: Shutting down and abandoning module Android_ETC1TargetPlatform (33)
+[2017.03.18-11.26.41:401][ 37]LogModuleManager: Shutting down and abandoning module Android_DXTTargetPlatform (32)
+[2017.03.18-11.26.41:401][ 37]LogModuleManager: Shutting down and abandoning module Android_ATCTargetPlatform (31)
+[2017.03.18-11.26.41:401][ 37]LogModuleManager: Shutting down and abandoning module Android_ASTCTargetPlatform (30)
+[2017.03.18-11.26.41:401][ 37]LogModuleManager: Shutting down and abandoning module AndroidTargetPlatform (29)
+[2017.03.18-11.26.41:401][ 37]LogModuleManager: Shutting down and abandoning module WindowsTargetPlatform (28)
+[2017.03.18-11.26.41:401][ 37]LogModuleManager: Shutting down and abandoning module WindowsServerTargetPlatform (27)
+[2017.03.18-11.26.41:401][ 37]LogModuleManager: Shutting down and abandoning module WindowsNoEditorTargetPlatform (26)
+[2017.03.18-11.26.41:401][ 37]LogModuleManager: Shutting down and abandoning module WindowsClientTargetPlatform (25)
+[2017.03.18-11.26.41:401][ 37]LogModuleManager: Shutting down and abandoning module AllDesktopTargetPlatform (24)
+[2017.03.18-11.26.41:401][ 37]LogModuleManager: Shutting down and abandoning module TargetPlatform (23)
+[2017.03.18-11.26.41:401][ 37]LogModuleManager: Shutting down and abandoning module InputCore (22)
+[2017.03.18-11.26.41:401][ 37]LogModuleManager: Shutting down and abandoning module Settings (21)
+[2017.03.18-11.26.41:401][ 37]LogModuleManager: Shutting down and abandoning module OnlineSubsystem (19)
+[2017.03.18-11.26.41:401][ 37]LogModuleManager: Shutting down and abandoning module HTTP (18)
+[2017.03.18-11.26.42:902][ 37]LogModuleManager: Shutting down and abandoning module XMPP (17)
+[2017.03.18-11.26.42:903][ 37]LogModuleManager: Shutting down and abandoning module OculusRift (16)
+[2017.03.18-11.26.42:903][ 37]LogModuleManager: Shutting down and abandoning module ExampleDeviceProfileSelector (15)
+[2017.03.18-11.26.42:903][ 37]LogModuleManager: Shutting down and abandoning module TextureCompressor (14)
+[2017.03.18-11.26.42:903][ 37]LogModuleManager: Shutting down and abandoning module ShaderCore (13)
+[2017.03.18-11.26.42:903][ 37]LogModuleManager: Shutting down and abandoning module Landscape (12)
+[2017.03.18-11.26.42:903][ 37]LogModuleManager: Shutting down and abandoning module SlateRHIRenderer (11)
+[2017.03.18-11.26.42:905][ 37]LogModuleManager: Shutting down and abandoning module OpenGLDrv (10)
+[2017.03.18-11.26.42:905][ 37]LogModuleManager: Shutting down and abandoning module D3D11RHI (9)
+[2017.03.18-11.26.42:905][ 37]LogModuleManager: Shutting down and abandoning module AnimGraphRuntime (8)
+[2017.03.18-11.26.42:905][ 37]LogModuleManager: Shutting down and abandoning module Renderer (7)
+[2017.03.18-11.26.42:905][ 37]LogModuleManager: Shutting down and abandoning module Engine (6)
+[2017.03.18-11.26.42:905][ 37]LogModuleManager: Shutting down and abandoning module CoreUObject (5)
+[2017.03.18-11.26.42:905][ 37]LogModuleManager: Shutting down and abandoning module NetworkFile (4)
+[2017.03.18-11.26.42:905][ 37]LogModuleManager: Shutting down and abandoning module StreamingFile (3)
+[2017.03.18-11.26.42:905][ 37]LogModuleManager: Shutting down and abandoning module SandboxFile (2)
+[2017.03.18-11.26.42:905][ 37]LogModuleManager: Shutting down and abandoning module PakFile (1)
+[2017.03.18-11.26.42:907][ 37]LogExit: Exiting.
+[2017.03.18-11.26.42:908][ 37]Log file closed, 03/18/17 11:26:42
