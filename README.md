@@ -10,7 +10,6 @@ Game Mechanics –
 
 Power Ups –
 3D vision - First Person View.
-Place Walls.
 Turn Circular.
 Multiple Balls.
 Faster Ball/s.
@@ -19,8 +18,6 @@ Bigger Ball/s.
 Changes Colour.
 Invisible Pong Boards.
 Sideways Pong Paddle.
-Draw Pong Paddle?.
-Zoom in on ball to make it harder to see the Pong board.
 Reverses Players Points.
 Shrinks Paddles.
 Enlarges Paddles.
