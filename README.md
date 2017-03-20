@@ -10,7 +10,6 @@ Game Mechanics –
 
 Power Ups –
 3D vision - First Person View.
-Place Walls.
 Turn Circular.
 Multiple Balls.
 Faster Ball/s.
@@ -19,8 +18,6 @@ Bigger Ball/s.
 Changes Colour.
 Invisible Pong Boards.
 Sideways Pong Paddle.
-Draw Pong Paddle?.
-Zoom in on ball to make it harder to see the Pong board.
 Reverses Players Points.
 Shrinks Paddles.
 Enlarges Paddles.
@@ -48,9 +45,13 @@ Dildo Controller – Genital Jousting. This game uses 8 joysticks with ball tops
 Webcam- No Pain No Gain. This game uses a webcam, players jump into a white sheet and depending on how close they are to the projection on the wall they will gain points.
 
 Controller Description
-A large see through box with two 8 direction joysticks on either end of the box. 4 arcade buttons placed near each joystick. Large Action Button.
+A large see through box with two 8 direction joysticks on either end of the box. 4 arcade buttons placed near each joystick. 
 
+The Joysticks would be used to operate the players pong paddles, the 4 buttons would be used to send out power ups.
 
+Using feedback from tutors I have decided to move away from using a joystick and potentially the buttons as well. Instead of a joystick I would like to use a linear potentiometer to control the paddles. 
+
+Also I would like to use a light sensor or something along those lines.
 
 
 
