@@ -1,0 +1,604 @@
+﻿Log file open, 03/20/17 13:11:53
+LogInit:Display: Running engine for game: Pong
+LogPlatformFile: Not using cached read wrapper
+LogInit:Display: RandInit(1983972969) SRandInit(1983972970).
+LogTaskGraph: Started task graph with 4 named threads and 5 total threads with 1 sets of task threads.
+LogStats: Stats thread started at 0.045713
+LogInit: Version: 4.12.5-0+UE4
+LogInit: API Version: 0
+LogInit: Net Version: 0
+LogDevObjectVersion: Number of dev versions registered: 13
+LogDevObjectVersion:   Dev-Blueprints (B0D832E4-1F89-4F0D-ACCF-7EB736FD4AA2): 3
+LogDevObjectVersion:   Dev-Build (E1C64328-A22C-4D53-A36C-8E866417BD8C): 0
+LogDevObjectVersion:   Dev-Core (375EC13C-06E4-48FB-B500-84F0262A717E): 1
+LogDevObjectVersion:   Dev-Editor (E4B068ED-F494-42E9-A231-DA0B2E46BB41): 2
+LogDevObjectVersion:   Dev-Framework (CFFC743F-43B0-4480-9391-14DF171D2073): 6
+LogDevObjectVersion:   Dev-Mobile (B02B49B5-BB20-44E9-A304-32B752E40360): 0
+LogDevObjectVersion:   Dev-Networking (A4E4105C-59A1-49B5-A7C5-40C4547EDFEE): 0
+LogDevObjectVersion:   Dev-Online (39C831C9-5AE6-47DC-9A44-9C173E1C8E7C): 0
+LogDevObjectVersion:   Dev-Physics (78F01B33-EBEA-4F98-B9B4-84EACCB95AA2): 0
+LogDevObjectVersion:   Dev-Platform (6631380F-2D4D-43E0-8009-CF276956A95A): 0
+LogDevObjectVersion:   Dev-Rendering (12F88B9F-8875-4AFC-A67C-D90C383ABD29): 2
+LogDevObjectVersion:   Dev-Sequencer (7B5AE74C-D270-4C10-A958-57980B212A5A): 0
+LogDevObjectVersion:   Dev-VR (D7296918-1DD6-4BDD-9DE2-64A83CC13884): 0
+LogInit: Compiled (64-bit): Aug 25 2016 13:31:26
+LogInit: Compiled with Visual C++: 19.00.24213.01
+LogInit: Build Configuration: Development
+LogInit: Branch Name: UE4
+LogInit: Command line:  
+LogInit: Base directory: C:/Unreal Engine 4.12/Engine/Binaries/Win64/
+LogInit: Installed Engine Build: 0
+LogInit: Using libcurl 7.41.0
+LogInit:  - built for x86_64-pc-win32
+LogInit:  - supports SSL with WinSSL
+LogInit:  - other features:
+LogInit:      CURL_VERSION_SSL
+LogInit:      CURL_VERSION_IPV6
+LogInit:      CURL_VERSION_ASYNCHDNS
+LogInit:      CURL_VERSION_LARGEFILE
+LogInit:      CURL_VERSION_IDN
+LogInit:  CurlRequestOptions (configurable via config and command line):
+LogInit:  - bVerifyPeer = true  - Libcurl will verify peer certificate
+LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
+LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
+LogInit:  - CertBundlePath = nullptr  - Libcurl will use whatever was configured at build time.
+LogInit: Presizing for max 8388607 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
+LogInit: Object subsystem initialized
+[2017.03.20-13.11.53:825][  0]LogInit: Selected Device Profile: [Windows]
+[2017.03.20-13.11.53:825][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2017.03.20-13.11.53:834][  0]LogInit: Computer: PENGAME-59034
+[2017.03.20-13.11.53:834][  0]LogInit: User: CP192723
+[2017.03.20-13.11.53:834][  0]LogInit: CPU Page size=65536, Cores=2
+[2017.03.20-13.11.53:834][  0]LogInit: High frequency timer resolution =3.507523 MHz
+[2017.03.20-13.11.53:834][  0]LogMemory: Memory total: Physical=7.9GB (8GB approx)
+[2017.03.20-13.11.53:834][  0]LogMemory: Platform Memory Stats for Windows
+[2017.03.20-13.11.53:834][  0]LogMemory: Process Physical Memory: 188.98 MB used, 188.98 MB peak
+[2017.03.20-13.11.53:834][  0]LogMemory: Process Virtual Memory: 194.61 MB used, 194.61 MB peak
+[2017.03.20-13.11.53:834][  0]LogMemory: Physical Memory: 3832.08 MB used, 8134.15 MB total
+[2017.03.20-13.11.53:834][  0]LogMemory: Virtual Memory: 542.43 MB used, 134217728.00 MB total
+[2017.03.20-13.11.53:860][  0]LogTextLocalizationManager: No specific translations for ('en-GB') exist, so ('en') translations will be used.
+[2017.03.20-13.11.54:232][  0]LogD3D11RHI: D3D11 adapters:
+[2017.03.20-13.11.54:242][  0]LogD3D11RHI:    0. 'AMD Radeon(TM) R5 240' (Feature Level 11_0)
+[2017.03.20-13.11.54:242][  0]LogD3D11RHI:       1006/0/4067 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:1, VendorId:0x1002
+[2017.03.20-13.11.54:243][  0]LogD3D11RHI:    1. 'Microsoft Basic Render Driver' (Feature Level 11_0)
+[2017.03.20-13.11.54:243][  0]LogD3D11RHI:       0/0/4067 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
+[2017.03.20-13.11.54:243][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2017.03.20-13.11.54:247][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2017.03.20-13.11.54:247][  0]LogD3D11RHI:     GPU DeviceId: 0x6611 (for the marketing name, search the web for "GPU Device Id")
+[2017.03.20-13.11.54:247][  0]LogWindows: EnumDisplayDevices:
+[2017.03.20-13.11.54:247][  0]LogWindows:    0. 'AMD Radeon(TM) R5 240' (P:1 D:1)
+[2017.03.20-13.11.54:247][  0]LogWindows:    1. 'AMD Radeon(TM) R5 240' (P:0 D:0)
+[2017.03.20-13.11.54:247][  0]LogWindows: DebugString: FoundDriverCount:2 
+[2017.03.20-13.11.54:247][  0]LogD3D11RHI:     Adapter Name: AMD Radeon(TM) R5 240
+[2017.03.20-13.11.54:247][  0]LogD3D11RHI:   Driver Version: Crimson 15.11 (internal:15.300.1025.1001, unified:15.300.1025.1001)
+[2017.03.20-13.11.54:247][  0]LogD3D11RHI:      Driver Date: 11-29-2015
+[2017.03.20-13.11.54:247][  0]LogRHI: Texture pool is 704 MB (70% of 1006 MB)
+[2017.03.20-13.11.54:254][  0]LogD3D11RHI: Async texture creation disabled: no driver support
+[2017.03.20-13.11.54:265][  0]LogD3D11RHI: GPU Timing Frequency: 27.000000 (Debug: 2 1)
+[2017.03.20-13.11.54:265][  0]LogShaderCompilers: Guid format shader working directory is 21 characters bigger than the processId version (D:/comp140-gam160-game/Pong/Intermediate/Shaders/WorkingDirectory/11140/).
+[2017.03.20-13.11.54:266][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/CP192723/AppData/Local/Temp/UnrealShaderWorkingDir/ADDD111745FE7F54B8B9D5BD2D143F89/'.
+[2017.03.20-13.11.54:266][  0]LogShaderCompilers:Display: Using Local Shader Compiler.
+[2017.03.20-13.11.55:013][  0]LogTemp:Display: Loaded TP AllDesktopTargetPlatform
+[2017.03.20-13.11.55:019][  0]LogTemp:Display: Loaded TP WindowsClientTargetPlatform
+[2017.03.20-13.11.55:025][  0]LogTemp:Display: Loaded TP WindowsNoEditorTargetPlatform
+[2017.03.20-13.11.55:031][  0]LogTemp:Display: Loaded TP WindowsServerTargetPlatform
+[2017.03.20-13.11.55:037][  0]LogTemp:Display: Loaded TP WindowsTargetPlatform
+[2017.03.20-13.11.55:043][  0]LogTemp:Display: Loaded TP AndroidTargetPlatform
+[2017.03.20-13.11.55:048][  0]LogTemp:Display: Loaded TP Android_ASTCTargetPlatform
+[2017.03.20-13.11.55:053][  0]LogTemp:Display: Loaded TP Android_ATCTargetPlatform
+[2017.03.20-13.11.55:058][  0]LogTemp:Display: Loaded TP Android_DXTTargetPlatform
+[2017.03.20-13.11.55:063][  0]LogTemp:Display: Loaded TP Android_ETC1TargetPlatform
+[2017.03.20-13.11.55:068][  0]LogTemp:Display: Loaded TP Android_ETC2TargetPlatform
+[2017.03.20-13.11.55:078][  0]LogTemp:Display: Loaded TP Android_MultiTargetPlatform
+[2017.03.20-13.11.55:078][  0]LogTemp:Display: Loaded TP Android_PVRTCTargetPlatform
+[2017.03.20-13.11.55:079][  0]LogTemp:Display: Loaded TP HTML5TargetPlatform
+[2017.03.20-13.11.55:097][  0]LogTemp:Display: Loaded TP IOSTargetPlatform
+[2017.03.20-13.11.55:102][  0]LogTemp:Display: Loaded TP TVOSTargetPlatform
+[2017.03.20-13.11.55:102][  0]LogTargetPlatformManager:Display: Building Assets For Windows
+[2017.03.20-13.11.55:148][  0]LogDerivedDataCache:Display: Max Cache Size: 512 MB
+[2017.03.20-13.11.55:197][  0]LogDerivedDataCache: Loaded boot cache 0.05s 48MB D:/comp140-gam160-game/Pong/DerivedDataCache/Boot.ddc.
+[2017.03.20-13.11.55:197][  0]LogDerivedDataCache:Display: Loaded Boot cache: D:/comp140-gam160-game/Pong/DerivedDataCache/Boot.ddc
+[2017.03.20-13.11.55:197][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file D:/comp140-gam160-game/Pong/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2017.03.20-13.11.55:197][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2017.03.20-13.11.55:197][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  EnginePak pak cache file ../../../Engine/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2017.03.20-13.11.55:197][  0]LogDerivedDataCache: Unable to find inner node EnginePak for hierarchical cache Hierarchy.
+[2017.03.20-13.11.55:210][  0]LogDerivedDataCache: Using Local data cache path ../../../Engine/DerivedDataCache: Writable
+[2017.03.20-13.11.55:210][  0]LogDerivedDataCache: Shared data cache path not found in *engine.ini, will not use an Shared cache.
+[2017.03.20-13.11.55:210][  0]LogDerivedDataCache: Unable to find inner node Shared for hierarchical cache Hierarchy.
+[2017.03.20-13.11.55:459][  0]LogInit: Selected Device Profile: [Windows]
+[2017.03.20-13.11.55:487][  0]LogContentStreaming: Texture pool size is 0.00 MB
+[2017.03.20-13.11.56:273][  0]LogMeshUtilities: No automatic mesh reduction module available
+[2017.03.20-13.11.56:273][  0]LogMeshUtilities: No automatic mesh merging module available
+[2017.03.20-13.11.56:273][  0]LogMeshUtilities: No distributed automatic mesh merging module available
+[2017.03.20-13.11.57:730][  0]LogAssetRegistry: FAssetRegistry took 0.0224 seconds to start up
+[2017.03.20-13.11.57:755][  0]LogPackageLocalizationCache: Processed 3 localized package path(s) for 2 prioritized culture(s) in 0.021738 seconds
+[2017.03.20-13.11.57:762][  0]LogUObjectArray: 28732 objects as part of root set at end of initial load.
+[2017.03.20-13.11.57:762][  0]LogUObjectAllocator: 5854096 out of 0 bytes used by permanent object pool.
+[2017.03.20-13.11.57:762][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2017.03.20-13.11.57:768][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+[2017.03.20-13.11.58:216][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2017.03.20-13.11.58:216][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2017.03.20-13.12.30:979][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2017.03.20-13.12.31:657][  0]SourceControl: Info Source control is disabled
+[2017.03.20-13.12.31:688][  0]SourceControl: Info Source control is disabled
+[2017.03.20-13.12.31:695][  0]SourceControl: Info Source control is disabled
+[2017.03.20-13.12.31:701][  0]SourceControl: Info Source control is disabled
+[2017.03.20-13.12.32:067][  0]LogEngine: Initializing Engine...
+[2017.03.20-13.12.32:068][  0]LogHMD: SteamVR failed to initialize.  Err: 110
+[2017.03.20-13.12.32:068][  0]LogHMD: SteamVR failed to initialize.  Err: 110
+[2017.03.20-13.12.32:630][  0]LogAIModule: Creating AISystem for world NewWorld
+[2017.03.20-13.12.32:634][  0]LogInit: XAudio2 using 'Speakers / Headphones (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.03.20-13.12.32:761][  0]LogInit: FAudioDevice initialized.
+[2017.03.20-13.12.32:785][  0]LogDerivedDataCache: Saved boot cache 0.02s 48MB D:/comp140-gam160-game/Pong/DerivedDataCache/Boot.ddc.
+[2017.03.20-13.12.32:794][  0]LogInit: Texture streaming: Enabled
+[2017.03.20-13.12.32:824][  0]LogInit: Transaction tracking system initialized
+[2017.03.20-13.12.32:838][  0]BlueprintLog: New page: Editor Load
+[2017.03.20-13.12.32:916][  0]LocalizationService: Info Localization service is disabled
+[2017.03.20-13.12.33:215][  0]LogConsoleResponse:Display: 
+[2017.03.20-13.12.34:686][  0]LogFileCache: Scanning file cache for directory 'D:/comp140-gam160-game/Pong/Content/' took 0.01s
+[2017.03.20-13.12.34:686][  0]LogCook:Display: Max memory allowance for cook 8192mb
+[2017.03.20-13.12.34:686][  0]LogCook:Display: Mobile HDR setting 1
+[2017.03.20-13.12.35:326][  0]SourceControl: Info Source control is disabled
+[2017.03.20-13.12.35:327][  0]Cmd: MAP LOAD FILE="D:/comp140-gam160-game/Pong/Content/Lavels/Pong_Main.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2017.03.20-13.12.35:327][  0]LogEditorServer:Warning: Can't find file 'D:/comp140-gam160-game/Pong/Content/Lavels/Pong_Main.umap'
+[2017.03.20-13.12.35:327][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2017.03.20-13.12.35:375][  0]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 47.404ms to complete.
+[2017.03.20-13.12.35:375][  0]LogFileHelpers: Loading map 'Pong_Main' took 0.048
+[2017.03.20-13.12.36:189][  0]LogCollectionManager: Loaded 0 collections in 0.003299 seconds
+[2017.03.20-13.12.36:348][  0]LogFileCache: Scanning file cache for directory 'D:/comp140-gam160-game/Pong/Saved/Collections/' took 0.01s
+[2017.03.20-13.12.36:348][  0]LogFileCache: Scanning file cache for directory 'D:/comp140-gam160-game/Pong/Content/Developers/CP192723/Collections/' took 0.01s
+[2017.03.20-13.12.36:348][  0]LogFileCache: Scanning file cache for directory 'D:/comp140-gam160-game/Pong/Content/Collections/' took 0.01s
+[2017.03.20-13.12.36:348][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000004 seconds
+[2017.03.20-13.12.36:364][  0]LogContentBrowser: Native class hierarchy populated in 0.0084 seconds. Added 2046 classes and 367 folders.
+[2017.03.20-13.12.36:450][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
+[2017.03.20-13.12.36:450][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
+[2017.03.20-13.12.36:491][  0]LogContentBrowser: Native class hierarchy updated for 'GameplayTags' in 0.0004 seconds. Added 12 classes and 0 folders.
+[2017.03.20-13.12.36:507][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0003 seconds. Added 0 classes and 0 folders.
+[2017.03.20-13.12.39:178][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0009 seconds. Added 0 classes and 0 folders.
+[2017.03.20-13.12.39:231][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0009 seconds. Added 1 classes and 2 folders.
+[2017.03.20-13.12.39:609][  0]LogCrashTracker: Crashtracker disabled due to settings.
+[2017.03.20-13.12.39:793][  0]LogUObjectGlobals:Warning: Failed to find object 'Class None.'
+[2017.03.20-13.12.39:837][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0004 seconds. Added 1 classes and 2 folders.
+[2017.03.20-13.12.39:837][  0]LogLoad: Full Startup: 46.53 seconds (BP compile: 0.10 seconds)
+[2017.03.20-13.12.39:837][  0]LogExternalProfiler: No external profilers were discovered.  External profiling features will not be available.
+[2017.03.20-13.12.40:177][  0]LogOcInput: OculusInput pre-init called
+[2017.03.20-13.12.40:281][  0]LogContentStreaming: Texture pool size now 700 MB
+[2017.03.20-13.12.41:395][  0]LogRenderer: Reallocating scene render targets to support 1208x660 (Frame:2).
+[2017.03.20-13.12.42:213][  3]LogAssetRegistry: Asset discovery search completed in 44.5047 seconds
+[2017.03.20-13.12.42:213][  3]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000001 seconds (found 0 objects)
+[2017.03.20-13.12.42:213][  3]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000040 seconds (updated 0 objects)
+[2017.03.20-13.13.34:506][276]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.03.20-13.13.34:624][276]PIE: New page: PIE session: Untitled_0 (20 Mar 2017 13:13:34)
+[2017.03.20-13.13.34:624][276]LogPlayLevel: Creating play world package: /Temp/UEDPIE_0_Untitled_0
+[2017.03.20-13.13.34:643][276]LogPlayLevel: PIE: StaticDuplicateObject took: (0.019848s)
+[2017.03.20-13.13.34:644][276]LogAIModule: Creating AISystem for world NewWorld
+[2017.03.20-13.13.34:645][276]LogPlayLevel: PIE: World Init took: (0.001182s)
+[2017.03.20-13.13.34:662][276]LogPlayLevel: PIE: Created PIE world by copying editor world from /Temp/Untitled_0.NewWorld to /Temp/UEDPIE_0_Untitled_0.NewWorld (0.038569s)
+[2017.03.20-13.13.34:702][276]LogInit: XAudio2 using 'Speakers / Headphones (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.03.20-13.13.34:714][276]LogInit: FAudioDevice initialized.
+[2017.03.20-13.13.35:388][276]LogStaticMesh: Building static mesh StaticMesh_Paddle...
+[2017.03.20-13.13.35:415][276]LogMeshUtilities:Warning: Invalid vertex normals found for mesh. Forcing recomputation of vertex normals for MikkTSpace. Fix mesh or disable "Use MikkTSpace Tangent Space" to avoid forced recomputation of normals.
+[2017.03.20-13.13.35:441][276]LogStaticMesh: Built static mesh [0.06s] /Game/StaticMeshes/StaticMesh_Paddle.StaticMesh_Paddle
+[2017.03.20-13.13.35:453][276]LogMaterial: Missing cached shader map for material M_White, compiling. 
+[2017.03.20-13.13.35:762][276]LogWorld: Game class is 'PangGamemode_C'
+[2017.03.20-13.13.35:909][276]LogWorld: Bringing World /Temp/UEDPIE_0_Untitled_0.NewWorld up for play (max tick rate 0) at 2017.03.20-13.13.35
+[2017.03.20-13.13.35:944][276]LogWorld: Bringing up level for play took: 0.036044
+[2017.03.20-13.13.36:214][276]LogContentBrowser: Native class hierarchy updated for 'MovieSceneCapture' in 0.0004 seconds. Added 11 classes and 0 folders.
+[2017.03.20-13.13.36:319][276]PIE: Info Play in editor start time for /Temp/UEDPIE_0_Untitled_0 2.666
+[2017.03.20-13.13.54:901][104]LogLinker:Warning: Can't find file '/Game/Meterials/M_White'
+[2017.03.20-13.13.54:903][104]LogLinker:Warning: Can't find file for asset '/Game/Meterials/M_White' while loading D:/comp140-gam160-game/Pong/Content/Blueprints/Pickups/Pickup-ThirdPerson.uasset.
+[2017.03.20-13.13.54:903][104]LoadErrors:Error: Error /Game/Blueprints/Pickups/Pickup-ThirdPerson : Can't find file for asset. /Game/Meterials/M_White
+[2017.03.20-13.13.54:903][104]LogLinker:Warning: Can't find file '/Game/Meterials/M_White'
+[2017.03.20-13.13.54:903][104]LogLinker:Warning: Can't find file for asset '/Game/Meterials/M_White' while loading D:/comp140-gam160-game/Pong/Content/Blueprints/Pickups/Pickup-ThirdPerson.uasset.
+[2017.03.20-13.13.54:904][104]LogLinker:Warning: Can't find file '/Game/Meterials/M_White'
+[2017.03.20-13.13.54:904][104]LogLinker:Warning: Can't find file for asset '/Game/Meterials/M_White' while loading D:/comp140-gam160-game/Pong/Content/Levels/Pong_Main.umap.
+[2017.03.20-13.13.54:904][104]LoadErrors:Error: Error /Game/Levels/Pong_Main : Can't find file for asset. /Game/Meterials/M_White
+[2017.03.20-13.13.54:904][104]LogLinker:Warning: Can't find file '/Game/Meterials/M_White'
+[2017.03.20-13.13.54:904][104]LogLinker:Warning: Can't find file for asset '/Game/Meterials/M_White' while loading D:/comp140-gam160-game/Pong/Content/Levels/Pong_Main.umap.
+[2017.03.20-13.13.54:906][104]LogLinker:Warning: Can't find file '/Game/Meterials/M_White'
+[2017.03.20-13.13.54:906][104]LoadErrors: Info Failed to load /Game/Meterials/M_White.M_White Referenced by Pickup_GEN_VARIABLE
+[2017.03.20-13.13.54:906][104]LogLinker:Warning: Can't find file for asset '/Game/Meterials/M_White' while loading D:/comp140-gam160-game/Pong/Content/Levels/Pong_Main.umap.
+[2017.03.20-13.13.55:001][104]LogMaterial: Missing cached shader map for material M_PongNumbers, compiling. 
+[2017.03.20-13.13.55:068][104]LogMaterial: Missing cached shader map for material Grey, compiling. 
+[2017.03.20-13.13.55:080][104]LogStaticMesh: Building static mesh StaticMesh_BoundaryWall...
+[2017.03.20-13.13.55:080][104]LogMeshUtilities:Warning: Invalid vertex normals found for mesh. Forcing recomputation of vertex normals for MikkTSpace. Fix mesh or disable "Use MikkTSpace Tangent Space" to avoid forced recomputation of normals.
+[2017.03.20-13.13.55:083][104]LogStaticMesh: Built static mesh [0.01s] /Game/StaticMeshes/StaticMesh_BoundaryWall.StaticMesh_BoundaryWall
+[2017.03.20-13.13.55:115][104]LogStaticMesh: Building static mesh StaticMesh_PongBall...
+[2017.03.20-13.13.55:116][104]LogMeshUtilities:Warning: Invalid vertex normals found for mesh. Forcing recomputation of vertex normals for MikkTSpace. Fix mesh or disable "Use MikkTSpace Tangent Space" to avoid forced recomputation of normals.
+[2017.03.20-13.13.55:119][104]LogStaticMesh: Built static mesh [0.00s] /Game/StaticMeshes/StaticMesh_PongBall.StaticMesh_PongBall
+[2017.03.20-13.13.55:254][104]LogMaterial: Missing cached shader map for material Black, compiling. 
+[2017.03.20-13.13.55:260][104]LogAIModule: Creating AISystem for world Pong_Main
+[2017.03.20-13.13.55:684][104]Cmd: MAP LOAD FILE="D:/comp140-gam160-game/Pong/Content/Levels/Pong_Main.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2017.03.20-13.13.55:684][104]LightingResults: New page: Lighting Build
+[2017.03.20-13.13.55:687][104]LogContentBrowser: Native class hierarchy updated for 'StatsViewer' in 0.0005 seconds. Added 5 classes and 0 folders.
+[2017.03.20-13.13.55:688][104]LoadErrors: New page: Loading map: Pong_Main.umap
+[2017.03.20-13.13.55:688][104]MapCheck: New page: Map Check
+[2017.03.20-13.13.55:688][104]LightingResults: New page: Lighting Build
+[2017.03.20-13.13.55:713][104]PIE:Warning: Warning Invalid Simulate Options: Body (BP_Ball_108.Ball StaticMesh_PongBall) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.20-13.13.55:713][104]PIE:Warning: Warning Invalid Simulate Options: Body (BP_Ball_108.Ball StaticMesh_PongBall) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.20-13.13.55:734][104]PIE:Warning: Warning Invalid Simulate Options: Body (BP_Ball_108.Ball StaticMesh_PongBall) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.20-13.13.55:734][104]PIE:Warning: Warning Invalid Simulate Options: Body (BP_Ball_108.Ball StaticMesh_PongBall) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.20-13.13.55:776][104]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2017.03.20-13.13.55:833][104]Cmd: MAP CHECKDEP NOCLEARLOG
+[2017.03.20-13.13.55:892][104]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 58.68ms to complete.
+[2017.03.20-13.13.55:892][104]LogFileHelpers: Loading map 'Pong_Main' took 0.210
+[2017.03.20-13.14.03:015][445]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Levels/Pong_Main.Pong_Main:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/Pong_Main.Pong_Main:PersistentLevel.Pong_Main' with GeneratedClass '/Game/Levels/Pong_Main.Pong_Main_C' with ClassGeneratedBy '/Game/Levels/Pong_Main.Pong_Main:PersistentLevel.Pong_Main'
+[2017.03.20-13.14.03:015][445]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.03.20-13.14.03:015][445]PIE: New page: PIE session: Pong_Main (20 Mar 2017 13:14:03)
+[2017.03.20-13.14.03:016][445]LogPlayLevel: Creating play world package: /Game/Levels/UEDPIE_0_Pong_Main
+[2017.03.20-13.14.03:020][445]LogPlayLevel: PIE: StaticDuplicateObject took: (0.004294s)
+[2017.03.20-13.14.03:020][445]LogAIModule: Creating AISystem for world Pong_Main
+[2017.03.20-13.14.03:020][445]LogPlayLevel: PIE: World Init took: (0.000473s)
+[2017.03.20-13.14.03:020][445]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Levels/Pong_Main.Pong_Main to /Game/Levels/UEDPIE_0_Pong_Main.Pong_Main (0.004952s)
+[2017.03.20-13.14.03:036][445]LogInit: XAudio2 using 'Speakers / Headphones (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.03.20-13.14.03:044][445]LogInit: FAudioDevice initialized.
+[2017.03.20-13.14.03:095][445]LogWorld: Game class is 'PangGamemode_C'
+[2017.03.20-13.14.03:096][445]PIE:Warning: Warning Invalid Simulate Options: Body (BP_Ball_108.Ball StaticMesh_PongBall) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.20-13.14.03:097][445]PIE:Warning: Warning Invalid Simulate Options: Body (BP_Ball_108.Ball StaticMesh_PongBall) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.20-13.14.03:097][445]LogWorld: Bringing World /Game/Levels/UEDPIE_0_Pong_Main.Pong_Main up for play (max tick rate 0) at 2017.03.20-13.14.03
+[2017.03.20-13.14.03:097][445]LogWorld: Bringing up level for play took: 0.002089
+[2017.03.20-13.14.03:099][445]PIE: Info Play in editor start time for /Game/Levels/UEDPIE_0_Pong_Main -0.554
+[2017.03.20-13.14.03:099][445]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Levels/Pong_Main.Pong_Main:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/Pong_Main.Pong_Main:PersistentLevel.Pong_Main' with GeneratedClass '/Game/Levels/Pong_Main.Pong_Main_C' with ClassGeneratedBy '/Game/Levels/Pong_Main.Pong_Main:PersistentLevel.Pong_Main'
+[2017.03.20-13.14.03:917][487]PIE:Warning: Warning BP_Ball_108.Ball StaticMesh_PongBall has to have 'CollisionEnabled' set to 'Query and Physics' or 'Physics only' if you'd like to AddForce. 
+[2017.03.20-13.14.03:917][487]PIE:Warning: Warning BP_Ball_108.Ball StaticMesh_PongBall has to have 'CollisionEnabled' set to 'Query and Physics' or 'Physics only' if you'd like to AddForce. 
+[2017.03.20-13.14.05:350][565]PIE:Warning: Warning BP_Ball_108.Ball StaticMesh_PongBall has to have 'CollisionEnabled' set to 'Query and Physics' or 'Physics only' if you'd like to AddForce. 
+[2017.03.20-13.14.05:350][565]PIE:Warning: Warning BP_Ball_108.Ball StaticMesh_PongBall has to have 'CollisionEnabled' set to 'Query and Physics' or 'Physics only' if you'd like to AddForce. 
+[2017.03.20-13.14.07:261][668]PIE:Warning: Warning BP_Ball_108.Ball StaticMesh_PongBall has to have 'CollisionEnabled' set to 'Query and Physics' or 'Physics only' if you'd like to AddForce. 
+[2017.03.20-13.14.07:261][668]PIE:Warning: Warning BP_Ball_108.Ball StaticMesh_PongBall has to have 'CollisionEnabled' set to 'Query and Physics' or 'Physics only' if you'd like to AddForce. 
+[2017.03.20-13.14.09:079][766]PIE:Warning: Warning BP_Ball_108.Ball StaticMesh_PongBall has to have 'CollisionEnabled' set to 'Query and Physics' or 'Physics only' if you'd like to AddForce. 
+[2017.03.20-13.14.09:079][766]PIE:Warning: Warning BP_Ball_108.Ball StaticMesh_PongBall has to have 'CollisionEnabled' set to 'Query and Physics' or 'Physics only' if you'd like to AddForce. 
+[2017.03.20-13.14.09:950][813]PIE:Warning: Warning BP_Ball_108.Ball StaticMesh_PongBall has to have 'CollisionEnabled' set to 'Query and Physics' or 'Physics only' if you'd like to AddForce. 
+[2017.03.20-13.14.09:950][813]PIE:Warning: Warning BP_Ball_108.Ball StaticMesh_PongBall has to have 'CollisionEnabled' set to 'Query and Physics' or 'Physics only' if you'd like to AddForce. 
+[2017.03.20-13.14.10:839][861]PIE:Warning: Warning BP_Ball_108.Ball StaticMesh_PongBall has to have 'CollisionEnabled' set to 'Query and Physics' or 'Physics only' if you'd like to AddForce. 
+[2017.03.20-13.14.10:839][861]PIE:Warning: Warning BP_Ball_108.Ball StaticMesh_PongBall has to have 'CollisionEnabled' set to 'Query and Physics' or 'Physics only' if you'd like to AddForce. 
+[2017.03.20-13.14.12:693][961]PIE:Warning: Warning BP_Ball_108.Ball StaticMesh_PongBall has to have 'CollisionEnabled' set to 'Query and Physics' or 'Physics only' if you'd like to AddForce. 
+[2017.03.20-13.14.12:693][961]PIE:Warning: Warning BP_Ball_108.Ball StaticMesh_PongBall has to have 'CollisionEnabled' set to 'Query and Physics' or 'Physics only' if you'd like to AddForce. 
+[2017.03.20-13.14.13:583][  9]PIE:Warning: Warning BP_Ball_108.Ball StaticMesh_PongBall has to have 'CollisionEnabled' set to 'Query and Physics' or 'Physics only' if you'd like to AddForce. 
+[2017.03.20-13.14.13:583][  9]PIE:Warning: Warning BP_Ball_108.Ball StaticMesh_PongBall has to have 'CollisionEnabled' set to 'Query and Physics' or 'Physics only' if you'd like to AddForce. 
+[2017.03.20-13.14.14:546][ 61]PIE:Warning: Warning BP_Ball_108.Ball StaticMesh_PongBall has to have 'CollisionEnabled' set to 'Query and Physics' or 'Physics only' if you'd like to AddForce. 
+[2017.03.20-13.14.14:546][ 61]PIE:Warning: Warning BP_Ball_108.Ball StaticMesh_PongBall has to have 'CollisionEnabled' set to 'Query and Physics' or 'Physics only' if you'd like to AddForce. 
+[2017.03.20-13.14.17:457][218]PIE:Warning: Warning BP_Ball_108.Ball StaticMesh_PongBall has to have 'CollisionEnabled' set to 'Query and Physics' or 'Physics only' if you'd like to AddForce. 
+[2017.03.20-13.14.17:457][218]PIE:Warning: Warning BP_Ball_108.Ball StaticMesh_PongBall has to have 'CollisionEnabled' set to 'Query and Physics' or 'Physics only' if you'd like to AddForce. 
+[2017.03.20-13.14.20:385][376]PIE:Warning: Warning BP_Ball_108.Ball StaticMesh_PongBall has to have 'CollisionEnabled' set to 'Query and Physics' or 'Physics only' if you'd like to AddForce. 
+[2017.03.20-13.14.20:385][376]PIE:Warning: Warning BP_Ball_108.Ball StaticMesh_PongBall has to have 'CollisionEnabled' set to 'Query and Physics' or 'Physics only' if you'd like to AddForce. 
+[2017.03.20-13.14.21:738][449]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Levels/Pong_Main.Pong_Main:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/Pong_Main.Pong_Main:PersistentLevel.Pong_Main' with GeneratedClass '/Game/Levels/Pong_Main.Pong_Main_C' with ClassGeneratedBy '/Game/Levels/Pong_Main.Pong_Main:PersistentLevel.Pong_Main'
+[2017.03.20-13.14.21:783][449]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Levels/Pong_Main.Pong_Main:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/Pong_Main.Pong_Main:PersistentLevel.Pong_Main' with GeneratedClass '/Game/Levels/Pong_Main.Pong_Main_C' with ClassGeneratedBy '/Game/Levels/Pong_Main.Pong_Main:PersistentLevel.Pong_Main'
+[2017.03.20-13.14.24:907][595]LogEditorViewport: Clicking on Actor (LMB): Pickup-ThirdPerson_C (Pickup-ThirdPerson)
+[2017.03.20-13.14.30:968][839]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Levels/Pong_Main.Pong_Main:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/Pong_Main.Pong_Main:PersistentLevel.Pong_Main' with GeneratedClass '/Game/Levels/Pong_Main.Pong_Main_C' with ClassGeneratedBy '/Game/Levels/Pong_Main.Pong_Main:PersistentLevel.Pong_Main'
+[2017.03.20-13.14.30:968][839]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.03.20-13.14.30:968][839]PIE: New page: PIE session: Pong_Main (20 Mar 2017 13:14:30)
+[2017.03.20-13.14.30:968][839]LogPlayLevel: Creating play world package: /Game/Levels/UEDPIE_0_Pong_Main
+[2017.03.20-13.14.30:972][839]LogPlayLevel: PIE: StaticDuplicateObject took: (0.003859s)
+[2017.03.20-13.14.30:972][839]LogAIModule: Creating AISystem for world Pong_Main
+[2017.03.20-13.14.30:972][839]LogPlayLevel: PIE: World Init took: (0.000525s)
+[2017.03.20-13.14.30:972][839]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Levels/Pong_Main.Pong_Main to /Game/Levels/UEDPIE_0_Pong_Main.Pong_Main (0.004546s)
+[2017.03.20-13.14.31:004][839]LogInit: XAudio2 using 'Speakers / Headphones (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.03.20-13.14.31:013][839]LogInit: FAudioDevice initialized.
+[2017.03.20-13.14.31:061][839]LogWorld: Game class is 'PangGamemode_C'
+[2017.03.20-13.14.31:063][839]PIE:Warning: Warning Invalid Simulate Options: Body (BP_Ball_108.Ball StaticMesh_PongBall) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.20-13.14.31:063][839]PIE:Warning: Warning Invalid Simulate Options: Body (BP_Ball_108.Ball StaticMesh_PongBall) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.20-13.14.31:063][839]LogWorld: Bringing World /Game/Levels/UEDPIE_0_Pong_Main.Pong_Main up for play (max tick rate 0) at 2017.03.20-13.14.31
+[2017.03.20-13.14.31:063][839]LogWorld: Bringing up level for play took: 0.001877
+[2017.03.20-13.14.31:064][839]PIE: Info Play in editor start time for /Game/Levels/UEDPIE_0_Pong_Main -0.589
+[2017.03.20-13.14.31:065][839]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Levels/Pong_Main.Pong_Main:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/Pong_Main.Pong_Main:PersistentLevel.Pong_Main' with GeneratedClass '/Game/Levels/Pong_Main.Pong_Main_C' with ClassGeneratedBy '/Game/Levels/Pong_Main.Pong_Main:PersistentLevel.Pong_Main'
+[2017.03.20-13.14.31:845][880]PIE:Warning: Warning BP_Ball_108.Ball StaticMesh_PongBall has to have 'CollisionEnabled' set to 'Query and Physics' or 'Physics only' if you'd like to AddForce. 
+[2017.03.20-13.14.31:845][880]PIE:Warning: Warning BP_Ball_108.Ball StaticMesh_PongBall has to have 'CollisionEnabled' set to 'Query and Physics' or 'Physics only' if you'd like to AddForce. 
+[2017.03.20-13.14.33:318][958]LogScript:Warning: Accessed None trying to read property CallFunc_FinishSpawningActor_ReturnValue
+	Pong_Main_C /Game/Levels/UEDPIE_0_Pong_Main.Pong_Main:PersistentLevel.Pong_Main_C_1
+	Function /Game/Levels/Pong_Main.Pong_Main_C:ExecuteUbergraph_Pong_Main:06DE
+[2017.03.20-13.14.33:345][958]PIE:Error: Error Blueprint Runtime Error: Accessed None trying to read property CallFunc_FinishSpawningActor_ReturnValue from function: 'ExecuteUbergraph_Pong_Main' from node: DestroyActor in graph: EventGraph in object: Pong_Main with description: Accessed None trying to read property CallFunc_FinishSpawningActor_ReturnValue
+[2017.03.20-13.14.33:636][974]PIE:Warning: Warning BP_Ball_108.Ball StaticMesh_PongBall has to have 'CollisionEnabled' set to 'Query and Physics' or 'Physics only' if you'd like to AddForce. 
+[2017.03.20-13.14.33:636][974]PIE:Warning: Warning BP_Ball_108.Ball StaticMesh_PongBall has to have 'CollisionEnabled' set to 'Query and Physics' or 'Physics only' if you'd like to AddForce. 
+[2017.03.20-13.14.35:361][ 58]PIE:Warning: Warning BP_Ball_108.Ball StaticMesh_PongBall has to have 'CollisionEnabled' set to 'Query and Physics' or 'Physics only' if you'd like to AddForce. 
+[2017.03.20-13.14.35:361][ 58]PIE:Warning: Warning BP_Ball_108.Ball StaticMesh_PongBall has to have 'CollisionEnabled' set to 'Query and Physics' or 'Physics only' if you'd like to AddForce. 
+[2017.03.20-13.14.36:162][ 97]PIE:Warning: Warning BP_Ball_108.Ball StaticMesh_PongBall has to have 'CollisionEnabled' set to 'Query and Physics' or 'Physics only' if you'd like to AddForce. 
+[2017.03.20-13.14.36:162][ 97]PIE:Warning: Warning BP_Ball_108.Ball StaticMesh_PongBall has to have 'CollisionEnabled' set to 'Query and Physics' or 'Physics only' if you'd like to AddForce. 
+[2017.03.20-13.14.37:890][181]PIE:Warning: Warning BP_Ball_108.Ball StaticMesh_PongBall has to have 'CollisionEnabled' set to 'Query and Physics' or 'Physics only' if you'd like to AddForce. 
+[2017.03.20-13.14.37:890][181]PIE:Warning: Warning BP_Ball_108.Ball StaticMesh_PongBall has to have 'CollisionEnabled' set to 'Query and Physics' or 'Physics only' if you'd like to AddForce. 
+[2017.03.20-13.14.38:674][219]PIE:Warning: Warning BP_Ball_108.Ball StaticMesh_PongBall has to have 'CollisionEnabled' set to 'Query and Physics' or 'Physics only' if you'd like to AddForce. 
+[2017.03.20-13.14.38:674][219]PIE:Warning: Warning BP_Ball_108.Ball StaticMesh_PongBall has to have 'CollisionEnabled' set to 'Query and Physics' or 'Physics only' if you'd like to AddForce. 
+[2017.03.20-13.14.40:406][303]PIE:Warning: Warning BP_Ball_108.Ball StaticMesh_PongBall has to have 'CollisionEnabled' set to 'Query and Physics' or 'Physics only' if you'd like to AddForce. 
+[2017.03.20-13.14.40:406][303]PIE:Warning: Warning BP_Ball_108.Ball StaticMesh_PongBall has to have 'CollisionEnabled' set to 'Query and Physics' or 'Physics only' if you'd like to AddForce. 
+[2017.03.20-13.14.42:099][385]PIE:Warning: Warning BP_Ball_108.Ball StaticMesh_PongBall has to have 'CollisionEnabled' set to 'Query and Physics' or 'Physics only' if you'd like to AddForce. 
+[2017.03.20-13.14.42:099][385]PIE:Warning: Warning BP_Ball_108.Ball StaticMesh_PongBall has to have 'CollisionEnabled' set to 'Query and Physics' or 'Physics only' if you'd like to AddForce. 
+[2017.03.20-13.14.43:823][471]PIE:Warning: Warning BP_Ball_108.Ball StaticMesh_PongBall has to have 'CollisionEnabled' set to 'Query and Physics' or 'Physics only' if you'd like to AddForce. 
+[2017.03.20-13.14.43:823][471]PIE:Warning: Warning BP_Ball_108.Ball StaticMesh_PongBall has to have 'CollisionEnabled' set to 'Query and Physics' or 'Physics only' if you'd like to AddForce. 
+[2017.03.20-13.14.44:698][518]PIE:Warning: Warning BP_Ball_108.Ball StaticMesh_PongBall has to have 'CollisionEnabled' set to 'Query and Physics' or 'Physics only' if you'd like to AddForce. 
+[2017.03.20-13.14.44:698][518]PIE:Warning: Warning BP_Ball_108.Ball StaticMesh_PongBall has to have 'CollisionEnabled' set to 'Query and Physics' or 'Physics only' if you'd like to AddForce. 
+[2017.03.20-13.14.45:629][568]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Levels/Pong_Main.Pong_Main:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/Pong_Main.Pong_Main:PersistentLevel.Pong_Main' with GeneratedClass '/Game/Levels/Pong_Main.Pong_Main_C' with ClassGeneratedBy '/Game/Levels/Pong_Main.Pong_Main:PersistentLevel.Pong_Main'
+[2017.03.20-13.14.45:679][568]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Levels/Pong_Main.Pong_Main:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/Pong_Main.Pong_Main:PersistentLevel.Pong_Main' with GeneratedClass '/Game/Levels/Pong_Main.Pong_Main_C' with ClassGeneratedBy '/Game/Levels/Pong_Main.Pong_Main:PersistentLevel.Pong_Main'
+[2017.03.20-13.24.28:955][453]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Levels/Pong_Main" FILE="D:/comp140-gam160-game/Pong/Saved/Autosaves/Game/Levels/Pong_Main_Auto1.umap" SILENT=true AUTOSAVING=true KEEPDIRTY=false
+[2017.03.20-13.24.29:272][453]LogSavePackage: Save=269.44ms
+[2017.03.20-13.24.29:272][453]LogSavePackage: Moving 'D:/comp140-gam160-game/Pong/Saved/Pong_Main_Auto1CA4ACBCD46446B1A63A5D18465EADE70.tmp' to 'D:/comp140-gam160-game/Pong/Saved/Autosaves/Game/Levels/Pong_Main_Auto1.umap'
+[2017.03.20-13.24.29:274][453]LogSavePackage:Display: Finished SavePackage D:/comp140-gam160-game/Pong/Saved/Autosaves/Game/Levels/Pong_Main_Auto1.umap
+[2017.03.20-13.24.29:277][453]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/Levels/Pong_Main' took 0.404
+[2017.03.20-13.24.29:277][453]LogFileHelpers: Editor autosave (incl. sublevels) for all levels took 0.404
+[2017.03.20-13.32.10:903][946]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Levels/Pong_Main.Pong_Main:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/Pong_Main.Pong_Main:PersistentLevel.Pong_Main' with GeneratedClass '/Game/Levels/Pong_Main.Pong_Main_C' with ClassGeneratedBy '/Game/Levels/Pong_Main.Pong_Main:PersistentLevel.Pong_Main'
+[2017.03.20-13.32.10:903][946]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.03.20-13.32.10:904][946]PIE: New page: PIE session: Pong_Main (20 Mar 2017 13:32:10)
+[2017.03.20-13.32.10:904][946]LogPlayLevel: Creating play world package: /Game/Levels/UEDPIE_0_Pong_Main
+[2017.03.20-13.32.10:908][946]LogPlayLevel: PIE: StaticDuplicateObject took: (0.004236s)
+[2017.03.20-13.32.10:908][946]LogAIModule: Creating AISystem for world Pong_Main
+[2017.03.20-13.32.10:909][946]LogPlayLevel: PIE: World Init took: (0.000604s)
+[2017.03.20-13.32.10:909][946]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Levels/Pong_Main.Pong_Main to /Game/Levels/UEDPIE_0_Pong_Main.Pong_Main (0.005045s)
+[2017.03.20-13.32.10:927][946]LogInit: XAudio2 using 'Speakers / Headphones (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.03.20-13.32.10:936][946]LogInit: FAudioDevice initialized.
+[2017.03.20-13.32.10:984][946]LogWorld: Game class is 'PangGamemode_C'
+[2017.03.20-13.32.10:985][946]PIE:Warning: Warning Invalid Simulate Options: Body (BP_Ball_108.Ball StaticMesh_PongBall) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.20-13.32.10:985][946]PIE:Warning: Warning Invalid Simulate Options: Body (BP_Ball_108.Ball StaticMesh_PongBall) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.20-13.32.10:986][946]LogWorld: Bringing World /Game/Levels/UEDPIE_0_Pong_Main.Pong_Main up for play (max tick rate 0) at 2017.03.20-13.32.10
+[2017.03.20-13.32.10:986][946]LogWorld: Bringing up level for play took: 0.002043
+[2017.03.20-13.32.10:987][946]PIE: Info Play in editor start time for /Game/Levels/UEDPIE_0_Pong_Main -0.674
+[2017.03.20-13.32.10:987][946]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Levels/Pong_Main.Pong_Main:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/Pong_Main.Pong_Main:PersistentLevel.Pong_Main' with GeneratedClass '/Game/Levels/Pong_Main.Pong_Main_C' with ClassGeneratedBy '/Game/Levels/Pong_Main.Pong_Main:PersistentLevel.Pong_Main'
+[2017.03.20-13.32.11:746][987]PIE:Warning: Warning BP_Ball_108.Ball StaticMesh_PongBall has to have 'CollisionEnabled' set to 'Query and Physics' or 'Physics only' if you'd like to AddForce. 
+[2017.03.20-13.32.11:746][987]PIE:Warning: Warning BP_Ball_108.Ball StaticMesh_PongBall has to have 'CollisionEnabled' set to 'Query and Physics' or 'Physics only' if you'd like to AddForce. 
+[2017.03.20-13.32.13:217][ 66]LogScript:Warning: Accessed None trying to read property CallFunc_FinishSpawningActor_ReturnValue
+	Pong_Main_C /Game/Levels/UEDPIE_0_Pong_Main.Pong_Main:PersistentLevel.Pong_Main_C_0
+	Function /Game/Levels/Pong_Main.Pong_Main_C:ExecuteUbergraph_Pong_Main:06DE
+[2017.03.20-13.32.13:217][ 66]PIE:Error: Error Blueprint Runtime Error: Accessed None trying to read property CallFunc_FinishSpawningActor_ReturnValue from function: 'ExecuteUbergraph_Pong_Main' from node: DestroyActor in graph: EventGraph in object: Pong_Main with description: Accessed None trying to read property CallFunc_FinishSpawningActor_ReturnValue
+[2017.03.20-13.32.13:541][ 82]PIE:Warning: Warning BP_Ball_108.Ball StaticMesh_PongBall has to have 'CollisionEnabled' set to 'Query and Physics' or 'Physics only' if you'd like to AddForce. 
+[2017.03.20-13.32.13:541][ 82]PIE:Warning: Warning BP_Ball_108.Ball StaticMesh_PongBall has to have 'CollisionEnabled' set to 'Query and Physics' or 'Physics only' if you'd like to AddForce. 
+[2017.03.20-13.32.15:268][166]PIE:Warning: Warning BP_Ball_108.Ball StaticMesh_PongBall has to have 'CollisionEnabled' set to 'Query and Physics' or 'Physics only' if you'd like to AddForce. 
+[2017.03.20-13.32.15:268][166]PIE:Warning: Warning BP_Ball_108.Ball StaticMesh_PongBall has to have 'CollisionEnabled' set to 'Query and Physics' or 'Physics only' if you'd like to AddForce. 
+[2017.03.20-13.32.16:977][249]PIE:Warning: Warning BP_Ball_108.Ball StaticMesh_PongBall has to have 'CollisionEnabled' set to 'Query and Physics' or 'Physics only' if you'd like to AddForce. 
+[2017.03.20-13.32.16:977][249]PIE:Warning: Warning BP_Ball_108.Ball StaticMesh_PongBall has to have 'CollisionEnabled' set to 'Query and Physics' or 'Physics only' if you'd like to AddForce. 
+[2017.03.20-13.32.18:681][332]PIE:Warning: Warning BP_Ball_108.Ball StaticMesh_PongBall has to have 'CollisionEnabled' set to 'Query and Physics' or 'Physics only' if you'd like to AddForce. 
+[2017.03.20-13.32.18:681][332]PIE:Warning: Warning BP_Ball_108.Ball StaticMesh_PongBall has to have 'CollisionEnabled' set to 'Query and Physics' or 'Physics only' if you'd like to AddForce. 
+[2017.03.20-13.32.19:462][370]PIE:Warning: Warning BP_Ball_108.Ball StaticMesh_PongBall has to have 'CollisionEnabled' set to 'Query and Physics' or 'Physics only' if you'd like to AddForce. 
+[2017.03.20-13.32.19:462][370]PIE:Warning: Warning BP_Ball_108.Ball StaticMesh_PongBall has to have 'CollisionEnabled' set to 'Query and Physics' or 'Physics only' if you'd like to AddForce. 
+[2017.03.20-13.32.21:171][453]PIE:Warning: Warning BP_Ball_108.Ball StaticMesh_PongBall has to have 'CollisionEnabled' set to 'Query and Physics' or 'Physics only' if you'd like to AddForce. 
+[2017.03.20-13.32.21:171][453]PIE:Warning: Warning BP_Ball_108.Ball StaticMesh_PongBall has to have 'CollisionEnabled' set to 'Query and Physics' or 'Physics only' if you'd like to AddForce. 
+[2017.03.20-13.32.21:953][491]PIE:Warning: Warning BP_Ball_108.Ball StaticMesh_PongBall has to have 'CollisionEnabled' set to 'Query and Physics' or 'Physics only' if you'd like to AddForce. 
+[2017.03.20-13.32.21:953][491]PIE:Warning: Warning BP_Ball_108.Ball StaticMesh_PongBall has to have 'CollisionEnabled' set to 'Query and Physics' or 'Physics only' if you'd like to AddForce. 
+[2017.03.20-13.32.23:659][576]PIE:Warning: Warning BP_Ball_108.Ball StaticMesh_PongBall has to have 'CollisionEnabled' set to 'Query and Physics' or 'Physics only' if you'd like to AddForce. 
+[2017.03.20-13.32.23:659][576]PIE:Warning: Warning BP_Ball_108.Ball StaticMesh_PongBall has to have 'CollisionEnabled' set to 'Query and Physics' or 'Physics only' if you'd like to AddForce. 
+[2017.03.20-13.32.24:530][623]PIE:Warning: Warning BP_Ball_108.Ball StaticMesh_PongBall has to have 'CollisionEnabled' set to 'Query and Physics' or 'Physics only' if you'd like to AddForce. 
+[2017.03.20-13.32.24:530][623]PIE:Warning: Warning BP_Ball_108.Ball StaticMesh_PongBall has to have 'CollisionEnabled' set to 'Query and Physics' or 'Physics only' if you'd like to AddForce. 
+[2017.03.20-13.32.25:422][671]PIE:Warning: Warning BP_Ball_108.Ball StaticMesh_PongBall has to have 'CollisionEnabled' set to 'Query and Physics' or 'Physics only' if you'd like to AddForce. 
+[2017.03.20-13.32.25:422][671]PIE:Warning: Warning BP_Ball_108.Ball StaticMesh_PongBall has to have 'CollisionEnabled' set to 'Query and Physics' or 'Physics only' if you'd like to AddForce. 
+[2017.03.20-13.32.26:312][719]PIE:Warning: Warning BP_Ball_108.Ball StaticMesh_PongBall has to have 'CollisionEnabled' set to 'Query and Physics' or 'Physics only' if you'd like to AddForce. 
+[2017.03.20-13.32.26:312][719]PIE:Warning: Warning BP_Ball_108.Ball StaticMesh_PongBall has to have 'CollisionEnabled' set to 'Query and Physics' or 'Physics only' if you'd like to AddForce. 
+[2017.03.20-13.32.28:149][818]PIE:Warning: Warning BP_Ball_108.Ball StaticMesh_PongBall has to have 'CollisionEnabled' set to 'Query and Physics' or 'Physics only' if you'd like to AddForce. 
+[2017.03.20-13.32.28:149][818]PIE:Warning: Warning BP_Ball_108.Ball StaticMesh_PongBall has to have 'CollisionEnabled' set to 'Query and Physics' or 'Physics only' if you'd like to AddForce. 
+[2017.03.20-13.32.28:594][842]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Levels/Pong_Main.Pong_Main:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/Pong_Main.Pong_Main:PersistentLevel.Pong_Main' with GeneratedClass '/Game/Levels/Pong_Main.Pong_Main_C' with ClassGeneratedBy '/Game/Levels/Pong_Main.Pong_Main:PersistentLevel.Pong_Main'
+[2017.03.20-13.32.28:641][842]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Levels/Pong_Main.Pong_Main:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/Pong_Main.Pong_Main:PersistentLevel.Pong_Main' with GeneratedClass '/Game/Levels/Pong_Main.Pong_Main_C' with ClassGeneratedBy '/Game/Levels/Pong_Main.Pong_Main:PersistentLevel.Pong_Main'
+[2017.03.20-13.34.22:900][542]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Levels/Pong_Main.Pong_Main:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/Pong_Main.Pong_Main:PersistentLevel.Pong_Main' with GeneratedClass '/Game/Levels/Pong_Main.Pong_Main_C' with ClassGeneratedBy '/Game/Levels/Pong_Main.Pong_Main:PersistentLevel.Pong_Main'
+[2017.03.20-13.34.22:900][542]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.03.20-13.34.22:900][542]PIE: New page: PIE session: Pong_Main (20 Mar 2017 13:34:22)
+[2017.03.20-13.34.22:900][542]LogPlayLevel: Creating play world package: /Game/Levels/UEDPIE_0_Pong_Main
+[2017.03.20-13.34.22:905][542]LogPlayLevel: PIE: StaticDuplicateObject took: (0.004202s)
+[2017.03.20-13.34.22:905][542]LogAIModule: Creating AISystem for world Pong_Main
+[2017.03.20-13.34.22:905][542]LogPlayLevel: PIE: World Init took: (0.000594s)
+[2017.03.20-13.34.22:905][542]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Levels/Pong_Main.Pong_Main to /Game/Levels/UEDPIE_0_Pong_Main.Pong_Main (0.005000s)
+[2017.03.20-13.34.22:922][542]LogInit: XAudio2 using 'Speakers / Headphones (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.03.20-13.34.22:931][542]LogInit: FAudioDevice initialized.
+[2017.03.20-13.34.22:979][542]LogWorld: Game class is 'PangGamemode_C'
+[2017.03.20-13.34.22:981][542]PIE:Warning: Warning Invalid Simulate Options: Body (BP_Ball_108.Ball StaticMesh_PongBall) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.20-13.34.22:981][542]PIE:Warning: Warning Invalid Simulate Options: Body (BP_Ball_108.Ball StaticMesh_PongBall) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.20-13.34.22:982][542]LogWorld: Bringing World /Game/Levels/UEDPIE_0_Pong_Main.Pong_Main up for play (max tick rate 0) at 2017.03.20-13.34.22
+[2017.03.20-13.34.22:982][542]LogWorld: Bringing up level for play took: 0.002166
+[2017.03.20-13.34.22:983][542]PIE: Info Play in editor start time for /Game/Levels/UEDPIE_0_Pong_Main -0.678
+[2017.03.20-13.34.22:983][542]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Levels/Pong_Main.Pong_Main:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/Pong_Main.Pong_Main:PersistentLevel.Pong_Main' with GeneratedClass '/Game/Levels/Pong_Main.Pong_Main_C' with ClassGeneratedBy '/Game/Levels/Pong_Main.Pong_Main:PersistentLevel.Pong_Main'
+[2017.03.20-13.34.23:751][583]PIE:Warning: Warning BP_Ball_108.Ball StaticMesh_PongBall has to have 'CollisionEnabled' set to 'Query and Physics' or 'Physics only' if you'd like to AddForce. 
+[2017.03.20-13.34.23:751][583]PIE:Warning: Warning BP_Ball_108.Ball StaticMesh_PongBall has to have 'CollisionEnabled' set to 'Query and Physics' or 'Physics only' if you'd like to AddForce. 
+[2017.03.20-13.34.24:606][628]PIE:Warning: Warning BP_Ball_108.Ball StaticMesh_PongBall has to have 'CollisionEnabled' set to 'Query and Physics' or 'Physics only' if you'd like to AddForce. 
+[2017.03.20-13.34.24:606][628]PIE:Warning: Warning BP_Ball_108.Ball StaticMesh_PongBall has to have 'CollisionEnabled' set to 'Query and Physics' or 'Physics only' if you'd like to AddForce. 
+[2017.03.20-13.34.26:430][725]PIE:Warning: Warning BP_Ball_108.Ball StaticMesh_PongBall has to have 'CollisionEnabled' set to 'Query and Physics' or 'Physics only' if you'd like to AddForce. 
+[2017.03.20-13.34.26:430][725]PIE:Warning: Warning BP_Ball_108.Ball StaticMesh_PongBall has to have 'CollisionEnabled' set to 'Query and Physics' or 'Physics only' if you'd like to AddForce. 
+[2017.03.20-13.34.27:125][762]LogScript:Warning: Accessed None trying to read property CallFunc_FinishSpawningActor_ReturnValue
+	Pong_Main_C /Game/Levels/UEDPIE_0_Pong_Main.Pong_Main:PersistentLevel.Pong_Main_C_0
+	Function /Game/Levels/Pong_Main.Pong_Main_C:ExecuteUbergraph_Pong_Main:06DE
+[2017.03.20-13.34.27:125][762]PIE:Error: Error Blueprint Runtime Error: Accessed None trying to read property CallFunc_FinishSpawningActor_ReturnValue from function: 'ExecuteUbergraph_Pong_Main' from node: DestroyActor in graph: EventGraph in object: Pong_Main with description: Accessed None trying to read property CallFunc_FinishSpawningActor_ReturnValue
+[2017.03.20-13.34.28:249][816]PIE:Warning: Warning BP_Ball_108.Ball StaticMesh_PongBall has to have 'CollisionEnabled' set to 'Query and Physics' or 'Physics only' if you'd like to AddForce. 
+[2017.03.20-13.34.28:249][816]PIE:Warning: Warning BP_Ball_108.Ball StaticMesh_PongBall has to have 'CollisionEnabled' set to 'Query and Physics' or 'Physics only' if you'd like to AddForce. 
+[2017.03.20-13.34.29:978][899]PIE:Warning: Warning BP_Ball_108.Ball StaticMesh_PongBall has to have 'CollisionEnabled' set to 'Query and Physics' or 'Physics only' if you'd like to AddForce. 
+[2017.03.20-13.34.29:978][899]PIE:Warning: Warning BP_Ball_108.Ball StaticMesh_PongBall has to have 'CollisionEnabled' set to 'Query and Physics' or 'Physics only' if you'd like to AddForce. 
+[2017.03.20-13.34.30:748][936]PIE:Warning: Warning BP_Ball_108.Ball StaticMesh_PongBall has to have 'CollisionEnabled' set to 'Query and Physics' or 'Physics only' if you'd like to AddForce. 
+[2017.03.20-13.34.30:748][936]PIE:Warning: Warning BP_Ball_108.Ball StaticMesh_PongBall has to have 'CollisionEnabled' set to 'Query and Physics' or 'Physics only' if you'd like to AddForce. 
+[2017.03.20-13.34.32:458][ 18]PIE:Warning: Warning BP_Ball_108.Ball StaticMesh_PongBall has to have 'CollisionEnabled' set to 'Query and Physics' or 'Physics only' if you'd like to AddForce. 
+[2017.03.20-13.34.32:458][ 18]PIE:Warning: Warning BP_Ball_108.Ball StaticMesh_PongBall has to have 'CollisionEnabled' set to 'Query and Physics' or 'Physics only' if you'd like to AddForce. 
+[2017.03.20-13.34.33:249][ 56]PIE:Warning: Warning BP_Ball_108.Ball StaticMesh_PongBall has to have 'CollisionEnabled' set to 'Query and Physics' or 'Physics only' if you'd like to AddForce. 
+[2017.03.20-13.34.33:249][ 56]PIE:Warning: Warning BP_Ball_108.Ball StaticMesh_PongBall has to have 'CollisionEnabled' set to 'Query and Physics' or 'Physics only' if you'd like to AddForce. 
+[2017.03.20-13.34.34:976][139]PIE:Warning: Warning BP_Ball_108.Ball StaticMesh_PongBall has to have 'CollisionEnabled' set to 'Query and Physics' or 'Physics only' if you'd like to AddForce. 
+[2017.03.20-13.34.34:976][139]PIE:Warning: Warning BP_Ball_108.Ball StaticMesh_PongBall has to have 'CollisionEnabled' set to 'Query and Physics' or 'Physics only' if you'd like to AddForce. 
+[2017.03.20-13.34.35:768][177]PIE:Warning: Warning BP_Ball_108.Ball StaticMesh_PongBall has to have 'CollisionEnabled' set to 'Query and Physics' or 'Physics only' if you'd like to AddForce. 
+[2017.03.20-13.34.35:768][177]PIE:Warning: Warning BP_Ball_108.Ball StaticMesh_PongBall has to have 'CollisionEnabled' set to 'Query and Physics' or 'Physics only' if you'd like to AddForce. 
+[2017.03.20-13.34.37:484][261]PIE:Warning: Warning BP_Ball_108.Ball StaticMesh_PongBall has to have 'CollisionEnabled' set to 'Query and Physics' or 'Physics only' if you'd like to AddForce. 
+[2017.03.20-13.34.37:484][261]PIE:Warning: Warning BP_Ball_108.Ball StaticMesh_PongBall has to have 'CollisionEnabled' set to 'Query and Physics' or 'Physics only' if you'd like to AddForce. 
+[2017.03.20-13.34.38:346][307]PIE:Warning: Warning BP_Ball_108.Ball StaticMesh_PongBall has to have 'CollisionEnabled' set to 'Query and Physics' or 'Physics only' if you'd like to AddForce. 
+[2017.03.20-13.34.38:346][307]PIE:Warning: Warning BP_Ball_108.Ball StaticMesh_PongBall has to have 'CollisionEnabled' set to 'Query and Physics' or 'Physics only' if you'd like to AddForce. 
+[2017.03.20-13.34.40:094][400]PIE:Warning: Warning BP_Ball_108.Ball StaticMesh_PongBall has to have 'CollisionEnabled' set to 'Query and Physics' or 'Physics only' if you'd like to AddForce. 
+[2017.03.20-13.34.40:094][400]PIE:Warning: Warning BP_Ball_108.Ball StaticMesh_PongBall has to have 'CollisionEnabled' set to 'Query and Physics' or 'Physics only' if you'd like to AddForce. 
+[2017.03.20-13.34.40:977][447]PIE:Warning: Warning BP_Ball_108.Ball StaticMesh_PongBall has to have 'CollisionEnabled' set to 'Query and Physics' or 'Physics only' if you'd like to AddForce. 
+[2017.03.20-13.34.40:977][447]PIE:Warning: Warning BP_Ball_108.Ball StaticMesh_PongBall has to have 'CollisionEnabled' set to 'Query and Physics' or 'Physics only' if you'd like to AddForce. 
+[2017.03.20-13.34.42:797][544]PIE:Warning: Warning BP_Ball_108.Ball StaticMesh_PongBall has to have 'CollisionEnabled' set to 'Query and Physics' or 'Physics only' if you'd like to AddForce. 
+[2017.03.20-13.34.42:797][544]PIE:Warning: Warning BP_Ball_108.Ball StaticMesh_PongBall has to have 'CollisionEnabled' set to 'Query and Physics' or 'Physics only' if you'd like to AddForce. 
+[2017.03.20-13.34.43:662][590]PIE:Warning: Warning BP_Ball_108.Ball StaticMesh_PongBall has to have 'CollisionEnabled' set to 'Query and Physics' or 'Physics only' if you'd like to AddForce. 
+[2017.03.20-13.34.43:662][590]PIE:Warning: Warning BP_Ball_108.Ball StaticMesh_PongBall has to have 'CollisionEnabled' set to 'Query and Physics' or 'Physics only' if you'd like to AddForce. 
+[2017.03.20-13.34.45:333][679]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Levels/Pong_Main.Pong_Main:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/Pong_Main.Pong_Main:PersistentLevel.Pong_Main' with GeneratedClass '/Game/Levels/Pong_Main.Pong_Main_C' with ClassGeneratedBy '/Game/Levels/Pong_Main.Pong_Main:PersistentLevel.Pong_Main'
+[2017.03.20-13.34.45:384][679]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Levels/Pong_Main.Pong_Main:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/Pong_Main.Pong_Main:PersistentLevel.Pong_Main' with GeneratedClass '/Game/Levels/Pong_Main.Pong_Main_C' with ClassGeneratedBy '/Game/Levels/Pong_Main.Pong_Main:PersistentLevel.Pong_Main'
+[2017.03.20-13.34.50:632][839]LogContentBrowser: Native class hierarchy updated for 'BlueprintGraph' in 0.0019 seconds. Added 111 classes and 0 folders.
+[2017.03.20-13.34.52:113][839]PIE:Warning: Warning Invalid Simulate Options: Body (BP_Ball_C_11.Ball StaticMesh_PongBall) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.20-13.34.52:113][839]PIE:Warning: Warning Invalid Simulate Options: Body (BP_Ball_C_11.Ball StaticMesh_PongBall) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.20-13.36.01:235][957]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Levels/Pong_Main.Pong_Main:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/Pong_Main.Pong_Main:PersistentLevel.Pong_Main' with GeneratedClass '/Game/Levels/Pong_Main.Pong_Main_C' with ClassGeneratedBy '/Game/Levels/Pong_Main.Pong_Main:PersistentLevel.Pong_Main'
+[2017.03.20-13.36.01:235][957]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.03.20-13.36.01:235][957]PIE: New page: PIE session: Pong_Main (20 Mar 2017 13:36:01)
+[2017.03.20-13.36.01:235][957]LogPlayLevel: Creating play world package: /Game/Levels/UEDPIE_0_Pong_Main
+[2017.03.20-13.36.01:241][957]LogPlayLevel: PIE: StaticDuplicateObject took: (0.006023s)
+[2017.03.20-13.36.01:242][957]LogAIModule: Creating AISystem for world Pong_Main
+[2017.03.20-13.36.01:242][957]LogPlayLevel: PIE: World Init took: (0.000702s)
+[2017.03.20-13.36.01:242][957]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Levels/Pong_Main.Pong_Main to /Game/Levels/UEDPIE_0_Pong_Main.Pong_Main (0.006982s)
+[2017.03.20-13.36.01:313][957]LogInit: XAudio2 using 'Speakers / Headphones (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.03.20-13.36.01:326][957]LogInit: FAudioDevice initialized.
+[2017.03.20-13.36.01:380][957]LogWorld: Game class is 'PangGamemode_C'
+[2017.03.20-13.36.01:382][957]PIE:Warning: Warning Invalid Simulate Options: Body (BP_Ball_108.Ball StaticMesh_PongBall) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.20-13.36.01:382][957]PIE:Warning: Warning Invalid Simulate Options: Body (BP_Ball_108.Ball StaticMesh_PongBall) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.20-13.36.01:382][957]LogWorld: Bringing World /Game/Levels/UEDPIE_0_Pong_Main.Pong_Main up for play (max tick rate 0) at 2017.03.20-13.36.01
+[2017.03.20-13.36.01:383][957]LogWorld: Bringing up level for play took: 0.002422
+[2017.03.20-13.36.01:384][957]PIE: Info Play in editor start time for /Game/Levels/UEDPIE_0_Pong_Main -0.277
+[2017.03.20-13.36.01:385][957]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Levels/Pong_Main.Pong_Main:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/Pong_Main.Pong_Main:PersistentLevel.Pong_Main' with GeneratedClass '/Game/Levels/Pong_Main.Pong_Main_C' with ClassGeneratedBy '/Game/Levels/Pong_Main.Pong_Main:PersistentLevel.Pong_Main'
+[2017.03.20-13.36.02:158][998]PIE:Warning: Warning BP_Ball_108.Ball StaticMesh_PongBall has to have 'CollisionEnabled' set to 'Query and Physics' or 'Physics only' if you'd like to AddForce. 
+[2017.03.20-13.36.02:159][998]PIE:Warning: Warning BP_Ball_108.Ball StaticMesh_PongBall has to have 'CollisionEnabled' set to 'Query and Physics' or 'Physics only' if you'd like to AddForce. 
+[2017.03.20-13.36.03:605][ 74]LogScript:Warning: Accessed None trying to read property CallFunc_FinishSpawningActor_ReturnValue
+	Pong_Main_C /Game/Levels/UEDPIE_0_Pong_Main.Pong_Main:PersistentLevel.Pong_Main_C_0
+	Function /Game/Levels/Pong_Main.Pong_Main_C:ExecuteUbergraph_Pong_Main:06DE
+[2017.03.20-13.36.03:605][ 74]PIE:Error: Error Blueprint Runtime Error: Accessed None trying to read property CallFunc_FinishSpawningActor_ReturnValue from function: 'ExecuteUbergraph_Pong_Main' from node: DestroyActor in graph: EventGraph in object: Pong_Main with description: Accessed None trying to read property CallFunc_FinishSpawningActor_ReturnValue
+[2017.03.20-13.36.03:934][ 90]PIE:Warning: Warning BP_Ball_108.Ball StaticMesh_PongBall has to have 'CollisionEnabled' set to 'Query and Physics' or 'Physics only' if you'd like to AddForce. 
+[2017.03.20-13.36.03:934][ 90]PIE:Warning: Warning BP_Ball_108.Ball StaticMesh_PongBall has to have 'CollisionEnabled' set to 'Query and Physics' or 'Physics only' if you'd like to AddForce. 
+[2017.03.20-13.36.05:665][173]PIE:Warning: Warning BP_Ball_108.Ball StaticMesh_PongBall has to have 'CollisionEnabled' set to 'Query and Physics' or 'Physics only' if you'd like to AddForce. 
+[2017.03.20-13.36.05:665][173]PIE:Warning: Warning BP_Ball_108.Ball StaticMesh_PongBall has to have 'CollisionEnabled' set to 'Query and Physics' or 'Physics only' if you'd like to AddForce. 
+[2017.03.20-13.36.06:463][211]PIE:Warning: Warning BP_Ball_108.Ball StaticMesh_PongBall has to have 'CollisionEnabled' set to 'Query and Physics' or 'Physics only' if you'd like to AddForce. 
+[2017.03.20-13.36.06:463][211]PIE:Warning: Warning BP_Ball_108.Ball StaticMesh_PongBall has to have 'CollisionEnabled' set to 'Query and Physics' or 'Physics only' if you'd like to AddForce. 
+[2017.03.20-13.36.08:206][294]PIE:Warning: Warning BP_Ball_108.Ball StaticMesh_PongBall has to have 'CollisionEnabled' set to 'Query and Physics' or 'Physics only' if you'd like to AddForce. 
+[2017.03.20-13.36.08:206][294]PIE:Warning: Warning BP_Ball_108.Ball StaticMesh_PongBall has to have 'CollisionEnabled' set to 'Query and Physics' or 'Physics only' if you'd like to AddForce. 
+[2017.03.20-13.36.13:072][526]PIE:Warning: Warning BP_Ball_108.Ball StaticMesh_PongBall has to have 'CollisionEnabled' set to 'Query and Physics' or 'Physics only' if you'd like to AddForce. 
+[2017.03.20-13.36.13:072][526]PIE:Warning: Warning BP_Ball_108.Ball StaticMesh_PongBall has to have 'CollisionEnabled' set to 'Query and Physics' or 'Physics only' if you'd like to AddForce. 
+[2017.03.20-13.36.14:791][614]PIE:Warning: Warning BP_Ball_108.Ball StaticMesh_PongBall has to have 'CollisionEnabled' set to 'Query and Physics' or 'Physics only' if you'd like to AddForce. 
+[2017.03.20-13.36.14:791][614]PIE:Warning: Warning BP_Ball_108.Ball StaticMesh_PongBall has to have 'CollisionEnabled' set to 'Query and Physics' or 'Physics only' if you'd like to AddForce. 
+[2017.03.20-13.36.15:643][659]PIE:Warning: Warning BP_Ball_108.Ball StaticMesh_PongBall has to have 'CollisionEnabled' set to 'Query and Physics' or 'Physics only' if you'd like to AddForce. 
+[2017.03.20-13.36.15:643][659]PIE:Warning: Warning BP_Ball_108.Ball StaticMesh_PongBall has to have 'CollisionEnabled' set to 'Query and Physics' or 'Physics only' if you'd like to AddForce. 
+[2017.03.20-13.36.16:515][705]PIE:Warning: Warning BP_Ball_108.Ball StaticMesh_PongBall has to have 'CollisionEnabled' set to 'Query and Physics' or 'Physics only' if you'd like to AddForce. 
+[2017.03.20-13.36.16:515][705]PIE:Warning: Warning BP_Ball_108.Ball StaticMesh_PongBall has to have 'CollisionEnabled' set to 'Query and Physics' or 'Physics only' if you'd like to AddForce. 
+[2017.03.20-13.36.17:404][752]PIE:Warning: Warning BP_Ball_108.Ball StaticMesh_PongBall has to have 'CollisionEnabled' set to 'Query and Physics' or 'Physics only' if you'd like to AddForce. 
+[2017.03.20-13.36.17:404][752]PIE:Warning: Warning BP_Ball_108.Ball StaticMesh_PongBall has to have 'CollisionEnabled' set to 'Query and Physics' or 'Physics only' if you'd like to AddForce. 
+[2017.03.20-13.36.19:278][851]PIE:Warning: Warning BP_Ball_108.Ball StaticMesh_PongBall has to have 'CollisionEnabled' set to 'Query and Physics' or 'Physics only' if you'd like to AddForce. 
+[2017.03.20-13.36.19:278][851]PIE:Warning: Warning BP_Ball_108.Ball StaticMesh_PongBall has to have 'CollisionEnabled' set to 'Query and Physics' or 'Physics only' if you'd like to AddForce. 
+[2017.03.20-13.36.21:170][951]PIE:Warning: Warning BP_Ball_108.Ball StaticMesh_PongBall has to have 'CollisionEnabled' set to 'Query and Physics' or 'Physics only' if you'd like to AddForce. 
+[2017.03.20-13.36.21:170][951]PIE:Warning: Warning BP_Ball_108.Ball StaticMesh_PongBall has to have 'CollisionEnabled' set to 'Query and Physics' or 'Physics only' if you'd like to AddForce. 
+[2017.03.20-13.36.23:023][ 49]PIE:Warning: Warning BP_Ball_108.Ball StaticMesh_PongBall has to have 'CollisionEnabled' set to 'Query and Physics' or 'Physics only' if you'd like to AddForce. 
+[2017.03.20-13.36.23:023][ 49]PIE:Warning: Warning BP_Ball_108.Ball StaticMesh_PongBall has to have 'CollisionEnabled' set to 'Query and Physics' or 'Physics only' if you'd like to AddForce. 
+[2017.03.20-13.36.23:875][ 94]PIE:Warning: Warning BP_Ball_108.Ball StaticMesh_PongBall has to have 'CollisionEnabled' set to 'Query and Physics' or 'Physics only' if you'd like to AddForce. 
+[2017.03.20-13.36.23:875][ 94]PIE:Warning: Warning BP_Ball_108.Ball StaticMesh_PongBall has to have 'CollisionEnabled' set to 'Query and Physics' or 'Physics only' if you'd like to AddForce. 
+[2017.03.20-13.36.26:278][221]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Levels/Pong_Main.Pong_Main:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/Pong_Main.Pong_Main:PersistentLevel.Pong_Main' with GeneratedClass '/Game/Levels/Pong_Main.Pong_Main_C' with ClassGeneratedBy '/Game/Levels/Pong_Main.Pong_Main:PersistentLevel.Pong_Main'
+[2017.03.20-13.36.26:333][221]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Levels/Pong_Main.Pong_Main:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/Pong_Main.Pong_Main:PersistentLevel.Pong_Main' with GeneratedClass '/Game/Levels/Pong_Main.Pong_Main_C' with ClassGeneratedBy '/Game/Levels/Pong_Main.Pong_Main:PersistentLevel.Pong_Main'
+[2017.03.20-13.36.29:116][351]LogEditorViewport: Clicking on Actor (LMB): Pickup-MultipleBalls_C (Pickup-MultipleBalls)
+[2017.03.20-13.36.30:811][430]LogEditorViewport: Clicking on Actor (LMB): Pickup-EnlargePaddle_C (Pickup-EnlargePaddle)
+[2017.03.20-13.36.35:898][671]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Levels/Pong_Main.Pong_Main:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/Pong_Main.Pong_Main:PersistentLevel.Pong_Main' with GeneratedClass '/Game/Levels/Pong_Main.Pong_Main_C' with ClassGeneratedBy '/Game/Levels/Pong_Main.Pong_Main:PersistentLevel.Pong_Main'
+[2017.03.20-13.36.35:898][671]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.03.20-13.36.35:899][671]PIE: New page: PIE session: Pong_Main (20 Mar 2017 13:36:35)
+[2017.03.20-13.36.35:899][671]LogPlayLevel: Creating play world package: /Game/Levels/UEDPIE_0_Pong_Main
+[2017.03.20-13.36.35:903][671]LogPlayLevel: PIE: StaticDuplicateObject took: (0.003895s)
+[2017.03.20-13.36.35:903][671]LogAIModule: Creating AISystem for world Pong_Main
+[2017.03.20-13.36.35:903][671]LogPlayLevel: PIE: World Init took: (0.000523s)
+[2017.03.20-13.36.35:903][671]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Levels/Pong_Main.Pong_Main to /Game/Levels/UEDPIE_0_Pong_Main.Pong_Main (0.004582s)
+[2017.03.20-13.36.35:933][671]LogInit: XAudio2 using 'Speakers / Headphones (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.03.20-13.36.35:941][671]LogInit: FAudioDevice initialized.
+[2017.03.20-13.36.35:990][671]LogWorld: Game class is 'PangGamemode_C'
+[2017.03.20-13.36.35:992][671]PIE:Warning: Warning Invalid Simulate Options: Body (BP_Ball_108.Ball StaticMesh_PongBall) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.20-13.36.35:992][671]PIE:Warning: Warning Invalid Simulate Options: Body (BP_Ball_108.Ball StaticMesh_PongBall) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.20-13.36.35:993][671]LogWorld: Bringing World /Game/Levels/UEDPIE_0_Pong_Main.Pong_Main up for play (max tick rate 0) at 2017.03.20-13.36.35
+[2017.03.20-13.36.35:993][671]LogWorld: Bringing up level for play took: 0.002180
+[2017.03.20-13.36.35:994][671]PIE: Info Play in editor start time for /Game/Levels/UEDPIE_0_Pong_Main 0.333
+[2017.03.20-13.36.35:994][671]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Levels/Pong_Main.Pong_Main:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/Pong_Main.Pong_Main:PersistentLevel.Pong_Main' with GeneratedClass '/Game/Levels/Pong_Main.Pong_Main_C' with ClassGeneratedBy '/Game/Levels/Pong_Main.Pong_Main:PersistentLevel.Pong_Main'
+[2017.03.20-13.36.36:755][711]PIE:Warning: Warning BP_Ball_108.Ball StaticMesh_PongBall has to have 'CollisionEnabled' set to 'Query and Physics' or 'Physics only' if you'd like to AddForce. 
+[2017.03.20-13.36.36:755][711]PIE:Warning: Warning BP_Ball_108.Ball StaticMesh_PongBall has to have 'CollisionEnabled' set to 'Query and Physics' or 'Physics only' if you'd like to AddForce. 
+[2017.03.20-13.36.38:184][786]LogScript:Warning: Accessed None trying to read property CallFunc_FinishSpawningActor_ReturnValue
+	Pong_Main_C /Game/Levels/UEDPIE_0_Pong_Main.Pong_Main:PersistentLevel.Pong_Main_C_0
+	Function /Game/Levels/Pong_Main.Pong_Main_C:ExecuteUbergraph_Pong_Main:06DE
+[2017.03.20-13.36.38:184][786]PIE:Error: Error Blueprint Runtime Error: Accessed None trying to read property CallFunc_FinishSpawningActor_ReturnValue from function: 'ExecuteUbergraph_Pong_Main' from node: DestroyActor in graph: EventGraph in object: Pong_Main with description: Accessed None trying to read property CallFunc_FinishSpawningActor_ReturnValue
+[2017.03.20-13.36.38:518][802]PIE:Warning: Warning BP_Ball_108.Ball StaticMesh_PongBall has to have 'CollisionEnabled' set to 'Query and Physics' or 'Physics only' if you'd like to AddForce. 
+[2017.03.20-13.36.38:518][802]PIE:Warning: Warning BP_Ball_108.Ball StaticMesh_PongBall has to have 'CollisionEnabled' set to 'Query and Physics' or 'Physics only' if you'd like to AddForce. 
+[2017.03.20-13.36.40:212][882]PIE:Warning: Warning BP_Ball_108.Ball StaticMesh_PongBall has to have 'CollisionEnabled' set to 'Query and Physics' or 'Physics only' if you'd like to AddForce. 
+[2017.03.20-13.36.40:212][882]PIE:Warning: Warning BP_Ball_108.Ball StaticMesh_PongBall has to have 'CollisionEnabled' set to 'Query and Physics' or 'Physics only' if you'd like to AddForce. 
+[2017.03.20-13.36.40:974][918]PIE:Warning: Warning BP_Ball_108.Ball StaticMesh_PongBall has to have 'CollisionEnabled' set to 'Query and Physics' or 'Physics only' if you'd like to AddForce. 
+[2017.03.20-13.36.40:974][918]PIE:Warning: Warning BP_Ball_108.Ball StaticMesh_PongBall has to have 'CollisionEnabled' set to 'Query and Physics' or 'Physics only' if you'd like to AddForce. 
+[2017.03.20-13.36.42:688][999]PIE:Warning: Warning BP_Ball_108.Ball StaticMesh_PongBall has to have 'CollisionEnabled' set to 'Query and Physics' or 'Physics only' if you'd like to AddForce. 
+[2017.03.20-13.36.42:688][999]PIE:Warning: Warning BP_Ball_108.Ball StaticMesh_PongBall has to have 'CollisionEnabled' set to 'Query and Physics' or 'Physics only' if you'd like to AddForce. 
+[2017.03.20-13.36.43:471][ 36]PIE:Warning: Warning BP_Ball_108.Ball StaticMesh_PongBall has to have 'CollisionEnabled' set to 'Query and Physics' or 'Physics only' if you'd like to AddForce. 
+[2017.03.20-13.36.43:471][ 36]PIE:Warning: Warning BP_Ball_108.Ball StaticMesh_PongBall has to have 'CollisionEnabled' set to 'Query and Physics' or 'Physics only' if you'd like to AddForce. 
+[2017.03.20-13.36.45:164][116]PIE:Warning: Warning BP_Ball_108.Ball StaticMesh_PongBall has to have 'CollisionEnabled' set to 'Query and Physics' or 'Physics only' if you'd like to AddForce. 
+[2017.03.20-13.36.45:164][116]PIE:Warning: Warning BP_Ball_108.Ball StaticMesh_PongBall has to have 'CollisionEnabled' set to 'Query and Physics' or 'Physics only' if you'd like to AddForce. 
+[2017.03.20-13.36.51:045][411]PIE:Warning: Warning BP_Ball_108.Ball StaticMesh_PongBall has to have 'CollisionEnabled' set to 'Query and Physics' or 'Physics only' if you'd like to AddForce. 
+[2017.03.20-13.36.51:045][411]PIE:Warning: Warning BP_Ball_108.Ball StaticMesh_PongBall has to have 'CollisionEnabled' set to 'Query and Physics' or 'Physics only' if you'd like to AddForce. 
+[2017.03.20-13.36.53:995][567]PIE:Warning: Warning BP_Ball_108.Ball StaticMesh_PongBall has to have 'CollisionEnabled' set to 'Query and Physics' or 'Physics only' if you'd like to AddForce. 
+[2017.03.20-13.36.53:995][567]PIE:Warning: Warning BP_Ball_108.Ball StaticMesh_PongBall has to have 'CollisionEnabled' set to 'Query and Physics' or 'Physics only' if you'd like to AddForce. 
+[2017.03.20-13.36.54:865][613]PIE:Warning: Warning BP_Ball_108.Ball StaticMesh_PongBall has to have 'CollisionEnabled' set to 'Query and Physics' or 'Physics only' if you'd like to AddForce. 
+[2017.03.20-13.36.54:865][613]PIE:Warning: Warning BP_Ball_108.Ball StaticMesh_PongBall has to have 'CollisionEnabled' set to 'Query and Physics' or 'Physics only' if you'd like to AddForce. 
+[2017.03.20-13.36.57:759][766]PIE:Warning: Warning BP_Ball_108.Ball StaticMesh_PongBall has to have 'CollisionEnabled' set to 'Query and Physics' or 'Physics only' if you'd like to AddForce. 
+[2017.03.20-13.36.57:760][766]PIE:Warning: Warning BP_Ball_108.Ball StaticMesh_PongBall has to have 'CollisionEnabled' set to 'Query and Physics' or 'Physics only' if you'd like to AddForce. 
+[2017.03.20-13.36.58:611][811]PIE:Warning: Warning BP_Ball_108.Ball StaticMesh_PongBall has to have 'CollisionEnabled' set to 'Query and Physics' or 'Physics only' if you'd like to AddForce. 
+[2017.03.20-13.36.58:611][811]PIE:Warning: Warning BP_Ball_108.Ball StaticMesh_PongBall has to have 'CollisionEnabled' set to 'Query and Physics' or 'Physics only' if you'd like to AddForce. 
+[2017.03.20-13.36.59:481][857]PIE:Warning: Warning BP_Ball_108.Ball StaticMesh_PongBall has to have 'CollisionEnabled' set to 'Query and Physics' or 'Physics only' if you'd like to AddForce. 
+[2017.03.20-13.36.59:481][857]PIE:Warning: Warning BP_Ball_108.Ball StaticMesh_PongBall has to have 'CollisionEnabled' set to 'Query and Physics' or 'Physics only' if you'd like to AddForce. 
+[2017.03.20-13.37.00:351][903]PIE:Warning: Warning BP_Ball_108.Ball StaticMesh_PongBall has to have 'CollisionEnabled' set to 'Query and Physics' or 'Physics only' if you'd like to AddForce. 
+[2017.03.20-13.37.00:351][903]PIE:Warning: Warning BP_Ball_108.Ball StaticMesh_PongBall has to have 'CollisionEnabled' set to 'Query and Physics' or 'Physics only' if you'd like to AddForce. 
+[2017.03.20-13.37.02:148][998]PIE:Warning: Warning BP_Ball_108.Ball StaticMesh_PongBall has to have 'CollisionEnabled' set to 'Query and Physics' or 'Physics only' if you'd like to AddForce. 
+[2017.03.20-13.37.02:148][998]PIE:Warning: Warning BP_Ball_108.Ball StaticMesh_PongBall has to have 'CollisionEnabled' set to 'Query and Physics' or 'Physics only' if you'd like to AddForce. 
+[2017.03.20-13.37.03:019][ 44]PIE:Warning: Warning BP_Ball_108.Ball StaticMesh_PongBall has to have 'CollisionEnabled' set to 'Query and Physics' or 'Physics only' if you'd like to AddForce. 
+[2017.03.20-13.37.03:019][ 44]PIE:Warning: Warning BP_Ball_108.Ball StaticMesh_PongBall has to have 'CollisionEnabled' set to 'Query and Physics' or 'Physics only' if you'd like to AddForce. 
+[2017.03.20-13.37.03:889][ 90]PIE:Warning: Warning BP_Ball_108.Ball StaticMesh_PongBall has to have 'CollisionEnabled' set to 'Query and Physics' or 'Physics only' if you'd like to AddForce. 
+[2017.03.20-13.37.03:889][ 90]PIE:Warning: Warning BP_Ball_108.Ball StaticMesh_PongBall has to have 'CollisionEnabled' set to 'Query and Physics' or 'Physics only' if you'd like to AddForce. 
+[2017.03.20-13.37.04:741][135]PIE:Warning: Warning BP_Ball_108.Ball StaticMesh_PongBall has to have 'CollisionEnabled' set to 'Query and Physics' or 'Physics only' if you'd like to AddForce. 
+[2017.03.20-13.37.04:741][135]PIE:Warning: Warning BP_Ball_108.Ball StaticMesh_PongBall has to have 'CollisionEnabled' set to 'Query and Physics' or 'Physics only' if you'd like to AddForce. 
+[2017.03.20-13.37.05:988][201]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Levels/Pong_Main.Pong_Main:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/Pong_Main.Pong_Main:PersistentLevel.Pong_Main' with GeneratedClass '/Game/Levels/Pong_Main.Pong_Main_C' with ClassGeneratedBy '/Game/Levels/Pong_Main.Pong_Main:PersistentLevel.Pong_Main'
+[2017.03.20-13.37.06:040][201]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Levels/Pong_Main.Pong_Main:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/Pong_Main.Pong_Main:PersistentLevel.Pong_Main' with GeneratedClass '/Game/Levels/Pong_Main.Pong_Main_C' with ClassGeneratedBy '/Game/Levels/Pong_Main.Pong_Main:PersistentLevel.Pong_Main'
+[2017.03.20-13.37.15:699][657]LogEditorViewport: Clicking Background
+[2017.03.20-13.37.44:213][ 66]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Levels/Pong_Main" FILE="D:/comp140-gam160-game/Pong/Saved/Autosaves/Game/Levels/Pong_Main_Auto2.umap" SILENT=true AUTOSAVING=true KEEPDIRTY=false
+[2017.03.20-13.37.44:360][ 66]LogSavePackage: Save=139.47ms
+[2017.03.20-13.37.44:360][ 66]LogSavePackage: Moving 'D:/comp140-gam160-game/Pong/Saved/Pong_Main_Auto2936160F2407FDE452884938C7B81593E.tmp' to 'D:/comp140-gam160-game/Pong/Saved/Autosaves/Game/Levels/Pong_Main_Auto2.umap'
+[2017.03.20-13.37.44:361][ 66]LogSavePackage:Display: Finished SavePackage D:/comp140-gam160-game/Pong/Saved/Autosaves/Game/Levels/Pong_Main_Auto2.umap
+[2017.03.20-13.37.44:362][ 66]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/Levels/Pong_Main' took 0.178
+[2017.03.20-13.37.44:362][ 66]LogFileHelpers: Editor autosave (incl. sublevels) for all levels took 0.178
+[2017.03.20-13.38.46:850][178]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Levels/Pong_Main.Pong_Main:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/Pong_Main.Pong_Main:PersistentLevel.Pong_Main' with GeneratedClass '/Game/Levels/Pong_Main.Pong_Main_C' with ClassGeneratedBy '/Game/Levels/Pong_Main.Pong_Main:PersistentLevel.Pong_Main'
+[2017.03.20-13.38.46:850][178]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.03.20-13.38.46:850][178]PIE: New page: PIE session: Pong_Main (20 Mar 2017 13:38:46)
+[2017.03.20-13.38.46:850][178]LogPlayLevel: Creating play world package: /Game/Levels/UEDPIE_0_Pong_Main
+[2017.03.20-13.38.46:855][178]LogPlayLevel: PIE: StaticDuplicateObject took: (0.004291s)
+[2017.03.20-13.38.46:855][178]LogAIModule: Creating AISystem for world Pong_Main
+[2017.03.20-13.38.46:855][178]LogPlayLevel: PIE: World Init took: (0.000592s)
+[2017.03.20-13.38.46:856][178]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Levels/Pong_Main.Pong_Main to /Game/Levels/UEDPIE_0_Pong_Main.Pong_Main (0.005099s)
+[2017.03.20-13.38.46:893][178]LogInit: XAudio2 using 'Speakers / Headphones (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.03.20-13.38.46:902][178]LogInit: FAudioDevice initialized.
+[2017.03.20-13.38.46:949][178]LogWorld: Game class is 'PangGamemode_C'
+[2017.03.20-13.38.46:951][178]PIE:Warning: Warning Invalid Simulate Options: Body (BP_Ball_108.Ball StaticMesh_PongBall) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.20-13.38.46:951][178]PIE:Warning: Warning Invalid Simulate Options: Body (BP_Ball_108.Ball StaticMesh_PongBall) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.20-13.38.46:952][178]LogWorld: Bringing World /Game/Levels/UEDPIE_0_Pong_Main.Pong_Main up for play (max tick rate 0) at 2017.03.20-13.38.46
+[2017.03.20-13.38.46:952][178]LogWorld: Bringing up level for play took: 0.002478
+[2017.03.20-13.38.46:953][178]PIE: Info Play in editor start time for /Game/Levels/UEDPIE_0_Pong_Main -0.708
+[2017.03.20-13.38.46:954][178]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Levels/Pong_Main.Pong_Main:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/Pong_Main.Pong_Main:PersistentLevel.Pong_Main' with GeneratedClass '/Game/Levels/Pong_Main.Pong_Main_C' with ClassGeneratedBy '/Game/Levels/Pong_Main.Pong_Main:PersistentLevel.Pong_Main'
+[2017.03.20-13.38.47:725][219]PIE:Warning: Warning BP_Ball_108.Ball StaticMesh_PongBall has to have 'CollisionEnabled' set to 'Query and Physics' or 'Physics only' if you'd like to AddForce. 
+[2017.03.20-13.38.47:725][219]PIE:Warning: Warning BP_Ball_108.Ball StaticMesh_PongBall has to have 'CollisionEnabled' set to 'Query and Physics' or 'Physics only' if you'd like to AddForce. 
+[2017.03.20-13.38.48:567][263]PIE:Warning: Warning BP_Ball_108.Ball StaticMesh_PongBall has to have 'CollisionEnabled' set to 'Query and Physics' or 'Physics only' if you'd like to AddForce. 
+[2017.03.20-13.38.48:567][263]PIE:Warning: Warning BP_Ball_108.Ball StaticMesh_PongBall has to have 'CollisionEnabled' set to 'Query and Physics' or 'Physics only' if you'd like to AddForce. 
+[2017.03.20-13.38.49:607][318]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Levels/Pong_Main.Pong_Main:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/Pong_Main.Pong_Main:PersistentLevel.Pong_Main' with GeneratedClass '/Game/Levels/Pong_Main.Pong_Main_C' with ClassGeneratedBy '/Game/Levels/Pong_Main.Pong_Main:PersistentLevel.Pong_Main'
+[2017.03.20-13.38.49:654][318]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Levels/Pong_Main.Pong_Main:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/Pong_Main.Pong_Main:PersistentLevel.Pong_Main' with GeneratedClass '/Game/Levels/Pong_Main.Pong_Main_C' with ClassGeneratedBy '/Game/Levels/Pong_Main.Pong_Main:PersistentLevel.Pong_Main'
+[2017.03.20-13.38.52:524][456]LogEditorViewport: Clicking on Actor (LMB): PickUp-ShrinkPaddle_C (PickUp-ShrinkPaddle)
+[2017.03.20-13.38.57:567][693]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Levels/Pong_Main.Pong_Main:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/Pong_Main.Pong_Main:PersistentLevel.Pong_Main' with GeneratedClass '/Game/Levels/Pong_Main.Pong_Main_C' with ClassGeneratedBy '/Game/Levels/Pong_Main.Pong_Main:PersistentLevel.Pong_Main'
+[2017.03.20-13.38.57:567][693]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.03.20-13.38.57:567][693]PIE: New page: PIE session: Pong_Main (20 Mar 2017 13:38:57)
+[2017.03.20-13.38.57:567][693]LogPlayLevel: Creating play world package: /Game/Levels/UEDPIE_0_Pong_Main
+[2017.03.20-13.38.57:571][693]LogPlayLevel: PIE: StaticDuplicateObject took: (0.004111s)
+[2017.03.20-13.38.57:572][693]LogAIModule: Creating AISystem for world Pong_Main
+[2017.03.20-13.38.57:572][693]LogPlayLevel: PIE: World Init took: (0.000476s)
+[2017.03.20-13.38.57:572][693]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Levels/Pong_Main.Pong_Main to /Game/Levels/UEDPIE_0_Pong_Main.Pong_Main (0.004749s)
+[2017.03.20-13.38.57:601][693]LogInit: XAudio2 using 'Speakers / Headphones (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.03.20-13.38.57:610][693]LogInit: FAudioDevice initialized.
+[2017.03.20-13.38.57:659][693]LogWorld: Game class is 'PangGamemode_C'
+[2017.03.20-13.38.57:660][693]PIE:Warning: Warning Invalid Simulate Options: Body (BP_Ball_108.Ball StaticMesh_PongBall) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.20-13.38.57:660][693]PIE:Warning: Warning Invalid Simulate Options: Body (BP_Ball_108.Ball StaticMesh_PongBall) is set to simulate physics but Collision Enabled is incompatible
+[2017.03.20-13.38.57:661][693]LogWorld: Bringing World /Game/Levels/UEDPIE_0_Pong_Main.Pong_Main up for play (max tick rate 0) at 2017.03.20-13.38.57
+[2017.03.20-13.38.57:661][693]LogWorld: Bringing up level for play took: 0.002045
+[2017.03.20-13.38.57:662][693]PIE: Info Play in editor start time for /Game/Levels/UEDPIE_0_Pong_Main 0.001
+[2017.03.20-13.38.57:662][693]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Levels/Pong_Main.Pong_Main:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/Pong_Main.Pong_Main:PersistentLevel.Pong_Main' with GeneratedClass '/Game/Levels/Pong_Main.Pong_Main_C' with ClassGeneratedBy '/Game/Levels/Pong_Main.Pong_Main:PersistentLevel.Pong_Main'
+[2017.03.20-13.38.58:436][732]PIE:Warning: Warning BP_Ball_108.Ball StaticMesh_PongBall has to have 'CollisionEnabled' set to 'Query and Physics' or 'Physics only' if you'd like to AddForce. 
+[2017.03.20-13.38.58:436][732]PIE:Warning: Warning BP_Ball_108.Ball StaticMesh_PongBall has to have 'CollisionEnabled' set to 'Query and Physics' or 'Physics only' if you'd like to AddForce. 
+[2017.03.20-13.38.59:886][807]LogScript:Warning: Accessed None trying to read property CallFunc_FinishSpawningActor_ReturnValue
+	Pong_Main_C /Game/Levels/UEDPIE_0_Pong_Main.Pong_Main:PersistentLevel.Pong_Main_C_2
+	Function /Game/Levels/Pong_Main.Pong_Main_C:ExecuteUbergraph_Pong_Main:06DE
+[2017.03.20-13.38.59:886][807]PIE:Error: Error Blueprint Runtime Error: Accessed None trying to read property CallFunc_FinishSpawningActor_ReturnValue from function: 'ExecuteUbergraph_Pong_Main' from node: DestroyActor in graph: EventGraph in object: Pong_Main with description: Accessed None trying to read property CallFunc_FinishSpawningActor_ReturnValue
+[2017.03.20-13.39.00:214][823]PIE:Warning: Warning BP_Ball_108.Ball StaticMesh_PongBall has to have 'CollisionEnabled' set to 'Query and Physics' or 'Physics only' if you'd like to AddForce. 
+[2017.03.20-13.39.00:214][823]PIE:Warning: Warning BP_Ball_108.Ball StaticMesh_PongBall has to have 'CollisionEnabled' set to 'Query and Physics' or 'Physics only' if you'd like to AddForce. 
+[2017.03.20-13.39.01:937][906]PIE:Warning: Warning BP_Ball_108.Ball StaticMesh_PongBall has to have 'CollisionEnabled' set to 'Query and Physics' or 'Physics only' if you'd like to AddForce. 
+[2017.03.20-13.39.01:937][906]PIE:Warning: Warning BP_Ball_108.Ball StaticMesh_PongBall has to have 'CollisionEnabled' set to 'Query and Physics' or 'Physics only' if you'd like to AddForce. 
+[2017.03.20-13.39.03:640][988]PIE:Warning: Warning BP_Ball_108.Ball StaticMesh_PongBall has to have 'CollisionEnabled' set to 'Query and Physics' or 'Physics only' if you'd like to AddForce. 
+[2017.03.20-13.39.03:640][988]PIE:Warning: Warning BP_Ball_108.Ball StaticMesh_PongBall has to have 'CollisionEnabled' set to 'Query and Physics' or 'Physics only' if you'd like to AddForce. 
+[2017.03.20-13.39.05:360][ 71]PIE:Warning: Warning BP_Ball_108.Ball StaticMesh_PongBall has to have 'CollisionEnabled' set to 'Query and Physics' or 'Physics only' if you'd like to AddForce. 
+[2017.03.20-13.39.05:360][ 71]PIE:Warning: Warning BP_Ball_108.Ball StaticMesh_PongBall has to have 'CollisionEnabled' set to 'Query and Physics' or 'Physics only' if you'd like to AddForce. 
+[2017.03.20-13.39.07:084][154]PIE:Warning: Warning BP_Ball_108.Ball StaticMesh_PongBall has to have 'CollisionEnabled' set to 'Query and Physics' or 'Physics only' if you'd like to AddForce. 
+[2017.03.20-13.39.07:084][154]PIE:Warning: Warning BP_Ball_108.Ball StaticMesh_PongBall has to have 'CollisionEnabled' set to 'Query and Physics' or 'Physics only' if you'd like to AddForce. 
+[2017.03.20-13.39.08:815][237]PIE:Warning: Warning BP_Ball_108.Ball StaticMesh_PongBall has to have 'CollisionEnabled' set to 'Query and Physics' or 'Physics only' if you'd like to AddForce. 
+[2017.03.20-13.39.08:815][237]PIE:Warning: Warning BP_Ball_108.Ball StaticMesh_PongBall has to have 'CollisionEnabled' set to 'Query and Physics' or 'Physics only' if you'd like to AddForce. 
+[2017.03.20-13.39.09:590][274]PIE:Warning: Warning BP_Ball_108.Ball StaticMesh_PongBall has to have 'CollisionEnabled' set to 'Query and Physics' or 'Physics only' if you'd like to AddForce. 
+[2017.03.20-13.39.09:590][274]PIE:Warning: Warning BP_Ball_108.Ball StaticMesh_PongBall has to have 'CollisionEnabled' set to 'Query and Physics' or 'Physics only' if you'd like to AddForce. 
+[2017.03.20-13.39.11:101][352]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Levels/Pong_Main.Pong_Main:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/Pong_Main.Pong_Main:PersistentLevel.Pong_Main' with GeneratedClass '/Game/Levels/Pong_Main.Pong_Main_C' with ClassGeneratedBy '/Game/Levels/Pong_Main.Pong_Main:PersistentLevel.Pong_Main'
+[2017.03.20-13.39.11:153][352]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Levels/Pong_Main.Pong_Main:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/Pong_Main.Pong_Main
