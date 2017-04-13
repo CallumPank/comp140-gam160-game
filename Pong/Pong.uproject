@@ -1,6 +1,16 @@
 {
 	"FileVersion": 3,
-	"EngineAssociation": "4.12",
+	"EngineAssociation": "{31E1CAD1-4C6F-5B48-6191-C599D118EEB5}",
 	"Category": "",
-	"Description": ""
+	"Description": "",
+	"Modules": [
+		{
+			"Name": "Pong",
+			"Type": "Runtime",
+			"LoadingPhase": "Default",
+			"AdditionalDependencies": [
+				"Engine"
+			]
+		}
+	]
 }
