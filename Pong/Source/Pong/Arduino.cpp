@@ -12,7 +12,7 @@ AArduino::AArduino()
 	PrimaryActorTick.bCanEverTick = true;
 
 	// connect to port using wide character string 'L'
-	this->connect(L"COM7");
+	this->connect(L"COM3");
 
 	// check connection
 	if (this->IsConnected()) UE_LOG(LogTemp, Warning, TEXT("Connection Success"));
