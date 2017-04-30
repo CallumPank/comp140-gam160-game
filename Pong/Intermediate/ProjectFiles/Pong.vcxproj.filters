@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<ItemGroup>
+		<None Include="..\..\Pong.uproject" />
+		<Filter Include="Source">
+			<UniqueIdentifier>{B48E86CA-374F-426A-B6F3-1EA311611887}</UniqueIdentifier>
+		</Filter>
+		<None Include="..\..\Source\Pong.Target.cs">
+			<Filter>Source</Filter>
+		</None >
+		<None Include="..\..\Source\PongEditor.Target.cs">
+			<Filter>Source</Filter>
+		</None >
+		<Filter Include="Config">
+			<UniqueIdentifier>{F7DFF886-2A39-4982-AB3F-FC4261CE48FB}</UniqueIdentifier>
+		</Filter>
+		<None Include="..\..\Config\DefaultEditor.ini">
+			<Filter>Config</Filter>
+		</None >
+		<None Include="..\..\Config\DefaultEngine.ini">
+			<Filter>Config</Filter>
+		</None >
+		<None Include="..\..\Config\DefaultGame.ini">
+			<Filter>Config</Filter>
+		</None >
+		<None Include="..\..\Config\DefaultInput.ini">
+			<Filter>Config</Filter>
+		</None >
+		<Filter Include="Source\Pong">
+			<UniqueIdentifier>{771A9F81-ECD0-4DDC-BDB9-12C890DFF34B}</UniqueIdentifier>
+		</Filter>
+		<ClInclude Include="..\..\Source\Pong\Arduino.h">
+			<Filter>Source\Pong</Filter>
+		</ClInclude >
+		<None Include="..\..\Source\Pong\Pong.Build.cs">
+			<Filter>Source\Pong</Filter>
+		</None >
+		<ClCompile Include="..\..\Source\Pong\Pong.cpp">
+			<Filter>Source\Pong</Filter>
+		</ClCompile >
+		<ClInclude Include="..\..\Source\Pong\Pong.h">
+			<Filter>Source\Pong</Filter>
+		</ClInclude >
+		<ClCompile Include="..\..\Source\Pong\Arduino.cpp">
+			<Filter>Source\Pong</Filter>
+		</ClCompile >
+	</ItemGroup>
+</Project>

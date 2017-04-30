@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<ItemGroup>
+		<None Include="C:\Unreal Engine 4.12\Engine\Source\Programs\SlateViewer\SlateViewer.Target.cs" />
+		<None Include="C:\Unreal Engine 4.12\Engine\Source\Programs\SlateViewer\SlateViewer.Build.cs" />
+		<Filter Include="Private">
+			<UniqueIdentifier>{962AFED5-EC8A-4341-B0C5-8FEAEBA111AD}</UniqueIdentifier>
+		</Filter>
+		<ClCompile Include="C:\Unreal Engine 4.12\Engine\Source\Programs\SlateViewer\Private\SlateViewerApp.cpp">
+			<Filter>Private</Filter>
+		</ClCompile >
+		<Filter Include="Private\IOS">
+			<UniqueIdentifier>{5D29C52B-2D4A-4225-87D8-62D3BBEBA78C}</UniqueIdentifier>
+		</Filter>
+		<ClCompile Include="C:\Unreal Engine 4.12\Engine\Source\Programs\SlateViewer\Private\IOS\IOSSlateViewerMain.cpp">
+			<Filter>Private\IOS</Filter>
+		</ClCompile >
+		<Filter Include="Private\Linux">
+			<UniqueIdentifier>{DA2ABE9A-4342-45E0-9AE9-F78CE9F83385}</UniqueIdentifier>
+		</Filter>
+		<ClCompile Include="C:\Unreal Engine 4.12\Engine\Source\Programs\SlateViewer\Private\Linux\SlateViewerMainLinux.cpp">
+			<Filter>Private\Linux</Filter>
+		</ClCompile >
+		<Filter Include="Private\Mac">
+			<UniqueIdentifier>{071C6A32-370F-4D96-A9E5-042B0EF5D89D}</UniqueIdentifier>
+		</Filter>
+		<ClCompile Include="C:\Unreal Engine 4.12\Engine\Source\Programs\SlateViewer\Private\Mac\SlateViewerMainMac.cpp">
+			<Filter>Private\Mac</Filter>
+		</ClCompile >
+		<Filter Include="Private\Windows">
+			<UniqueIdentifier>{F890026C-FDE9-4B52-BA8C-E36F692EBE0B}</UniqueIdentifier>
+		</Filter>
+		<ClCompile Include="C:\Unreal Engine 4.12\Engine\Source\Programs\SlateViewer\Private\Windows\SlateViewerMainWindows.cpp">
+			<Filter>Private\Windows</Filter>
+		</ClCompile >
+		<Filter Include="Public">
+			<UniqueIdentifier>{0DE77E8F-4C9F-4FB7-BD59-08CCC04DDF04}</UniqueIdentifier>
+		</Filter>
+		<ClInclude Include="C:\Unreal Engine 4.12\Engine\Source\Programs\SlateViewer\Public\SlateViewer.h">
+			<Filter>Public</Filter>
+		</ClInclude >
+		<ClInclude Include="C:\Unreal Engine 4.12\Engine\Source\Programs\SlateViewer\Public\SlateViewerApp.h">
+			<Filter>Public</Filter>
+		</ClInclude >
+		<Filter Include="Resources">
+			<UniqueIdentifier>{BA0640FC-096D-4D4F-8FB0-7DE36A0BD073}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="Resources\Windows">
+			<UniqueIdentifier>{B2EE7465-28D3-427E-B578-3F696413B1FE}</UniqueIdentifier>
+		</Filter>
+		<Manifest Include="C:\Unreal Engine 4.12\Engine\Source\Programs\SlateViewer\Resources\Windows\Debug-PCLaunch-Win32.manifest">
+			<Filter>Resources\Windows</Filter>
+		</Manifest >
+		<Manifest Include="C:\Unreal Engine 4.12\Engine\Source\Programs\SlateViewer\Resources\Windows\Debug-PCLaunch-Win64.manifest">
+			<Filter>Resources\Windows</Filter>
+		</Manifest >
+		<Manifest Include="C:\Unreal Engine 4.12\Engine\Source\Programs\SlateViewer\Resources\Windows\PCLaunch-Win32.manifest">
+			<Filter>Resources\Windows</Filter>
+		</Manifest >
+		<Manifest Include="C:\Unreal Engine 4.12\Engine\Source\Programs\SlateViewer\Resources\Windows\PCLaunch-Win64.manifest">
+			<Filter>Resources\Windows</Filter>
+		</Manifest >
+		<ResourceCompile Include="C:\Unreal Engine 4.12\Engine\Source\Programs\SlateViewer\Resources\Windows\PCLaunch.rc">
+			<Filter>Resources\Windows</Filter>
+		</ResourceCompile >
+	</ItemGroup>
+</Project>

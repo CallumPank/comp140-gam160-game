@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<ItemGroup>
+		<None Include="C:\Unreal Engine 4.12\Engine\Source\Programs\UnrealFrontend\UnrealFrontend.Target.cs" />
+		<Filter Include="Config">
+			<UniqueIdentifier>{AB97DD95-C995-4F4E-8991-93F22649AA45}</UniqueIdentifier>
+		</Filter>
+		<None Include="C:\Unreal Engine 4.12\Engine\Programs\UnrealFrontend\Config\DefaultEngine.ini">
+			<Filter>Config</Filter>
+		</None >
+		<None Include="C:\Unreal Engine 4.12\Engine\Source\Programs\UnrealFrontend\UnrealFrontend.Build.cs" />
+		<Filter Include="Private">
+			<UniqueIdentifier>{AA655A78-06AB-4FB7-B96C-CF7928D63585}</UniqueIdentifier>
+		</Filter>
+		<ClCompile Include="C:\Unreal Engine 4.12\Engine\Source\Programs\UnrealFrontend\Private\UnrealFrontendMain.cpp">
+			<Filter>Private</Filter>
+		</ClCompile >
+		<ClInclude Include="C:\Unreal Engine 4.12\Engine\Source\Programs\UnrealFrontend\Private\UnrealFrontendMain.h">
+			<Filter>Private</Filter>
+		</ClInclude >
+		<ClInclude Include="C:\Unreal Engine 4.12\Engine\Source\Programs\UnrealFrontend\Private\UnrealFrontendPrivatePCH.h">
+			<Filter>Private</Filter>
+		</ClInclude >
+		<Filter Include="Private\Commands">
+			<UniqueIdentifier>{14122542-D9DC-42E4-A198-0C6C44AF7BA6}</UniqueIdentifier>
+		</Filter>
+		<ClCompile Include="C:\Unreal Engine 4.12\Engine\Source\Programs\UnrealFrontend\Private\Commands\DeployCommand.cpp">
+			<Filter>Private\Commands</Filter>
+		</ClCompile >
+		<ClInclude Include="C:\Unreal Engine 4.12\Engine\Source\Programs\UnrealFrontend\Private\Commands\DeployCommand.h">
+			<Filter>Private\Commands</Filter>
+		</ClInclude >
+		<ClCompile Include="C:\Unreal Engine 4.12\Engine\Source\Programs\UnrealFrontend\Private\Commands\LaunchCommand.cpp">
+			<Filter>Private\Commands</Filter>
+		</ClCompile >
+		<ClInclude Include="C:\Unreal Engine 4.12\Engine\Source\Programs\UnrealFrontend\Private\Commands\LaunchCommand.h">
+			<Filter>Private\Commands</Filter>
+		</ClInclude >
+		<ClCompile Include="C:\Unreal Engine 4.12\Engine\Source\Programs\UnrealFrontend\Private\Commands\LaunchFromProfileCommand.cpp">
+			<Filter>Private\Commands</Filter>
+		</ClCompile >
+		<ClInclude Include="C:\Unreal Engine 4.12\Engine\Source\Programs\UnrealFrontend\Private\Commands\LaunchFromProfileCommand.h">
+			<Filter>Private\Commands</Filter>
+		</ClInclude >
+		<ClCompile Include="C:\Unreal Engine 4.12\Engine\Source\Programs\UnrealFrontend\Private\Commands\PackageCommand.cpp">
+			<Filter>Private\Commands</Filter>
+		</ClCompile >
+		<ClInclude Include="C:\Unreal Engine 4.12\Engine\Source\Programs\UnrealFrontend\Private\Commands\PackageCommand.h">
+			<Filter>Private\Commands</Filter>
+		</ClInclude >
+		<ClCompile Include="C:\Unreal Engine 4.12\Engine\Source\Programs\UnrealFrontend\Private\Commands\StatsConvertCommand.cpp">
+			<Filter>Private\Commands</Filter>
+		</ClCompile >
+		<ClInclude Include="C:\Unreal Engine 4.12\Engine\Source\Programs\UnrealFrontend\Private\Commands\StatsConvertCommand.h">
+			<Filter>Private\Commands</Filter>
+		</ClInclude >
+		<ClCompile Include="C:\Unreal Engine 4.12\Engine\Source\Programs\UnrealFrontend\Private\Commands\StatsDumpMemoryCommand.cpp">
+			<Filter>Private\Commands</Filter>
+		</ClCompile >
+		<ClInclude Include="C:\Unreal Engine 4.12\Engine\Source\Programs\UnrealFrontend\Private\Commands\StatsDumpMemoryCommand.h">
+			<Filter>Private\Commands</Filter>
+		</ClInclude >
+		<ClCompile Include="C:\Unreal Engine 4.12\Engine\Source\Programs\UnrealFrontend\Private\Commands\UserInterfaceCommand.cpp">
+			<Filter>Private\Commands</Filter>
+		</ClCompile >
+		<ClInclude Include="C:\Unreal Engine 4.12\Engine\Source\Programs\UnrealFrontend\Private\Commands\UserInterfaceCommand.h">
+			<Filter>Private\Commands</Filter>
+		</ClInclude >
+		<Filter Include="Private\Linux">
+			<UniqueIdentifier>{A80F2DF4-D47D-41EF-8CD8-5FB880FA9AAC}</UniqueIdentifier>
+		</Filter>
+		<ClCompile Include="C:\Unreal Engine 4.12\Engine\Source\Programs\UnrealFrontend\Private\Linux\LinuxUnrealFrontendMain.cpp">
+			<Filter>Private\Linux</Filter>
+		</ClCompile >
+		<Filter Include="Private\Mac">
+			<UniqueIdentifier>{AF45B2A8-A8B2-4A52-9459-78757164FE4A}</UniqueIdentifier>
+		</Filter>
+		<ClCompile Include="C:\Unreal Engine 4.12\Engine\Source\Programs\UnrealFrontend\Private\Mac\MacUnrealFrontendMain.cpp">
+			<Filter>Private\Mac</Filter>
+		</ClCompile >
+		<Filter Include="Private\Windows">
+			<UniqueIdentifier>{605D56CD-E86F-445A-9D75-9A4C21ABAC9B}</UniqueIdentifier>
+		</Filter>
+		<ClCompile Include="C:\Unreal Engine 4.12\Engine\Source\Programs\UnrealFrontend\Private\Windows\WindowsUnrealFrontendMain.cpp">
+			<Filter>Private\Windows</Filter>
+		</ClCompile >
+		<Filter Include="Resources">
+			<UniqueIdentifier>{FC6AE2CD-F73B-48D0-B939-B96F93193922}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="Resources\Windows">
+			<UniqueIdentifier>{AC8E35A5-496D-476C-8203-A09198CA6587}</UniqueIdentifier>
+		</Filter>
+		<Manifest Include="C:\Unreal Engine 4.12\Engine\Source\Programs\UnrealFrontend\Resources\Windows\Debug-UnrealFrontend-Win32.manifest">
+			<Filter>Resources\Windows</Filter>
+		</Manifest >
+		<Manifest Include="C:\Unreal Engine 4.12\Engine\Source\Programs\UnrealFrontend\Resources\Windows\Debug-UnrealFrontend-Win64.manifest">
+			<Filter>Resources\Windows</Filter>
+		</Manifest >
+		<Manifest Include="C:\Unreal Engine 4.12\Engine\Source\Programs\UnrealFrontend\Resources\Windows\UnrealFrontend-Win32.manifest">
+			<Filter>Resources\Windows</Filter>
+		</Manifest >
+		<Manifest Include="C:\Unreal Engine 4.12\Engine\Source\Programs\UnrealFrontend\Resources\Windows\UnrealFrontend-Win64.manifest">
+			<Filter>Resources\Windows</Filter>
+		</Manifest >
+		<None Include="C:\Unreal Engine 4.12\Engine\Source\Programs\UnrealFrontend\Resources\Windows\UnrealFrontend.ico">
+			<Filter>Resources\Windows</Filter>
+		</None >
+		<ResourceCompile Include="C:\Unreal Engine 4.12\Engine\Source\Programs\UnrealFrontend\Resources\Windows\UnrealFrontend.rc">
+			<Filter>Resources\Windows</Filter>
+		</ResourceCompile >
+	</ItemGroup>
+</Project>
